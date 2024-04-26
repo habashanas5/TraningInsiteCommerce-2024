@@ -1,0 +1,5 @@
+{
+  "name": "Return Request (RMA)",
+  "parentType": "OrderDetailsPage",
+  "urlSegment": "RequestRma"
+}

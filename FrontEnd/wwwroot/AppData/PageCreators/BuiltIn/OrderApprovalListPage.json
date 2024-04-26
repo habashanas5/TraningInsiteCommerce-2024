@@ -1,0 +1,5 @@
+{
+  "name": "Order Approval",
+  "parentType": "MyAccountPage",
+  "urlSegment": "OrderApproval"
+}

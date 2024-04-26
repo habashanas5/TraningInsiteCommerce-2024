@@ -1,0 +1,5 @@
+{
+  "name": "Checkout - Shipping",
+  "parentType": "HomePage",
+  "urlSegment": "CheckoutShipping"
+}

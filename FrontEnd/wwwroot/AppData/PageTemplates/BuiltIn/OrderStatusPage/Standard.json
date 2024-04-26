@@ -1,0 +1,177 @@
+{
+    "nodeId": "4427719a-8aa9-451a-9fcf-f0e734021694",
+    "name": "Order Status",
+    "type": "OrderStatusPage",
+    "parentId": "c12c76ec-da75-4d15-b7ca-1ef2e7d7c067",
+    "sortOrder": -1,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "variantName": null,
+    "id": "d635366e-69d6-4c99-9a03-f0b392b830fd",
+    "generalFields": {
+        "horizontalRule": "",
+        "hideHeader": false,
+        "hideFooter": false,
+        "hideFromSearchEngines": false,
+        "hideFromSiteSearch": false,
+        "excludeFromNavigation": false,
+        "excludeFromSignInRequired": false,
+        "tags": [],
+        "variantName": "",
+        "hideBreadcrumbs": false
+    },
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Check Order Status "
+        },
+        "openGraphTitle": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "urlSegment": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "OrderStatus"
+        },
+        "openGraphUrl": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "openGraphImage": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "metaKeywords": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "metaDescription": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        }
+    },
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "d635366e-69d6-4c99-9a03-f0b392b830fd",
+            "type": "Basic/PageTitle",
+            "zone": "Content",
+            "id": "84a2bb89-0559-428f-903a-cce8a10d2f4b",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "d635366e-69d6-4c99-9a03-f0b392b830fd",
+            "zone": "Content",
+            "type": "Basic/Rows",
+            "id": "162b325d-8e8c-4f6b-b83c-d803edd02ec9",
+            "generalFields": {
+                "rowCount": 5,
+                "gap": 20
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "162b325d-8e8c-4f6b-b83c-d803edd02ec9",
+            "zone": "Content0",
+            "type": "Basic/RichContent",
+            "id": "03e78c13-4336-4af8-9047-331d88f61bce",
+            "generalFields": {
+                "backgroundColor": "",
+                "padding": 0
+            },
+            "translatableFields": {},
+            "contextualFields": {
+                "content": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2|Desktop|d06988c0-9358-4dbb-aa3d-b7be5b6a7fd9": "<p>View an order by entering the order number and the email address or postal code placed on the order.</p>"
+                }
+            }
+        },
+        {
+            "parentId": "162b325d-8e8c-4f6b-b83c-d803edd02ec9",
+            "zone": "Content1",
+            "type": "OrderStatus/OrderStatusForm",
+            "id": "0aa15e6a-44c7-43de-b756-6a373e4a84ce",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "162b325d-8e8c-4f6b-b83c-d803edd02ec9",
+            "type": "OrderStatus/OrderStatusHeader",
+            "zone": "Content2",
+            "id": "27e154da-18fb-4be5-98ed-3ae2259bfd43",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "162b325d-8e8c-4f6b-b83c-d803edd02ec9",
+            "type": "Basic/Row",
+            "zone": "Content3",
+            "id": "cad3b5b9-d5ac-4e7b-bce6-c32c000be970",
+            "generalFields": {
+                "columns": [
+                    [12, 12, 12, 12, 8],
+                    [12, 12, 12, 12, 4]
+                ],
+                "alignment": [],
+                "gap": 15,
+                "reflow": true
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "162b325d-8e8c-4f6b-b83c-d803edd02ec9",
+            "type": "OrderStatus/OrderStatusProductList",
+            "zone": "Content4",
+            "id": "d15e1340-fa34-4e79-a783-e71109c04ad1",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "cad3b5b9-d5ac-4e7b-bce6-c32c000be970",
+            "type": "Basic/Rows",
+            "zone": "Content0",
+            "id": "9494f2bd-3d39-45a7-9da2-c1fc9ddba012",
+            "generalFields": {
+                "rowCount": 3,
+                "gap": 20
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "cad3b5b9-d5ac-4e7b-bce6-c32c000be970",
+            "type": "OrderStatus/OrderStatusTotal",
+            "zone": "Content1",
+            "id": "0275413d-2e82-4ceb-8dc2-5d01dd14728d",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "9494f2bd-3d39-45a7-9da2-c1fc9ddba012",
+            "type": "OrderStatus/OrderStatusInformation",
+            "zone": "Content0",
+            "id": "ddafe3e7-8278-4c97-8f55-2abf3f6fe48d",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "9494f2bd-3d39-45a7-9da2-c1fc9ddba012",
+            "type": "OrderStatus/OrderStatusAddressDetails",
+            "zone": "Content1",
+            "id": "0b692887-5575-4744-a3ac-e2e94d65adb1",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "9494f2bd-3d39-45a7-9da2-c1fc9ddba012",
+            "zone": "Content2",
+            "type": "OrderStatus/OrderStatusShipmentPackages",
+            "id": "c5c790fa-b2ca-47b3-8238-0a8c61a7719b",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

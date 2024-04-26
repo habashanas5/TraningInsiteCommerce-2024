@@ -1,0 +1,77 @@
+{
+    "id": "c714ae70-b7e1-46b5-ac80-b831fe6615b2",
+    "nodeId": "c29caea1-87df-47e9-9632-b892d2f1b27c",
+    "type": "AccountSettingsPage",
+    "parentId": "40d9365e-86ff-4621-8b76-1b3fd3443e70",
+    "sortOrder": 2,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "fields": {
+        "title": "Account Settings",
+        "name": "Account Settings",
+        "urlSegment": "AccountSettings"
+    },
+    "translatableFields": {},
+    "contextualFields": {},
+    "widgets": [
+        {
+            "id": "4ba2738c-68ca-48a1-9239-d99d090cabf2",
+            "parentId": "c714ae70-b7e1-46b5-ac80-b831fe6615b2",
+            "type": "AccountSettings/AccountSettingsHeader",
+            "zone": "Content",
+            "fields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "id": "bb81493f-59d1-4b45-9e6e-c7ed40f43959",
+            "parentId": "c714ae70-b7e1-46b5-ac80-b831fe6615b2",
+            "type": "Basic/Row",
+            "zone": "Content",
+            "fields": {
+                "columns": [[12,12,4,4,4],[12,12,8,8,8]],
+                "gap": 30
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "id": "221bf3e6-f6d0-4a2a-b117-b30da41f498c",
+            "parentId": "bb81493f-59d1-4b45-9e6e-c7ed40f43959",
+            "type": "Basic/Rows",
+            "zone": "Content0",
+            "fields": {
+                "rowCount": 2,
+                "gap": 1
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "id": "31c5982d-2f8a-427a-87dc-61054c7ac31f",
+            "parentId": "bb81493f-59d1-4b45-9e6e-c7ed40f43959",
+            "type": "AccountSettings/AccountSettingsDefaultBillingShipping",
+            "zone": "Content1",
+            "fields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "id": "b661eb87-63c0-44d0-88ce-09fa6519d02e",
+            "parentId": "221bf3e6-f6d0-4a2a-b117-b30da41f498c",
+            "type": "AccountSettings/AccountSettingsUserInformation",
+            "zone": "Content0",
+            "fields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "221bf3e6-f6d0-4a2a-b117-b30da41f498c",
+            "zone": "Content1",
+            "type": "AccountSettings/AccountSettingsManageSubscriptions",
+            "id": "77d3f30f-6316-4f49-b55e-f2a288579851",
+            "fields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

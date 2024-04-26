@@ -1,0 +1,12 @@
+{
+  "name": "Brands",
+  "parentType": "HomePage",
+  "urlSegment": "BrandsPage",
+  "pages": [
+    {
+      "urlSegment": "Details",
+      "name": "Brand Details",
+      "type": "BrandDetailsPage"
+    }
+  ]
+}

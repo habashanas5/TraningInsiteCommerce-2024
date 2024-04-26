@@ -1,0 +1,5 @@
+{
+  "name": "Product Compare",
+  "parentType": "HomePage",
+  "urlSegment": "Catalog/ProductComparison"
+}

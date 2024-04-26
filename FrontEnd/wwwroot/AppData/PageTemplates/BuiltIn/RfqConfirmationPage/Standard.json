@@ -1,0 +1,55 @@
+{
+  "nodeId": "25cc7b32-b72d-4141-99f2-a21fba89ce16",
+  "name": "Quote Confirmation",
+  "type": "RfqConfirmationPage",
+  "parentId": "685d675a-7d5b-49a8-80af-14496ee80804",
+  "sortOrder": 1,
+  "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+  "id": "9f8378b6-8145-433b-bf9b-ea7bc4db045e",
+  "fields": {
+    "title": "Quote Confirmation",
+    "name": "Quote Confirmation",
+    "urlSegment": "Confirmation",
+    "horizontalRule": "",
+    "excludeFromNavigation": true,
+    "tags": []
+  },
+  "translatableFields": {
+    "title": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Quote Confirmation"
+    },
+    "urlSegment": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Confirmation"
+    }
+  },
+  "contextualFields": {},
+  "widgets": [
+    {
+      "parentId": "9f8378b6-8145-433b-bf9b-ea7bc4db045e",
+      "type": "RfqConfirmation/RfqConfirmationHeader",
+      "zone": "Content",
+      "id": "4cafa6d4-1cea-4c04-9e69-0a2152e23a63",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "9f8378b6-8145-433b-bf9b-ea7bc4db045e",
+      "type": "RfqConfirmation/RfqConfirmationDetails",
+      "zone": "Content",
+      "id": "6bfe2032-f28c-46e1-9c9d-ec0d43098d26",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "9f8378b6-8145-433b-bf9b-ea7bc4db045e",
+      "type": "RfqConfirmation/RfqConfirmationProductList",
+      "zone": "Content",
+      "id": "58c1d15e-1676-4f1f-9346-165d8b6855ed",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    }
+  ]
+}

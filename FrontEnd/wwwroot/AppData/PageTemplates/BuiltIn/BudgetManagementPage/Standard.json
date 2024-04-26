@@ -1,0 +1,58 @@
+{
+    "id": "131d8a85-dc5c-42dd-abb3-402f9b21130c",
+    "parentId": "15a315d4-4d64-4ef4-b0de-6e589e21baa4",
+    "nodeId": "432948ea-a967-4ed2-8a6d-6a1bdaf77b54",
+    "sortOrder": 2,
+    "fields": {
+        "title": "Budget Management",
+        "name": "Budget Management",
+        "urlSegment": "Budget"
+    },
+    "translatableFields": {},
+    "type": "BudgetManagementPage",
+    "widgets": [
+        {
+            "parentId": "131d8a85-dc5c-42dd-abb3-402f9b21130c",
+            "zone": "Content",
+            "type": "Budget/BudgetManagementHeader",
+            "id": "6189fa5f-aca8-4c5d-a878-951d9e14bda8",
+            "fields": {},
+            "translatableFields": {}
+        },
+        {
+            "id": "0fa5e8e5-b64f-4440-8493-16b93a92f4b9",
+            "parentId": "131d8a85-dc5c-42dd-abb3-402f9b21130c",
+            "type": "Budget/ReviewBudget",
+            "zone": "Content",
+            "fields": {},
+            "translatableFields": {}
+        },
+        {
+            "id": "gfa5e8e5-b64f-4440-8493-16b93a92f4b9",
+            "parentId": "131d8a85-dc5c-42dd-abb3-402f9b21130c",
+            "type": "Budget/ConfigureBudget",
+            "zone": "Content",
+            "fields": {},
+            "translatableFields": {}
+        },
+        {
+            "parentId": "131d8a85-dc5c-42dd-abb3-402f9b21130c",
+            "zone": "Content",
+            "type": "Budget/CostCodes",
+            "id": "6a877b02-fb63-481a-84a1-aa7faf961b5c",
+            "fields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "131d8a85-dc5c-42dd-abb3-402f9b21130c",
+            "zone": "Content",
+            "type": "Budget/AssignBudgets",
+            "id": "012f90d2-4cbc-4c7b-9573-f3413c4b48ed",
+            "fields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ],
+    "websiteId": "5c028c3a-c7f1-41fe-a4c0-1414b4c7acdb"
+}

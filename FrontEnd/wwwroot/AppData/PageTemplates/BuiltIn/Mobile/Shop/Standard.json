@@ -1,0 +1,79 @@
+{
+  "nodeId": "39a3172d-c01f-4eb5-b85a-f0fe03c9190b",
+  "name": "Shop",
+  "type": "Mobile/Shop",
+  "parentId": "00000000-0000-0000-0000-000000000000",
+  "sortOrder": 0,
+  "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+  "variantName": null,
+  "id": "0a9af556-5cd3-4952-a17b-0d8d347c4f87",
+  "generalFields": {
+      "horizontalRule": "",
+      "hideHeader": false,
+      "hideFooter": false,
+      "hideFromSearchEngines": false,
+      "hideFromSiteSearch": true,
+      "excludeFromNavigation": true,
+      "excludeFromSignInRequired": false,
+      "tags": [],
+      "variantName": "",
+      "hideBreadcrumbs": false
+  },
+  "translatableFields": {
+      "title": {
+          "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Shop"
+      }
+  },
+  "contextualFields": {},
+  "widgets": [
+      {
+          "parentId": "0a9af556-5cd3-4952-a17b-0d8d347c4f87",
+          "zone": "Content",
+          "type": "Mobile/LinkList",
+          "id": "371c8620-3a5e-4c6b-85a5-c2e62d5ae5bd",
+          "generalFields": {
+              "layout": "list",
+              "links": [
+                  {
+                      "fields": {
+                          "icon": "",
+                          "type": "Categories",
+                          "url": "",
+                          "text": ""
+                      }
+                  },
+                  {
+                      "fields": {
+                          "icon": "",
+                          "type": "QuickOrder",
+                          "url": "",
+                          "text": ""
+                      }
+                  }
+              ]
+          },
+          "translatableFields": {},
+          "contextualFields": {}
+      },
+      {
+          "parentId": "0a9af556-5cd3-4952-a17b-0d8d347c4f87",
+          "zone": "Content",
+          "type": "Mobile/ProductCarousel",
+          "id": "a75b2eaa-a541-4dea-b747-16d2c05e0490",
+          "generalFields": {
+              "carouselType": "topSellers",
+              "displayProductsFrom": "allCategories",
+              "selectedCategoryIds": [],
+              "showImage": true,
+              "showTitle": true,
+              "showPrice": true
+          },
+          "translatableFields": {
+              "title": {
+                  "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Top Sellers"
+              }
+          },
+          "contextualFields": {}
+      }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Invoice History",
+  "parentType": "MyAccountPage",
+  "urlSegment": "Invoices",
+  "pages": [
+    {
+      "urlSegment": "Details",
+      "name": "Invoice Details",
+      "type": "InvoiceDetailsPage"
+    }
+  ]
+}

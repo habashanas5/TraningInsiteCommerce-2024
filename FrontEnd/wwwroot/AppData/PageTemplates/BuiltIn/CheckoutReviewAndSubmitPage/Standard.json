@@ -1,0 +1,115 @@
+{
+    "nodeId": "c965fc3a-4722-4094-b52e-d70e7fa03559",
+    "name": "Checkout - Review & Submit",
+    "type": "CheckoutReviewAndSubmitPage",
+    "parentId": "5336590b-a163-49f0-970e-c58f0a26cb7f",
+    "sortOrder": 0,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "id": "cbd97c95-22be-4f99-8b39-6ef1adcb943c",
+    "generalFields": {
+        "horizontalRule": "",
+        "tags": [],
+        "hideBreadcrumbs": false
+    },
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Checkout - Review & Submit"
+        },
+        "urlSegment": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "CheckoutReviewAndSubmit"
+        }
+    },
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "cbd97c95-22be-4f99-8b39-6ef1adcb943c",
+            "type": "CheckoutReviewAndSubmit/CheckoutReviewAndSubmitPageContainer",
+            "zone": "Content",
+            "id": "7746f7e6-dfee-4787-817a-653230ecee63",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "7746f7e6-dfee-4787-817a-653230ecee63",
+            "type": "CheckoutReviewAndSubmit/CheckoutReviewAndSubmitHeader",
+            "zone": "Content00",
+            "id": "1d260bbf-caec-4f5c-930b-268f3065b2db",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "7746f7e6-dfee-4787-817a-653230ecee63",
+            "type": "CheckoutReviewAndSubmit/CheckoutReviewAndSubmitCartTotal",
+            "zone": "Content02",
+            "id": "1bbbf91e-ccb5-46d1-9a69-b9f681391e71",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "7746f7e6-dfee-4787-817a-653230ecee63",
+            "type": "CheckoutReviewAndSubmit/CheckoutReviewAndSubmitPromotionCode",
+            "zone": "Content01",
+            "id": "247633cb-c2da-4852-a450-fc3c46a7498e",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "7746f7e6-dfee-4787-817a-653230ecee63",
+            "type": "CheckoutReviewAndSubmit/CheckoutReviewAndSubmitPaymentDetails",
+            "zone": "Content03",
+            "id": "eb6dec02-9688-44b7-9724-986097635da0",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "7746f7e6-dfee-4787-817a-653230ecee63",
+            "type": "CheckoutReviewAndSubmit/CheckoutReviewAndSubmitShippingInfo",
+            "zone": "Content04",
+            "id": "ad33ed5d-d9d7-4fa3-90e9-528302a01722",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "7746f7e6-dfee-4787-817a-653230ecee63",
+            "type": "CheckoutReviewAndSubmit/CheckoutReviewAndSubmitProductList",
+            "zone": "Content05",
+            "id": "0a18ab6a-e3d0-4c28-8e6e-d2b712a37b27",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "7746f7e6-dfee-4787-817a-653230ecee63",
+            "type": "CheckoutReviewAndSubmit/CheckoutReviewAndSubmitActionButtons",
+            "zone": "Content06",
+            "id": "9a36b71e-7c23-47b0-ae81-c2c1adc63885",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "7746f7e6-dfee-4787-817a-653230ecee63",
+            "type": "CheckoutReviewAndSubmit/CheckoutReviewAndSubmitCarrierService",
+            "zone": "Content07",
+            "id": "9106ed85-feb6-4b8c-9646-5fc5d1b05fb7",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "7746f7e6-dfee-4787-817a-653230ecee63",
+            "type": "Common/CartApproverMessage",
+            "zone": "Content08",
+            "id": "501ea74f-4871-4b88-8173-0752cdcec86a",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

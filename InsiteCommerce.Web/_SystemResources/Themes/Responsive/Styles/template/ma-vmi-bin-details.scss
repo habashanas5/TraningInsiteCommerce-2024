@@ -1,0 +1,139 @@
+﻿.ma-vmi-bin-details {
+    .od-head {
+        font-size: 0.9em;
+
+        .od-data {
+            font-weight: normal;
+        }
+
+        h3 {
+            float: left;
+            margin-top: 0;
+            margin-bottom: 0.2em;
+
+            &.od-lbl {
+                padding-right: 0.3em;
+                clear: left;
+            }
+        }
+    }
+
+    .btns {
+        .btn {
+            margin-top: 1.3em;
+        }
+    }
+
+    .search-date {
+        position: relative;
+    }
+
+    .picker {
+        right: 0% !important;
+    }
+
+    .search-date-to .picker__holder {
+        right: 0% !important;
+    }
+
+    .search-vmi-counts {
+        margin-top: 20px;
+
+        .btns .btn {
+            float: right;
+        }
+
+        .search-date {
+            em {
+                display: block;
+            }
+        }
+    }
+
+    .icon-arw-down-5 {
+        position: absolute;
+        top: 1.5em;
+        right: .8em;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .search-user {
+        .vmi-count-searchbox {
+            display: block;
+        }
+    }
+
+    .search-no-results {
+        background-color: #F2F2F2;
+        text-align: center;
+        padding: 70px 0;
+    }
+
+    .overflow-table {
+        .col-check {
+            width: 40px;
+
+            input {
+                margin: 0;
+            }
+        }
+    }
+
+    .btn-export-selected, .btn-export-all {
+        float: right;
+        margin-left: 7px;
+    }
+}
+
+
+@media all and (max-width: 767px) {
+    .ma-vmi-bin-details {
+        .btns {
+            margin-bottom: .7rem;
+
+            .btn {
+                width: 100%;
+                margin: .3em 0;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+    .ma-vmi-bin-details {
+
+        label.accord-head {
+            display: inline-block;
+        }
+
+        .search-vmi-counts {
+            .btns .btn {
+                margin-left: 1em;
+            }
+
+            .search-date {
+                input {
+                    width: 90px;
+                    display: inline-block;
+                }
+
+                em {
+                    display: inline-block;
+                    float: left;
+                    line-height: 38px;
+                    margin-right: .75em;
+                }
+
+                .row .small-6 {
+                    width: auto;
+                }
+
+                [class*="column"] + [class*="column"]:last-child {
+                    float: left;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

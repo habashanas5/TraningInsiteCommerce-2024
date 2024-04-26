@@ -1,0 +1,98 @@
+{
+    "nodeId": "cf02e4da-aa33-40ed-9cf5-cd07fb9ebe50",
+    "name": "Return Request (RMA)",
+    "type": "RequestRmaPage",
+    "parentId": "7bd0503f-1c3f-4c84-be42-fc2524ae77d0",
+    "sortOrder": -1,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "id": "abb8d7b3-f9fb-4f34-8ac3-8eba09983064",
+    "generalFields": {},
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Return Request (RMA)"
+        },
+        "openGraphTitle": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "urlSegment": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "RequestRMA"
+        },
+        "openGraphUrl": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "openGraphImage": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "metaKeywords": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "metaDescription": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        }
+    },
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "abb8d7b3-f9fb-4f34-8ac3-8eba09983064",
+            "type": "RequestRma/RequestRmaHeader",
+            "zone": "Content",
+            "id": "3b615d7f-348a-4679-8a65-e781b422adf3",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "abb8d7b3-f9fb-4f34-8ac3-8eba09983064",
+            "type": "Basic/Row",
+            "zone": "Content",
+            "id": "946257e3-ae86-4a4d-bf36-2b1deb3a2760",
+            "generalFields": {
+                "columns": [
+                    6,
+                    6
+                ],
+                "alignment": [],
+                "gap": 0,
+                "reflow": true
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "946257e3-ae86-4a4d-bf36-2b1deb3a2760",
+            "type": "RequestRma/RequestRmaInformation",
+            "zone": "Content0",
+            "id": "85a44d19-194b-4dda-87e7-123ce98e54c9",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "946257e3-ae86-4a4d-bf36-2b1deb3a2760",
+            "type": "RequestRma/RequestRmaNotes",
+            "zone": "Content1",
+            "id": "60afbee6-5482-4d73-a36c-f72cdb06d67d",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "abb8d7b3-f9fb-4f34-8ac3-8eba09983064",
+            "zone": "Content",
+            "type": "RequestRma/RequestRmaProductList",
+            "id": "09beeadb-ca42-49f8-8956-fad50aaf5573",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "abb8d7b3-f9fb-4f34-8ac3-8eba09983064",
+            "type": "RequestRma/RequestRmaProductListButtons",
+            "zone": "Content",
+            "id": "355da8e6-37e8-49ec-b42e-55c67f79190c",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

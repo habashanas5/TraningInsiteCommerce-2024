@@ -1,0 +1,93 @@
+{
+    "nodeId": "380b9d2a-bcb9-4323-8b9e-75dbb84e46a5",
+    "name": "Saved Orders",
+    "type": "SavedOrderListPage",
+    "parentId": "ab1f5e32-1649-4826-8cdf-7dcfd7aa0bfd",
+    "sortOrder": 0,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "variantName": null,
+    "id": "76b97043-72d3-4bfa-b3d4-3535e9e3b231",
+    "generalFields": {
+        "horizontalRule": "",
+        "hideHeader": false,
+        "hideFooter": false,
+        "hideFromSearchEngines": false,
+        "hideFromSiteSearch": false,
+        "excludeFromNavigation": false,
+        "excludeFromSignInRequired": false,
+        "tags": [],
+        "hideBreadcrumbs": false,
+        "variantName": ""
+    },
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Saved Orders"
+        },
+        "openGraphTitle": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "urlSegment": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "SavedOrders"
+        },
+        "openGraphUrl": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "openGraphImage": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "metaKeywords": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "metaDescription": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        }
+    },
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "76b97043-72d3-4bfa-b3d4-3535e9e3b231",
+            "type": "SavedOrderList/SavedOrderListHeader",
+            "zone": "Content",
+            "id": "42e8196d-c663-49aa-9d8a-fde942301525",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "76b97043-72d3-4bfa-b3d4-3535e9e3b231",
+            "type": "SavedOrderList/SavedOrderListFilter",
+            "zone": "Content",
+            "id": "d091dc59-8084-4d04-88ee-1646d46921bb",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "76b97043-72d3-4bfa-b3d4-3535e9e3b231",
+            "type": "SavedOrderList/SavedOrderListTable",
+            "zone": "Content",
+            "id": "27e65424-a4cf-4419-a0f8-52c629352165",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "76b97043-72d3-4bfa-b3d4-3535e9e3b231",
+            "zone": "Content",
+            "type": "SavedOrderList/SavedOrderListPagination",
+            "id": "5ec46e11-d188-46cc-88c2-ff647522a699",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "42e8196d-c663-49aa-9d8a-fde942301525",
+            "type": "Basic/PageTitle",
+            "zone": "Content",
+            "id": "5c939cb4-3678-4d27-b50c-eab87b26bc66",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

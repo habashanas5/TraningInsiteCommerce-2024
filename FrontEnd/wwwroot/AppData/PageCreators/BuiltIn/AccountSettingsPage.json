@@ -1,0 +1,5 @@
+{
+  "name": "Account Settings",
+  "parentType": "MyAccountPage",
+  "urlSegment": "AccountSettings"
+}

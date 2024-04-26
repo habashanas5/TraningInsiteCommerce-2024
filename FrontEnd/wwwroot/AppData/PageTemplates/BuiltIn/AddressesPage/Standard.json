@@ -1,0 +1,96 @@
+{
+  "id": "ea3fbec3-4fe6-41f8-8000-f7125ff5ac6e",
+  "parentId": "f9c98cf8-c69d-400b-9a6f-8367be20698e",
+  "nodeId": "c5bf27e3-05be-4656-9513-58f0a6e2d829",
+  "sortOrder": 0,
+  "translatableFields": {},
+  "type": "AddressesPage",
+  "widgets": [
+    {
+      "parentId": "ea3fbec3-4fe6-41f8-8000-f7125ff5ac6e",
+      "type": "Basic/PageTitle",
+      "zone": "Content",
+      "id": "6d6f810c-9e24-4df2-bc3a-42162f24458b"
+    },
+    {
+      "parentId": "ea3fbec3-4fe6-41f8-8000-f7125ff5ac6e",
+      "type": "Basic/Row",
+      "zone": "Content",
+      "id": "c638c96e-4f36-420d-860f-4f06668e0145",
+      "fields": {
+        "columns": [[12,12,4,4,4],[12,12,8,8,8]],
+        "gap": 30
+      }
+    },
+    {
+      "parentId": "c638c96e-4f36-420d-860f-4f06668e0145",
+      "type": "Basic/Row",
+      "zone": "Content0",
+      "id": "2d072a7a-4d0e-4356-8440-690c3fc09dd8",
+      "fields": {
+        "columns": [12,12],
+        "gap": 30,
+        "reflow": false
+      }
+    },
+    {
+        "parentId": "c638c96e-4f36-420d-860f-4f06668e0145",
+        "type": "Basic/Row",
+        "zone": "Content1",
+        "id": "9863b234-adc7-4e21-a4c8-320e246cf4f2",
+        "fields": {
+          "columns": [12,12],
+          "gap": 30,
+          "reflow": false
+        }
+      },
+    {
+      "parentId": "9863b234-adc7-4e21-a4c8-320e246cf4f2",
+      "zone": "Content0",
+      "type": "Addresses/AddressBook",
+      "id": "ce7d5f52-364f-4907-8da4-1e7a2d27b268"
+    },
+    {
+        "parentId": "9863b234-adc7-4e21-a4c8-320e246cf4f2",
+        "zone": "Content1",
+        "type": "Addresses/AddressBookPagination",
+        "id": "ccc256e6-8077-4fc8-be93-6ef873c20ee6"
+      },
+    {
+      "parentId": "2d072a7a-4d0e-4356-8440-690c3fc09dd8",
+      "zone": "Content0",
+      "type": "Addresses/CurrentBillingAddress",
+      "id": "b32d04e2-5241-4f30-b2cd-de55603a4a17"
+    },
+    {
+      "parentId": "2d072a7a-4d0e-4356-8440-690c3fc09dd8",
+      "zone": "Content1",
+      "type": "Addresses/CurrentShippingAddress",
+      "id": "9357a0d5-f8df-4556-a3e3-e76b0bab6768"
+    },
+    {
+      "parentId": "ce7d5f52-364f-4907-8da4-1e7a2d27b268",
+      "zone": "Content00",
+      "type": "Basic/Row",
+      "id": "3c19823b-38fa-481d-a704-4e9425fe769f",
+      "fields": {
+        "columns": [6,6,3,3],
+        "gap": 30,
+        "reflow": false
+      }
+    },
+    {
+      "parentId": "3c19823b-38fa-481d-a704-4e9425fe769f",
+      "zone": "Content0",
+      "type": "Addresses/AddressBookSearchBox",
+      "id": "b04bbbe5-1194-48a6-a208-b5674bf78e90"
+    },
+    {
+      "parentId": "3c19823b-38fa-481d-a704-4e9425fe769f",
+      "zone": "Content1",
+      "type": "Addresses/CreateAddressButton",
+      "id": "1742938b-cbb0-4f80-9bad-37d0d2ca7f2d"
+    }
+  ],
+  "websiteId": "5c028c3a-c7f1-41fe-a4c0-1414b4c7acdb"
+}

@@ -1,0 +1,11 @@
+{
+  "tags": [
+    "gsd"
+  ],
+  "imports": [
+    "mobius",
+    "client-framework",
+    "content-library",
+    "server-framework"
+  ]
+}

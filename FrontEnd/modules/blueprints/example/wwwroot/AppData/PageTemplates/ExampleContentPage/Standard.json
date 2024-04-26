@@ -1,0 +1,67 @@
+{
+  "id": "88b9d7b9-a856-4bab-bc75-b8214486dea9",
+  "nodeId": "724794da-783d-48f2-9b6d-840e025d1e69",
+  "name": "Page",
+  "type": "ExampleContentPage",
+  "parentId": "ca9c5832-7329-429b-81ae-d7aaae785748",
+  "sortOrder": -1,
+  "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+  "generalFields": {
+    "horizontalRule": "",
+    "hideHeader": false,
+    "hideFooter": false,
+    "hideFromSearchEngines": false,
+    "hideFromSiteSearch": false,
+    "excludeFromNavigation": false,
+    "excludeFromSignInRequired": false,
+    "tags": []
+  },
+  "translatableFields": {
+    "title": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Page"
+    },
+    "openGraphTitle": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+    },
+    "urlSegment": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Page"
+    },
+    "openGraphUrl": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+    },
+    "openGraphImage": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+    },
+    "metaKeywords": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+    },
+    "metaDescription": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+    }
+  },
+  "contextualFields": {},
+  "widgets": [
+    {
+      "id": "05e4e6c2-8790-40b4-a665-431de241e82c",
+      "parentId": "88b9d7b9-a856-4bab-bc75-b8214486dea9",
+      "type": "Basic/PageTitle",
+      "zone": "Content",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "id": "264167c5-5349-4a14-9052-628b274a8265",
+      "parentId": "88b9d7b9-a856-4bab-bc75-b8214486dea9",
+      "type": "Basic/RichContent",
+      "zone": "Content",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {
+        "content": {
+          "a26095ef-c714-e311-ba31-d43d7e4e88b2|Desktop|d06988c0-9358-4dbb-aa3d-b7be5b6a7fd9": "Example Page Content!"
+        }
+      }
+    }
+  ]
+}

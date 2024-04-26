@@ -1,0 +1,24 @@
+{
+  "id": "9aaad1e8-2cc0-4968-93cd-fcc6d2ea93d3",
+  "nodeId": "872c6d79-667f-4119-9c0a-67532a751bc9",
+  "type": "CategoryListPage",
+  "parentId": "34a98292-151c-4097-b161-1923c67f0e8a",
+  "sortOrder": -1,
+  "websiteId": "5c028c3a-c7f1-41fe-a4c0-1414b4c7acdb",
+  "fields": {
+    "title": "Shop Categories",
+    "name": "Category List",
+    "urlSegment": "Categories"
+  },
+  "translatableFields": {},
+  "widgets": [
+    {
+      "parentId": "9aaad1e8-2cc0-4968-93cd-fcc6d2ea93d3",
+      "zone": "Content",
+      "type": "Category/CategoryList",
+      "id": "f4281a5e-138b-4f79-9251-bcb01b7d2580",
+      "fields": {},
+      "translatableFields": {}
+    }
+  ]
+}

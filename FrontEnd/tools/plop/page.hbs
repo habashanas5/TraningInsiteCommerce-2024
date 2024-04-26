@@ -1,0 +1,42 @@
+import { HasShellContext, withIsInShell } from "@insite/client-framework/Components/IsInShell";
+import Zone from "@insite/client-framework/Components/Zone";
+import ApplicationState from "@insite/client-framework/Store/ApplicationState";
+import PageModule from "@insite/client-framework/Types/PageModule";
+import PageProps from "@insite/client-framework/Types/PageProps";
+import Page from "@insite/mobius/Page";
+import { HasHistory, withHistory } from "@insite/mobius/utilities/HistoryContext";
+import * as React from "react";
+import { connect, ResolveThunks } from "react-redux";
+
+const mapStateToProps = (state: ApplicationState) => ({
+});
+
+const mapDispatchToProps = {
+};
+
+type Props = HasHistory & ReturnType<typeof mapStateToProps> & ResolveThunks<typeof mapDispatchToProps> & HasShellContext & PageProps;
+
+class {{pascalCase pageName}}Page extends React.Component<Props> {
+    componentDidMount() {
+        // load data here
+    }
+
+    render() {
+        return <Page>
+            <Zone contentId={this.props.id} zoneName="Content"/>
+        </Page>;
+    }
+}
+
+const pageModule: PageModule = {
+    component: connect(mapStateToProps, mapDispatchToProps)(withHistory(withIsInShell({{pascalCase pageName}}Page))),
+    definition: {
+        hasEditableUrlSegment: true,
+        hasEditableTitle: true,
+        pageType: "System",
+    },
+};
+
+export default pageModule;
+
+export const {{pascalCase pageName}}PageContext = "{{pascalCase pageName}}Page";

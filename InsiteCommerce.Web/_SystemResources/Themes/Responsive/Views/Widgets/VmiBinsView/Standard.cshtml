@@ -1,0 +1,202 @@
+﻿<div ng-controller="VmiBinsController as vm" ng-cloak
+    ng-init="vm.exportHeaders = [
+        '[% translate 'Vmi Location ID' %]',
+        '[% translate 'Product ID' %]',
+        '[% translate 'Bin Number' %]',
+        '[% translate 'Min Qty' %]',
+        '[% translate 'Max Qty' %]'
+        ];">
+    <div ng-if="!vm.failedToLoadVmiBins">
+        <div class="row top-actions-block">
+            <div class="medium-6 columns"></div>
+            <div class="medium-6 columns top-actions-controls">
+                <button class="btn primary" ng-click="vm.openAddProductModal()">[% translate 'Add Product' %]</button>
+            </div>
+        </div>
+        <section class="accordion search-vmi-bins">
+            <div class="cm">
+                <input type="checkbox" id="accord-1" class="accord-check" />
+                <label for="accord-1" class="accord-head">[% translate 'Search' %]</label>
+                <article class="accord-content">
+                    <div class="row">
+                        <div class="medium-12 large-4 columns search-col-1">
+                            <div class="search-product">
+                                <label>[% translate 'Search Products' %]</label>
+                                <input type="text" ng-model="vm.searchFilter.filter" />
+                            </div>
+                        </div>
+                        <div class="medium-12 large-4 columns search-col-2">
+                            <div class="search-date">
+                                <label>[% translate 'Bin Range' %]</label>
+                                <div class="row">
+                                    <div class="small-6 columns search-bin-from">
+                                        <em>[% translate 'From' %]</em>
+                                        <input type="text" maxlength="25" ng-model="vm.searchFilter.binNumberFrom" />
+                                    </div>
+                                    <div class="small-6 columns search-bin-to">
+                                        <em>[% translate 'To_date' %]</em>
+                                        <input type="text" maxlength="25" ng-model="vm.searchFilter.binNumberTo" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="medium-12 large-4 columns search-col-3">
+                            <div class="search-date">
+                                <label>[% translate 'Previous Count Date Range' %]</label>
+                                <div class="row">
+                                    <div class="small-6 columns search-date-from">
+                                        <em>[% translate 'From' %]</em>
+                                        <input type="text" class="datepicker" isc-pick-a-date="vm.searchFilter.previousCountFromDate" />
+                                    </div>
+                                    <div class="small-6 columns search-date-to">
+                                        <em>[% translate 'To_date' %]</em>
+                                        <input type="text" class="datepicker" isc-pick-a-date="vm.searchFilter.previousCountToDate" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button type="submit" class="btn primary btn-search" ng-click="vm.search()">[% translate 'Search' %]</button>
+                        <button type="submit" class="btn secondary btn-clear" ng-click="vm.clear()">[% translate 'Clear' %]</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <div ng-show="vm.vmiBins.length > 0">
+
+        <h3 class="results-count">
+            <span class="result-num" ng-bind="vm.pagination.totalItemCount"></span>
+            <span class="result-lbl">[% translate 'products' %]</span>
+        </h3>
+        <div class="btn-group">
+            <button id="tst_vmiLocationDetailsView_export_products" type="button" class="btn primary export-btn" ng-disabled="!vm.isAnyRowSelected()" ng-click="vm.exportSelected()">[% translate 'Export Selected' %]</button>
+            <button id="tst_vmiLocationDetailsView_exportAll_products" type="button" class="btn primary export-all-btn" ng-click="vm.exportAll()">[% translate 'Export All' %]</button>
+            <button type="button" class="btn primary btn-delete" ng-disabled="!vm.isAnyRowSelected()" ng-click="vm.deleteVmiBins()">[% translate 'Delete' %]</button>
+        </div>
+
+        <isc-pager pagination="vm.pagination" storage-key="vm.paginationStorageKey" update-data="vm.getVmiBins()"></isc-pager>
+
+        <div class="overflow-table small">
+            <table class="info-tbl">
+                <tbody>
+                    <tr>
+                        <th class="col-check">
+                            <span class="sticky-first">
+                                <input type="checkbox" ng-model="vm.allSelected" ng-click="vm.selectAll()" />
+                            </span>
+                        </th>
+                        <th class="col-productName">
+                            <a href="javascript:void(0)" class="sort"
+                               ng-class="{'sort-ascending':vm. searchFilter.sort === 'product.shortDescription', 'sort-descending': vm.searchFilter.sort === 'product.shortDescription DESC'}"
+                               ng-click="vm.changeSort('product.shortDescription')">
+                                [% translate 'Product Name' %]
+                            </a>
+                        </th>
+                        <th class="col-part">
+                            <a href="javascript:void(0)" class="sort"
+                               ng-class="{'sort-ascending': vm.searchFilter.sort === 'product.erpNumber', 'sort-descending': vm.searchFilter.sort === 'product.erpNumber DESC'}"
+                               ng-click="vm.changeSort('product.erpNumber')">
+                                [% translate 'Part #' %]
+                            </a>
+                        </th>
+                        <th class="col-manufacture">
+                            <a href="javascript:void(0)" class="sort"
+                               ng-class="{'sort-ascending': vm.searchFilter.sort === 'product.manufacturerItem', 'sort-descending': vm.searchFilter.sort === 'product.manufacturerItem DESC'}"
+                               ng-click="vm.changeSort('product.manufacturerItem')">
+                                [% translate 'Manufacture #' %]
+                            </a>
+                        </th>
+                        <th class="col-customerName">
+                            <a href="javascript:void(0)" class="sort"
+                               ng-class="{'sort-ascending': vm.searchFilter.sort === 'product.customerName', 'sort-descending': vm.searchFilter.sort === 'product.customerName DESC'}"
+                               ng-click="vm.changeSort('product.customerName')">
+                                [% translate 'My Part #' %]
+                            </a>
+                        </th>
+                        <th class="col-bin">
+                            <a href="javascript:void(0)" class="sort"
+                               ng-class="{'sort-ascending': vm.searchFilter.sort === 'binNumber', 'sort-descending': vm.searchFilter.sort === 'binNumber DESC'}"
+                               ng-click="vm.changeSort('binNumber')">
+                                [% translate 'Bin #' %]
+                            </a>
+                        </th>
+                        <th class="col-minimumQty">
+                            <a href="javascript:void(0)" class="sort"
+                               ng-class="{'sort-ascending': vm.searchFilter.sort === 'minimumQty', 'sort-descending': vm.searchFilter.sort === 'minimumQty DESC'}"
+                               ng-click="vm.changeSort('minimumQty')">
+                                [% translate 'Min' %]
+                            </a>
+                        </th>
+                        <th class="col-maximumQty">
+                            <a href="javascript:void(0)" class="sort"
+                               ng-class="{'sort-ascending': vm.searchFilter.sort === 'maximumQty', 'sort-descending': vm.searchFilter.sort === 'maximumQty DESC'}"
+                               ng-click="vm.changeSort('maximumQty')">
+                                [% translate 'Max' %]
+                            </a>
+                        </th>
+                        <th class="col-previousCountDate">
+                            <a href="javascript:void(0)" class="sort"
+                               ng-class="{'sort-ascending': vm.searchFilter.sort === 'previousCountDate', 'sort-descending': vm.searchFilter.sort === 'previousCountDate DESC'}"
+                               ng-click="vm.changeSort('previousCountDate')">
+                                [% translate 'Previous Count Date' %]
+                            </a>
+                        </th>
+                        <th class="col-previousCountQty">
+                            <a href="javascript:void(0)" class="sort"
+                               ng-class="{'sort-ascending': vm.searchFilter.sort === 'previousCountQty', 'sort-descending': vm.searchFilter.sort === 'previousCountQty DESC'}"
+                               ng-click="vm.changeSort('previousCountQty')">
+                                [% translate 'Previous Count Quantity' %]
+                            </a>
+                        </th>
+                        <th class="col-previousOrder">
+                            <a href="javascript:void(0)" class="sort"
+                               ng-class="{'sort-ascending': vm.searchFilter.sort === 'lastOrderLineId', 'sort-descending': vm.searchFilter.sort === 'lastOrderLineId DESC'}"
+                               ng-click="vm.changeSort('lastOrderLineId')">
+                                [% translate 'Previous Order' %]
+                            </a>
+                        </th>
+                    </tr>
+                    <tr ng-repeat="vmiBin in vm.vmiBins">
+                        <td class="col-check">
+                            <span class="sticky-first">
+                                <input type="checkbox" ng-model="vm.isSelected[vmiBin.id]" ng-click="vm.select(vmiBin.id)" />
+                            </span>
+                        </td>
+                        <td class="col-productName">
+                            <a ng-href="[% urlForPage 'VmiBinDetailsPage' %]?locationId={{vm.locationId}}&id={{vmiBin.id}}" ng-bind="vmiBin.product.shortDescription"></a>
+                        </td>
+                        <td class="col-part" ng-bind="vmiBin.product.erpNumber">></td>
+                        <td class="col-manufacture" ng-bind="vmiBin.product.manufacturerItem"></td>
+                        <td class="col-customerName" ng-bind="vmiBin.product.customerName"></td>
+                        <td class="col-bin" ng-bind="vmiBin.binNumber"></td>
+                        <td class="col-minimumQty" ng-bind="vmiBin.minimumQty"></td>
+                        <td class="col-maximumQty" ng-bind="vmiBin.maximumQty"></td>
+                        <td class="col-previousCountDate" ng-bind="vmiBin.previousCountDate | date:'shortDate'"></td>
+                        <td class="col-previousCountQty" ng-bind="vmiBin.previousCountQty"></td>
+                        <td class="col-previousOrder">
+                            <a ng-href="[% urlForPage 'OrderDetailPage' %]?orderNumber={{ vmiBin.lastOrderErpOrderNumber || vmiBin.lastOrderWebOrderNumber }}">
+                                {{ vmiBin.lastOrderErpOrderNumber || vmiBin.lastOrderWebOrderNumber }}
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <isc-pager pagination="vm.pagination" bottom="true" storage-key="vm.paginationStorageKey" update-data="vm.getVmiBins()"></isc-pager>
+    </div>
+
+    <div class="search-no-results" ng-show="vm.vmiBins.length === 0 || vm.failedToLoadVmiBins">
+        <h3>[% translate 'No products found' %].</h3>
+    </div>
+</div>
+
+<script type="text/ng-template" id="/PartialViews/Vmi-DeleteVmiBinsModal">
+    [% partialView 'Vmi-DeleteVmiBinsModal' %]
+</script>
+
+<script type="text/ng-template" id="/PartialViews/Vmi-VmiBinModal">
+    [% partialView 'Vmi-VmiBinModal' %]
+</script>

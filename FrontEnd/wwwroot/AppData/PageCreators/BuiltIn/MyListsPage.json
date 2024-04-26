@@ -1,0 +1,12 @@
+{
+  "name": "My Lists",
+  "parentType": "MyAccountPage",
+  "urlSegment": "MyLists",
+  "pages": [
+    {
+      "urlSegment": "Details",
+      "name": "My Lists Details",
+      "type": "MyListsDetailsPage"
+    }
+  ]
+}

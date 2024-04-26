@@ -1,0 +1,19 @@
+﻿<div id="popup-remove-vmi-user" class="reveal-modal popup-remove-vmi-user" data-reveal data-reveal-init>
+    <div class="modal-wrap">
+        <h2>[% translate 'Remove User from VMI' %]</h2>
+        <div class="pop-content">
+            <div class="row">
+                <div class="row">
+                    <div>
+                        <p>[% siteMessage 'Vmi_RemoveVmiUser_Info' %]</p>
+                    </div>
+                </div>
+                <div class="row btns">
+                    <button ng-click="vm.closeModal()" class="btn tertiary btn-cancel" type="button">[% translate 'Cancel' %]</button>
+                    <button ng-click="vm.removeVmiUser()" class="btn primary" type="button">[% translate 'Remove' %]</button>
+                </div>
+            </div>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+    </div>
+</div>

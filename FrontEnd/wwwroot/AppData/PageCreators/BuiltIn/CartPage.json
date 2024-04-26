@@ -1,0 +1,5 @@
+{
+  "name": "Cart",
+  "parentType": "HomePage",
+  "urlSegment": "Cart"
+}

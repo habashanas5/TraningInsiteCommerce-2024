@@ -1,0 +1,106 @@
+﻿<div id="popup-add-vmi-user" class="reveal-modal popup-add-vmi-user" data-reveal data-reveal-init>
+    <div class="modal-wrap">
+        <h2 ng-bind="vm.isEditUserModal ? '[% translate 'Edit User' EscapeSingleQuotes %]' : '[% translate 'Add User' EscapeSingleQuotes %]'"></h2>
+        <div class="pop-content">
+            <form name="vm.vmiUserForm" novalidate>
+                <div class="row">
+                    <div class="small-12 large-3 columns left-block">
+                        <div ng-if="vm.isPopupOpened && !vm.isEditUserModal" class="select-step">
+                            <label class="search-user-label">[% translate 'Search User' %]</label>
+                            <input type="text" class="user-selector" id="select-user" name="selectedUser"
+                                   ng-init="vm.userOptionsPlaceholder = '[% translate 'Search' EscapeSingleQuotes %]'" ng-click="vm.totalUsersCount && vm.openAutocomplete($event, '#select-user')"
+                                   ng-model="vm.userSearchText" kendo-auto-complete k-options="vm.userOptions" required/>
+                            <span class="icon-arw-down-5" ng-click="vm.totalUsersCount && vm.openAutocomplete($event, '#select-user')"></span>
+                        </div>
+                        <div ng-if="vm.isEditUserModal">
+                            <div class="vmi-user-property">
+                                <div class="vmi-user-property-label">[% translate 'Username' %]</div>
+                                <div class="vmi-user-property-value" ng-bind="vm.user.userName"></div>
+                            </div>
+                            <div class="vmi-user-property" ng-if="vm.user.firstName">
+                                <div class="vmi-user-property-label">[% translate 'First Name' %]</div>
+                                <div class="vmi-user-property-value" ng-bind="vm.user.firstName"></div>
+                            </div>
+                            <div class="vmi-user-property" ng-if="vm.user.lastName">
+                                <div class="vmi-user-property-label">[% translate 'Last Name' %]</div>
+                                <div class="vmi-user-property-value" ng-bind="vm.user.lastName"></div>
+                            </div>
+                            <div class="vmi-user-property" ng-if="vm.user.email">
+                                <div class="vmi-user-property-label">[% translate 'Email Address' %]</div>
+                                <div class="vmi-user-property-value" ng-bind="vm.user.email"></div>
+                            </div>
+                        </div>
+                        <div class="role-options">
+                            <div class="role-label">[% translate 'Select VMI Role' %]</div>
+                            <div class="role-option">
+                                <input id="user-role" name="role" ng-model="vm.role" type="radio" value="VMI_User"/>
+                                <label for="user-role">[% translate 'User' %]</label>
+                            </div>
+                            <div class="role-option">
+                                <input id="admin-role" name="role" ng-model="vm.role" type="radio" value="VMI_Admin"/>
+                                <label for="admin-role">[% translate 'Admin' %]</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-12 large-9 columns right-block">
+                        <div class="vmi-locations-search-block small-12 medium-6 large-5 columns">
+                            <label class="search-vmi-locations-label" for="vmi-locations-search-input">[% translate 'Assign Locations' %]</label>
+                            <input id="vmi-locations-search-input" type="text" ng-model="vm.vmiLocationSearchText" ng-change="vm.searchVmiLocation()"/>
+                        </div>
+                        <div ng-show="vm.vmiLocations.length > 0">
+                            <div class="overflow-table small">
+                                <table class="info-tbl">
+                                    <tbody>
+                                    <tr>
+                                        <th class="col-selector">
+                                            <input type="checkbox" class="item-select" ng-click="vm.selectAll()" ng-checked="vm.isAllSelected()"/>
+                                        </th>
+                                        <th class="col-name">
+                                            <span class="sticky-first">
+                                                <a href="javascript:void(0)" class="sort"
+                                                   ng-class="{'sort-ascending': vm.vmiLocationsPagination.sortType === 'name', 'sort-descending': vm.vmiLocationsPagination.sortType === 'name DESC'}"
+                                                   ng-click="vm.changeSort('name')">
+                                                    [% translate 'Location Name' %]
+                                                </a>
+                                            </span>
+                                        </th>
+                                        <th class="col-address">
+                                            <a href="javascript:void(0)" class="sort"
+                                               ng-class="{'sort-ascending': vm.vmiLocationsPagination.sortType === 'customer.customerSequence', 'sort-descending': vm.vmiLocationsPagination.sortType === 'customer.customerSequence DESC'}"
+                                               ng-click="vm.changeSort('customer.customerSequence')">
+                                                [% translate 'Address' %]
+                                            </a>
+                                        </th>
+                                    </tr>
+                                    <tr ng-repeat="vmiLocation in vm.vmiLocations">
+                                        <td class="col-selector">
+                                            <input type="checkbox" class="item-select" ng-click="vm.checkVmiLocation(vmiLocation.id)" ng-checked="vm.isVmiLocationChecked(vmiLocation.id)"/>
+                                        </td>
+                                        <td class="col-name">
+                                            <a ng-href="[% urlForPage 'VmiLocationDetailsPage' %]?id={{ vmiLocation.id }}">{{ vmiLocation.name }}</a>
+                                        </td>
+                                        <td class="col-address" ng-bind="vmiLocation.customerLabel"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <isc-pager pagination="vm.vmiLocationsPagination" update-data="vm.getLocations()"></isc-pager>
+                        </div>
+                    </div>
+                    <div id="error" class="error" ng-show="vm.vmiUserForm.$submitted && (vm.errorMessage || vm.vmiUserForm.selectedUser.$error.required)">
+                        <span ng-show="vm.errorMessage" class="field-validation-error" ng-bind="vm.errorMessage"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row btns">
+                        <a href="javascript:void(0)" ng-if="!vm.isEditUserModal" ng-click="vm.openImportVmiUserPopup()">[% translate 'Import User' %]</a>
+                        <a href="javascript:void(0)" ng-if="vm.isEditUserModal" ng-click="vm.openRemoveVmiUserPopup()">[% translate 'Remove User' %]</a>
+                        <button ng-click="vm.closeModal()" class="btn tertiary btn-cancel" type="button">[% translate 'Cancel' %]</button>
+                        <button class="btn primary btn-add-vmi-user" type="button" ng-click="vm.submitForm()" ng-bind="vm.isEditUserModal ? '[% translate 'Save' EscapeSingleQuotes %]' : '[% translate 'Add User' EscapeSingleQuotes %]'"></button>
+                    </div>
+                </div>
+            </form>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+    </div>
+</div>

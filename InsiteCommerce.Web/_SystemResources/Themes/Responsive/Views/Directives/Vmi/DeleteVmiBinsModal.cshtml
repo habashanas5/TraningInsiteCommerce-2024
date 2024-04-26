@@ -1,0 +1,21 @@
+﻿<div id="delete-vmi-bins-modal" class="reveal-modal delete-vmi-bins-modal" data-reveal data-reveal-init>
+    <div class="modal-wrap">
+        <h2>[% translate 'Delete Selected Products' %]</h2>
+        <div class="pop-content">
+            <div class="row">
+                <div class="row">
+                    <div>
+                        <p>
+                            [% translate 'Delete the selected products?' %]
+                        </p>
+                    </div>
+                </div>
+                <div class="row btns">
+                    <button ng-click="vm.closeModal()" class="btn tertiary btn-cancel" type="button">[% translate 'Cancel' %]</button>
+                    <button ng-click="vm.deleteVmiBins()" class="btn primary" type="button">[% translate 'Delete' %]</button>
+                </div>
+            </div>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+    </div>
+</div>

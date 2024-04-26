@@ -1,0 +1,167 @@
+{
+  "nodeId": "377c44e0-0ab7-4b01-a907-5525f49b348e",
+  "name": "MyAccount",
+  "type": "MyAccountPage",
+  "parentId": "f0b88f1d-de4a-43d9-b009-398b21a7a99c",
+  "sortOrder": 0,
+  "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+  "variantName": null,
+  "id": "1bed91f2-0880-4e6f-8174-867268c609a7",
+  "generalFields": {
+      "horizontalRule": "",
+      "tags": [],
+      "hideBreadcrumbs": false,
+      "variantName": ""
+  },
+  "translatableFields": {
+      "title": {
+          "a26095ef-c714-e311-ba31-d43d7e4e88b2": "My Account"
+      },
+      "urlSegment": {
+          "a26095ef-c714-e311-ba31-d43d7e4e88b2": "MyAccount"
+      }
+  },
+  "contextualFields": {},
+  "widgets": [
+      {
+          "parentId": "1bed91f2-0880-4e6f-8174-867268c609a7",
+          "type": "Basic/Row",
+          "zone": "Content",
+          "id": "b0028f1a-e27c-4dc5-8b04-072100d72c33",
+          "generalFields": {
+              "columns": [
+                  6,
+                  6
+              ],
+              "alignment": {
+                  "1": "middle"
+              },
+              "gap": 0,
+              "reflow": true
+          },
+          "translatableFields": {},
+          "contextualFields": {}
+      },
+      {
+          "parentId": "1bed91f2-0880-4e6f-8174-867268c609a7",
+          "type": "MyAccount/MyAccountView",
+          "zone": "Content",
+          "id": "ad85cd51-a62f-4453-86b6-2c0898923ce8",
+          "generalFields": {},
+          "translatableFields": {},
+          "contextualFields": {}
+      },
+      {
+          "parentId": "b0028f1a-e27c-4dc5-8b04-072100d72c33",
+          "type": "Basic/PageTitle",
+          "zone": "Content0",
+          "id": "3fce7e0e-1510-436d-9cca-511fd565ac96",
+          "generalFields": {},
+          "translatableFields": {},
+          "contextualFields": {}
+      },
+      {
+          "parentId": "b0028f1a-e27c-4dc5-8b04-072100d72c33",
+          "type": "MyAccount/MyAccountHomepageSelector",
+          "zone": "Content1",
+          "id": "2c047612-132f-473a-826b-4c083082fb6c",
+          "generalFields": {},
+          "translatableFields": {},
+          "contextualFields": {}
+      },
+      {
+          "parentId": "ad85cd51-a62f-4453-86b6-2c0898923ce8",
+          "type": "Basic/Row",
+          "zone": "DashboardWidgets",
+          "id": "c85d3b0c-c3f4-4b3d-9636-f3f3dc390839",
+          "generalFields": {
+              "columns": [
+                  [
+                      12,
+                      12,
+                      6,
+                      6,
+                      6
+                  ],
+                  [
+                      12,
+                      12,
+                      6,
+                      6,
+                      6
+                  ],
+                  12
+              ],
+              "alignment": [],
+              "gap": 30,
+              "reflow": true
+          },
+          "translatableFields": {},
+          "contextualFields": {}
+      },
+      {
+          "parentId": "ad85cd51-a62f-4453-86b6-2c0898923ce8",
+          "type": "Basic/RichContent",
+          "zone": "NavigationList",
+          "id": "9d96f519-6263-4309-8aac-fa03ecafa312",
+          "generalFields": {
+              "backgroundColor": "",
+              "padding": 0
+          },
+          "translatableFields": {},
+          "contextualFields": {
+              "content": {
+                  "a26095ef-c714-e311-ba31-d43d7e4e88b2|Desktop|d06988c0-9358-4dbb-aa3d-b7be5b6a7fd9": "<p><strong>Quick Links</strong></p>"
+              }
+          }
+      },
+      {
+          "parentId": "ad85cd51-a62f-4453-86b6-2c0898923ce8",
+          "type": "Basic/NavigationList",
+          "zone": "NavigationList",
+          "id": "cb2a8185-6afb-4325-8dcc-ec180fdcbe89",
+          "generalFields": {
+              "depth": 1,
+              "leftMargin": 0,
+              "marginBottom": 10,
+              "nodeId": {
+                  "value": "",
+                  "type": "Page"
+              }
+          },
+          "translatableFields": {},
+          "contextualFields": {}
+      },
+      {
+          "parentId": "c85d3b0c-c3f4-4b3d-9636-f3f3dc390839",
+          "type": "Common/RecentOrders",
+          "zone": "Content0",
+          "id": "4a2fe814-1773-4361-83dc-0a71ee39bed7",
+          "generalFields": {
+              "numberOfRecords": 5
+          },
+          "translatableFields": {},
+          "contextualFields": {}
+      },
+      {
+          "parentId": "c85d3b0c-c3f4-4b3d-9636-f3f3dc390839",
+          "type": "Common/RecentQuotes",
+          "zone": "Content1",
+          "id": "0c7410a1-dd67-496f-b1a6-64a571cc3d82",
+          "generalFields": {},
+          "translatableFields": {},
+          "contextualFields": {}
+      },
+      {
+          "parentId": "c85d3b0c-c3f4-4b3d-9636-f3f3dc390839",
+          "type": "Common/RecentWishLists",
+          "zone": "Content2",
+          "id": "9383a94e-2684-4f51-9d61-65ff9563e8d7",
+          "generalFields": {
+              "numberOfRecords": 3
+          },
+          "translatableFields": {},
+          "contextualFields": {}
+      }
+  ]
+}

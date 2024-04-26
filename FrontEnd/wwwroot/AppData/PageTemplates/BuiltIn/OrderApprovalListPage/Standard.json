@@ -1,0 +1,91 @@
+{
+    "nodeId": "d40252bf-f5f1-4d74-974a-ff4afb2f9e70",
+    "name": "Order Approval",
+    "type": "OrderApprovalListPage",
+    "parentId": "798c97b3-f292-4568-97c8-c199b56e82f8",
+    "sortOrder": -1,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "id": "21cb96da-b7b5-49dd-8089-059c30e5f54f",
+    "generalFields": {
+        "horizontalRule": "",
+        "hideHeader": false,
+        "hideFooter": false,
+        "hideFromSearchEngines": false,
+        "hideFromSiteSearch": false,
+        "excludeFromNavigation": false,
+        "excludeFromSignInRequired": false,
+        "tags": [],
+        "hideBreadcrumbs": false
+    },
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Order Approval"
+        },
+        "openGraphTitle": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "urlSegment": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "OrderApproval"
+        },
+        "openGraphUrl": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "openGraphImage": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "metaKeywords": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "metaDescription": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        }
+    },
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "21cb96da-b7b5-49dd-8089-059c30e5f54f",
+            "zone": "Content",
+            "type": "OrderApprovalList/OrderApprovalListHeader",
+            "id": "aa6fecb3-ff21-49bc-9ea7-aeb2997594cc",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "21cb96da-b7b5-49dd-8089-059c30e5f54f",
+            "zone": "Content",
+            "type": "OrderApprovalList/OrderApprovalListFilter",
+            "id": "d710c79d-0bbc-46cd-89a8-7805d7859ebb",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "21cb96da-b7b5-49dd-8089-059c30e5f54f",
+            "zone": "Content",
+            "type": "OrderApprovalList/OrderApprovalListTable",
+            "id": "83e53cac-23fc-441a-b27b-8f9cce93d2d2",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "21cb96da-b7b5-49dd-8089-059c30e5f54f",
+            "zone": "Content",
+            "type": "OrderApprovalList/OrderApprovalListPagination",
+            "id": "0fa22a7d-25cb-43fb-b4d5-2ac216076d12",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "aa6fecb3-ff21-49bc-9ea7-aeb2997594cc",
+            "zone": "Content00",
+            "type": "Basic/PageTitle",
+            "id": "06f149ee-616b-4afa-af9e-9acd1d74a82e",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+﻿<div id="VmiLocationImportPopup" class="reveal-modal popup-import-location" data-reveal data-reveal-init>
+    <div class="modal-wrap">
+        <h2>[% translate 'Import Locations' %]</h2>
+        <div class="row">
+            <div class="medium-6 large-6 columns location-upload-input">
+                <div class="oui-box">
+                    <div class="oui-browse">
+                        <button id="buttonFileUpload" class="primary btn dark-blue" ng-click="vm.onButtonFileUploadClick()">[% translate 'Browse' %]</button>
+                        <input id="hiddenFileUpload" style="display: none" type="file" onchange="angular.element(this).data('_scope').vm.setFile(this)">
+                        <span id="tst_locationUpload_fileTitle" class="file-title" ng-bind="!vm.fileName ? '[% translate 'No file selected.' EscapeSingleQuotes %]' : vm.fileName"></span>
+                    </div>
+                    <div class="first-row-option">
+                        <input id="firstRowCheckbox" type="checkbox" ng-model="vm.firstRowHeading"/><label for="firstRowCheckbox">[% translate 'First row is column headings' %]</label>
+                    </div>
+                    <div class="oui-message showing" ng-show="vm.badFile || vm.uploadLimitExceeded">
+                        <div id="tst_locationUpload_badFile" class="upload-error" ng-show="vm.badFile">
+                            [% siteMessage 'VmiLocationUpload_Failure' %]
+                        </div>
+                        <div id="tst_locationUpload_uploadLimitExceeded" class="upload-error" ng-show="vm.uploadLimitExceeded">
+                            [% siteMessage 'LocationUpload_RowsLimitExceeded' %]
+                        </div>
+                    </div>
+                    <div class="oui-locations">
+                        <button id="tst_locationUpload_uploadFile" class="primary btn" ng-click="vm.uploadFile()" ng-disabled="!vm.file || vm.badFile">[% translate 'Upload VMI Locations' %]</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="medium-6 large-6 columns location-upload-instructions">
+                <div>
+                    [% siteMessage 'VmiLocationUpload_Instructions_Line1_Part1' %] <a target="_blank" href="/Excel/VMIImport_LocationsTemplate.xlsx" download="VMIImport_LocationsTemplate.xlsx">[% translate 'Download the template' %]</a>  [% siteMessage 'VmiLocationUpload_Instructions_Line1_Part2' %]
+                </div>
+            </div>
+
+            <div id="locationUploadingIssuesPopup" class="reveal-modal popup-share ma-location-upload" data-options="close_on_background_click: false;" data-reveal data-reveal-init>
+                <div class="ou-modal issues wide modal-wrap">
+                    <i class="exclamation-triangle"></i>
+                    <h3 ng-if="!vm.fullFileError" class="underline">[% siteMessage 'VmiLocationUpload_Failure' %]:</h3>
+                    <h3 ng-if="vm.fullFileError" class="underline">[% siteMessage 'VmiLocationUpload_Failure' %].</h3>
+                    <div ng-if="!vm.fullFileError" class="ou-table-wrapper">
+                        <table class="ou-issues-table">
+                            <thead>
+                            <tr>
+                                <td class="up-row-num">[% translate 'Row #' %]</td>
+                                <td class="up-item-num">[% translate 'Bill To' %]</td>
+                                <td class="up-qty">[% translate 'Ship To' %]</td>
+                                <td class="up-um">[% translate 'Location Name' %]</td>
+                                <td class="up-reason">[% translate 'Reason' %]</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="tst_locationUpload_issueRow" ng-repeat="errorEntry in vm.errorEntries">
+                                <td class="up-row-num" ng-bind="errorEntry.index"></td>
+                                <td class="up-bill-to" ng-bind="errorEntry.billToId"></td>
+                                <td class="up-ship-to" ng-bind="errorEntry.shipToId"></td>
+                                <td class="up-location-name" ng-bind="errorEntry.name"></td>
+                                <td class="up-reason">
+                                    <span ng-if="errorEntry.error === 'NoBillTo'">{{'[% siteMessage 'Field_Required' EscapeSingleQuotes %]'.replace('{0}', '[% translate 'BillTo' EscapeSingleQuotes %]')}}</span>
+                                    <span ng-if="errorEntry.error === 'BillToNotFound'">[% siteMessage 'Customer_BillToNotFound' EscapeSingleQuotes %]</span>
+                                    <span ng-if="errorEntry.error === 'NoShipTo'">{{'[% siteMessage 'Field_Required' EscapeSingleQuotes %]'.replace('{0}', '[% translate 'ShipTo' EscapeSingleQuotes %]')}}</span>
+                                    <span ng-if="errorEntry.error === 'ShipToNotFound'">[% siteMessage 'Customer_ShipToNotFound' EscapeSingleQuotes %]</span>
+                                    <span ng-if="errorEntry.error === 'NoLocationName'">{{'[% siteMessage 'Field_Required' EscapeSingleQuotes %]'.replace('{0}', '[% translate 'Location Name' EscapeSingleQuotes %]')}}</span>
+                                    <span ng-if="errorEntry.error === 'DuplicateLocationName'">[% siteMessage 'Vmi_VmiLocationDuplicate' EscapeSingleQuotes %]</span>
+                                    <span ng-if="errorEntry.error === 'DuplicateLocationNameSameFile'">[% siteMessage 'Vmi_VmiLocationDuplicate_SameFile' EscapeSingleQuotes %]</span>
+                                    <span ng-if="errorEntry.error === 'LocationNameTooLong'">{{'[% siteMessage 'Field_Too_Long' EscapeSingleQuotes %]'.replace('{0}', '[% translate 'Location Name' EscapeSingleQuotes %]').replace('{1}', 255)}}</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div ng-if="vm.fullFileError">
+                            [% siteMessage 'VmiLocationUpload_Instructions_Line1_Part1' %] <a target="_blank" href="/Excel/VMIImport_LocationsTemplate.xlsx" download="VMIImport_LocationsTemplate.xlsx">[% translate 'Download the template' %]</a>  [% siteMessage 'VmiLocationUpload_Instructions_Line1_Part2' %]
+                        </div>
+                    <div class="button-container">
+                        <button id="tst_locationUploadIssues_uploadLocations" class="btn primary dark-blue slim no-margin-bottom" ng-disabled="!vm.importedItems || vm.importedItems.length === 0 || vm.fullFileError" ng-click="vm.uploadProducts('#locationUploadingIssuesPopup')">[% translate 'Continue Upload' %]</button>
+                        <button id="tst_locationtUploadIssues_cancelUpload" class="btn tertiary slim no-margin-bottom" ng-click="vm.hideUploadingIssuesPopup()">[% translate 'Cancel Upload' %]</button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div id="locationUploadSuccessPopup" class="reveal-modal popup-share ma-location-upload" data-reveal data-options="close_on_background_click: false;">
+                <div class="ou-modal modal-wrap success">
+                    <i class="fa fa-check"></i>
+                    <h3>{{vm.uploadedItemsCount}} [% translate 'locations uploaded' %].</h3>
+                    <button id="tst_locationUploadSuccess_uploadLocations" class="btn primary dark-blue slim no-margin-bottom" ng-click="vm.hideUploadSuccessPopup()">[% translate 'Return To Vmi Locations' %]</button>
+                </div>
+            </div>
+
+            <div id="locationUploadingPopup" class="reveal-modal location-error-popup ma-location-upload" data-reveal data-options="close_on_background_click: false;" data-reveal-init>
+                <div class="modal-wrap ou-modal">
+                    <div class="loader"></div>
+                    <h3>{{(!vm.uploadCancelled) ? "[% translate 'Uploading Locations' %]..." : "[% translate 'Cancelling' %]..."}}</h3>
+                    <button id="tst_locationUpload_cancelUpload" class="btn tertiary slim no-margin-bottom" ng-click="vm.cancelUpload()" ng-show="vm.allowCancel" ng-enable="!vm.uploadCancelled">[% translate 'Cancel Upload' %]</button>
+                </div>
+            </div>
+
+        </div>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+    </div>
+</div>

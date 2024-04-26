@@ -1,0 +1,5 @@
+{
+  "name": "Budget Management",
+  "parentType": "MyAccountPage",
+  "urlSegment": "BudgetManagement"
+}

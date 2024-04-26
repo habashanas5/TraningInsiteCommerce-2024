@@ -1,0 +1,360 @@
+{
+  "id": "cfd75c29-611c-4788-8696-870811751b11",
+  "nodeId": "61ee8b7d-8e8f-49c2-9010-f90a03606e05",
+  "type": "ProductDetailsPage",
+  "parentId": "8cff0f31-5726-4027-bc60-07a4db28b4ce",
+  "sortOrder": -1,
+  "websiteId": "5c028c3a-c7f1-41fe-a4c0-1414b4c7acdb",
+  "fields": {
+    "title": "Product Details",
+    "name": "Product Details",
+    "urlSegment": "Product Details"
+  },
+  "translatableFields": {},
+  "widgets": [
+    {
+      "parentId": "cfd75c29-611c-4788-8696-870811751b11",
+      "zone": "Content",
+      "type": "ProductDetails/ProductDetailsView",
+      "id": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "fields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "cfd75c29-611c-4788-8696-870811751b11",
+      "type": "Common/ProductCarousel",
+      "zone": "Content",
+      "id": "83a51766-60a7-49f3-a9f2-29f6859fc9d6",
+      "generalFields": {
+          "title": "Cross Sells",
+          "carouselType": "relatedProducts",
+          "displayProductsFrom": "allCategories",
+          "selectedCategoryIds": [],
+          "relatedProductType": "CrossSell",
+          "numberOfProductsToDisplay": 10,
+          "seedWithManuallyAssigned": "",
+          "maxNumberOfColumns": 4,
+          "showImage": true,
+          "showTitle": true,
+          "showBrandName": true,
+          "showPartNumbers": true,
+          "showPrice": true,
+          "showAddToCart": true,
+          "showAddToList": true
+      },
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+        "id": "51585138-7ab1-49b8-91e8-3e9bb52ad12e",
+        "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+        "zone": "Content0",
+        "type": "ProductDetails/ProductDetailsPageTitle",
+        "fields": {},
+        "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content0",
+      "type": "ProductDetails/ProductDetailsPartNumber",
+      "id": "33bc46de-6f89-439e-980b-e8a5ae1f9fe8",
+      "fields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content0",
+      "type": "ProductDetails/ProductDetailsCustomerPartNumber",
+      "id": "aa326af4-b439-4380-b17a-1503e0d8beb5",
+      "fields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content0",
+      "type": "ProductDetails/ProductDetailsManufacturingPartNumber",
+      "id": "5448b12a-0c6b-4954-84e7-860bfb5684be",
+      "fields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content0",
+      "type": "ProductDetails/ProductDetailsPrimaryImage",
+      "id": "2eb13cfe-56a0-492b-9bf4-d703105ed5a5",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content0",
+      "type": "ProductDetails/ProductDetailsImageCarousel",
+      "id": "474b2ff2-6739-4fea-b7fb-6c34c26df58c",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content2",
+      "type": "ProductDetails/ProductDetailsKitSectionOptions",
+      "id": "5f533157-80fa-42ab-9660-c4bea306bae9",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+  },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content2",
+        "type": "ProductDetails/ProductDetailsAttributes",
+        "id": "6d7d074f-83b8-4129-890c-73ea0cb6bc2d",
+        "fields": {},
+        "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content2",
+        "type": "ProductDetails/ProductDetailsDescription",
+        "id": "0a1b8819-91a9-458f-b7a1-84e30d9f278a",
+        "fields": {},
+        "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content2",
+        "type": "ProductDetails/ProductDetailsDocuments",
+        "id": "c3d0c46e-02d2-4fe6-82bb-c098c4f65c55",
+        "fields": {},
+        "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content2",
+        "type": "ProductDetails/ProductDetailsSpecifications",
+        "id": "bf4df3ab-a54c-4a28-b7ae-9e7c2a07949d",
+        "fields": {},
+        "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content1",
+      "type": "ProductDetails/ProductDetailsPrice",
+      "id": "64af89bd-500e-4126-9bb8-08f3f2a975e7",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content1",
+      "type": "ProductDetails/ProductDetailsQuantityBreakPricing",
+      "id": "00af7a3d-2556-401d-b886-f6e553aca366",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content1",
+      "type": "ProductDetails/ProductDetailsAvailability",
+      "id": "11860994-5891-4530-947d-046325c9ff81",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content1",
+      "type": "ProductDetails/ProductDetailsVariantOptions",
+      "id": "05321428-0367-4ad9-a536-89aa41b311d8",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content1",
+      "type": "ProductDetails/ProductDetailsUnitOfMeasureSelect",
+      "id": "0d15d373-4f2e-43d2-afd9-3cbc67b99a09",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content1",
+      "type": "Basic/Row",
+      "id": "3c45f76d-21fd-423a-8e9c-7fe42290cb3e",
+      "fields": {
+        "columns": [[3,3,5,3,3],[9,9,7,9,9]],
+        "alignment": ["top", "bottom"],
+        "gap": 10
+      },
+      "translatableFields": {}
+    },
+    {
+      "parentId": "3c45f76d-21fd-423a-8e9c-7fe42290cb3e",
+      "zone": "Content0",
+      "type": "ProductDetails/ProductDetailsQuantityOrdered",
+      "id": "bedabe98-b433-424e-975a-5c7657a40efa",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "3c45f76d-21fd-423a-8e9c-7fe42290cb3e",
+      "zone": "Content1",
+      "type": "ProductDetails/ProductDetailsAddToCartButton",
+      "id": "6106cf18-d34d-47ba-926e-43809ed2b321",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content1",
+      "type": "ProductDetails/ProductDetailsDeliveryScheduleButton",
+      "id": "539c6e0b-0e85-4903-acfa-0830f4855bca",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content1",
+      "type": "ProductDetails/ProductDetailsAddToListLink",
+      "id": "fd2477d8-c262-4a3d-a5af-4b2819b436de",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content1",
+      "type": "ProductDetails/ProductDetailsShareLink",
+      "id": "f1fbf894-9c70-46ce-b051-fdec6145db51",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content3",
+      "type": "ProductDetails/ProductDetailsPrice",
+      "id": "f2cfdc00-0b7d-449b-889b-9c786c23263a",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content3",
+      "type": "ProductDetails/ProductDetailsQuantityBreakPricing",
+      "id": "94eff3ad-05bb-4dc1-98ce-25ef0c116b25",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content3",
+      "type": "ProductDetails/ProductDetailsAvailability",
+      "id": "1d56f9ac-83d3-430c-a33e-bebcf2f27695",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content3",
+      "type": "ProductDetails/ProductDetailsVariantOptions",
+      "id": "c9b6f06f-bac1-487e-a1e2-604381973517",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content3",
+      "type": "ProductDetails/ProductDetailsBundleSectionOptions",
+      "id": "f3d91367-d310-400a-84d6-10c928a32f8e",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content3",
+      "type": "ProductDetails/ProductDetailsUnitOfMeasureSelect",
+      "id": "44829810-4af5-4076-9af9-b25426a0769c",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content3",
+      "type": "Basic/Row",
+      "id": "c6e84c76-135d-4164-8c76-b956116b3db7",
+      "fields": {
+        "columns": [[3,3,4,3,2],[9,9,8,9,10]],
+        "alignment": ["top","bottom"],
+        "gap": 10
+      },
+      "translatableFields": {}
+    },
+    {
+      "parentId": "c6e84c76-135d-4164-8c76-b956116b3db7",
+      "zone": "Content0",
+      "type": "ProductDetails/ProductDetailsQuantityOrdered",
+      "id": "89f82dcd-c512-450d-8122-4b403fc795e9",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "c6e84c76-135d-4164-8c76-b956116b3db7",
+      "zone": "Content1",
+      "type": "ProductDetails/ProductDetailsAddToCartButton",
+      "id": "3726736a-d7ca-4d75-b22b-2182fe80864f",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content3",
+      "type": "ProductDetails/ProductDetailsDeliveryScheduleButton",
+      "id": "30993995-4599-4c46-9491-ffca0e406deb",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content3",
+      "type": "ProductDetails/ProductDetailsAddToListLink",
+      "id": "c66a3934-bac2-49e0-a8fd-8e2bee3f74ea",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "zone": "Content3",
+      "type": "ProductDetails/ProductDetailsShareLink",
+      "id": "e07c34c7-6826-44f4-8e27-266444a422c5",
+      "fields": {},
+      "translatableFields": {}
+    },
+    {
+      "parentId": "e7fe40cc-040b-46a6-8ea2-69274def5be1",
+      "type": "Common/ProductCarousel",
+      "zone": "Content3",
+      "id": "df2dfe75-c79a-48c7-b274-2425bbf77dc4",
+      "generalFields": {
+          "title": "Accessories",
+          "carouselType": "relatedProducts",
+          "displayProductsFrom": "allCategories",
+          "selectedCategoryIds": [],
+          "relatedProductType": "Accessory",
+          "numberOfProductsToDisplay": 10,
+          "seedWithManuallyAssigned": "",
+          "maxNumberOfColumns": 1,
+          "showImage": true,
+          "showTitle": true,
+          "showBrandName": true,
+          "showPartNumbers": true,
+          "showPrice": true,
+          "showAddToCart": true,
+          "showAddToList": true
+      },
+      "translatableFields": {},
+      "contextualFields": {}
+    }
+  ]
+}

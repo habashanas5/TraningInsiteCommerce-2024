@@ -1,0 +1,66 @@
+{
+    "id": "6cc57482-4aba-467a-98c9-289b33ebcbb5",
+    "nodeId": "5b7d6353-0423-479b-9f3e-1382d5edff44",
+    "type": "InvoiceDetailsPage",
+    "parentId": "f1fb7d69-3c05-4bd9-8f7a-f5ef5d9572c0",
+    "sortOrder": 0,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "fields": {
+        "title": "Invoice Details",
+        "name": "Invoice Details",
+        "urlSegment": "Details",
+        "horizontalRule": "",
+        "tags": []
+    },
+    "translatableFields": {},
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "6cc57482-4aba-467a-98c9-289b33ebcbb5",
+            "zone": "Content",
+            "type": "InvoiceDetails/InvoiceDetailHeader",
+            "id": "2812bd24-f33a-4bc6-a69c-e9b264a7cc90",
+            "fields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "id": "e5f5f930-3129-492f-b325-04818a0b2fb4",
+            "parentId": "6cc57482-4aba-467a-98c9-289b33ebcbb5",
+            "type": "Basic/Row",
+            "zone": "Content",
+            "fields": {
+                "columns": [[12,12,12,8,8],[12,12,12,4,4]]
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "id": "d3b1e6ce-721f-4682-a946-d1931473fce3",
+            "parentId": "6cc57482-4aba-467a-98c9-289b33ebcbb5",
+            "type": "InvoiceDetails/InvoiceDetailsSummaryTable",
+            "zone": "Content",
+            "fields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "id": "f20bb958-409d-4487-a725-c61bed02e790",
+            "parentId": "e5f5f930-3129-492f-b325-04818a0b2fb4",
+            "type": "InvoiceDetails/InvoiceDetailsTotal",
+            "zone": "Content1",
+            "fields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "id": "244f5b43-ecd4-46c2-86fe-a3376aa2cd14",
+            "parentId": "e5f5f930-3129-492f-b325-04818a0b2fb4",
+            "type": "InvoiceDetails/InvoiceDetailsInformation",
+            "zone": "Content0",
+            "fields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

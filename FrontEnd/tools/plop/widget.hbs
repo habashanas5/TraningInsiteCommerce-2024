@@ -1,0 +1,79 @@
+{{#if functionComponent}}
+    {{#if toast}}
+import React, { FC, useContext } from "react";
+    {{else}}
+import React, { FC } from "react";
+    {{/if}}
+{{else}}
+import React from "react";
+{{/if}}
+import { connect, ResolveThunks } from "react-redux";
+import WidgetModule from "@insite/client-framework/Types/WidgetModule";
+import WidgetProps from "@insite/client-framework/Types/WidgetProps";
+import { {{pascalCase pageName}}PageContext } from "@insite/content-library/Pages/{{pascalCase pageName}}Page";
+import ApplicationState from "@insite/client-framework/Store/ApplicationState";
+{{#if toast}}
+import ToasterContext from "@insite/mobius/Toast/ToasterContext";
+{{/if}}
+
+interface OwnProps extends WidgetProps {
+}
+
+{{#if functionComponent}}
+{{else}}
+interface State {
+}
+
+{{/if}}
+const mapStateToProps = (state: ApplicationState) => ({
+});
+
+const mapDispatchToProps = {
+};
+
+type Props = ReturnType<typeof mapStateToProps> & ResolveThunks<typeof mapDispatchToProps> & OwnProps;
+
+export interface {{pascalCase pageName}}{{pascalCase name}}Styles {
+}
+
+export const {{camelCase pageName}}{{pascalCase name}}Styles: {{pascalCase pageName}}{{pascalCase name}}Styles = {};
+
+const styles = {{camelCase pageName}}{{pascalCase name}}Styles;
+
+{{#if functionComponent}}
+const {{pascalCase pageName}}{{pascalCase name}}: FC<Props> = ({ }) => {
+{{#if toast}}
+    const toasterContext = useContext(ToasterContext);
+
+{{/if}}
+    return (
+        <></>
+    );
+};
+{{else}}
+class {{pascalCase pageName}}{{pascalCase name}} extends React.Component<Props, State> {
+
+    {{#if toast}}
+    static contextType = ToasterContext;
+    context!: React.ContextType<typeof ToasterContext>;
+
+    {{/if}}
+    render() {
+
+        return(
+            <></>
+        );
+    }
+}
+{{/if}}
+
+const widgetModule: WidgetModule = {
+    component: connect(mapStateToProps, mapDispatchToProps)({{pascalCase pageName}}{{pascalCase name}}),
+    definition: {
+        group: "{{titleCase pageName}}",
+        displayName: "{{titleCase name}}",
+        allowedContexts: [{{pascalCase pageName}}PageContext],
+    },
+};
+
+export default widgetModule;

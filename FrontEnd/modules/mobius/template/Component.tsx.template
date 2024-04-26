@@ -1,0 +1,30 @@
+import * as React from 'react';
+import styled, { ThemeProps, withTheme } from 'styled-components';
+import { BaseTheme } from '../globals/baseTheme';
+import injectCss from '../utilities/injectCss';
+import InjectableCss, { StyledProp } from '../utilities/InjectableCss';
+import MobiusStyledComponentProps from "../utilities/MobiusStyledComponentProps";
+
+export type {{ Component }}Props = MobiusStyledComponentProps<'div', {
+    /** CSS string or styled-components function to be injected into this component. */
+    css?: StyledProp<{{ Component }}Props>;
+}>;
+
+const {{ Component }}Style = styled.div<ThemeProps<BaseTheme> & InjectableCss>`
+    ${injectCss}
+`;
+
+/**
+ * (work in progress)
+ */
+const {{ Component }}: React.FC<{{ Component }}Props> = ({ children, css, ...otherProps }) => (
+    <{{ Component }}Style css={css} {...otherProps}>
+        {children}
+    </{{ Component }}Style>
+);
+
+{{ Component }}.defaultProps = {
+};
+
+/** @component */
+export default withTheme({{ Component }});

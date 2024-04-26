@@ -1,0 +1,138 @@
+{
+  "nodeId": "6c3531fa-2369-4d0f-b1e4-f1fb3bb522f8",
+  "name": "Account",
+  "type": "Mobile/Account",
+  "parentId": "00000000-0000-0000-0000-000000000000",
+  "sortOrder": 0,
+  "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+  "variantName": null,
+  "id": "3496d6bb-77ad-4922-b139-0460978e15c0",
+  "generalFields": {
+      "horizontalRule": "",
+      "hideHeader": false,
+      "hideFooter": false,
+      "hideFromSearchEngines": false,
+      "hideFromSiteSearch": true,
+      "excludeFromNavigation": true,
+      "excludeFromSignInRequired": false,
+      "tags": [],
+      "variantName": "",
+      "hideBreadcrumbs": false
+  },
+  "translatableFields": {
+      "title": {
+          "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Account"
+      }
+  },
+  "contextualFields": {},
+  "widgets": [
+      {
+          "parentId": "3496d6bb-77ad-4922-b139-0460978e15c0",
+          "type": "Mobile/LinkList",
+          "zone": "Content",
+          "id": "11caa923-13a8-4b8c-88d6-8792a77b4d7d",
+          "generalFields": {
+              "layout": "list",
+              "links": [
+                  {
+                      "fields": {
+                          "icon": "",
+                          "type": "OrderHistory",
+                          "url": "",
+                          "text": ""
+                      }
+                  },
+                  {
+                      "fields": {
+                          "icon": "",
+                          "type": "Lists",
+                          "url": "",
+                          "text": ""
+                      }
+                  },
+                  {
+                      "fields": {
+                          "icon": "",
+                          "type": "SavedOrders",
+                          "url": "",
+                          "text": ""
+                      }
+                  }
+              ]
+          },
+          "translatableFields": {},
+          "contextualFields": {}
+      },
+      {
+          "parentId": "3496d6bb-77ad-4922-b139-0460978e15c0",
+          "type": "Mobile/LinkList",
+          "zone": "Content",
+          "id": "f619a838-3cd9-469d-9e2b-688e9928c8f8",
+          "generalFields": {
+              "layout": "list",
+              "links": [
+                  {
+                      "fields": {
+                          "icon": "",
+                          "type": "ChangeCustomer",
+                          "url": "",
+                          "text": ""
+                      }
+                  }
+              ]
+          },
+          "translatableFields": {},
+          "contextualFields": {}
+      },
+      {
+          "parentId": "3496d6bb-77ad-4922-b139-0460978e15c0",
+          "type": "Mobile/LinkList",
+          "zone": "Content",
+          "id": "7ebaa9f7-0df9-4f2f-b680-689745351c2e",
+          "generalFields": {
+              "layout": "list",
+              "links": [
+                  {
+                      "fields": {
+                          "icon": "",
+                          "type": "ViewAccountOnWebsite",
+                          "url": "",
+                          "text": ""
+                      }
+                  },
+                  {
+                      "fields": {
+                          "icon": "",
+                          "type": "Settings",
+                          "url": "",
+                          "text": ""
+                      }
+                  }
+              ]
+          },
+          "translatableFields": {},
+          "contextualFields": {}
+      },
+      {
+          "parentId": "3496d6bb-77ad-4922-b139-0460978e15c0",
+          "type": "Mobile/LinkList",
+          "zone": "Content",
+          "id": "0764653a-89ad-45ec-b16f-9b34e94e6ed0",
+          "generalFields": {
+              "layout": "list",
+              "links": [
+                  {
+                      "fields": {
+                          "icon": "",
+                          "type": "SignOut",
+                          "url": "",
+                          "text": ""
+                      }
+                  }
+              ]
+          },
+          "translatableFields": {},
+          "contextualFields": {}
+      }
+  ]
+}

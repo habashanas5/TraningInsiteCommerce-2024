@@ -1,0 +1,174 @@
+{
+  "nodeId": "dde8568b-b20a-4ced-a33d-ce7e8d4cbf53",
+  "name": "Home",
+  "type": "HomePage",
+  "parentId": "00000000-0000-0000-0000-000000000000",
+  "sortOrder": 0,
+  "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+  "fields": {
+    "title": "Home",
+    "name": "Home",
+    "urlSegment": "",
+    "horizontalRule": "",
+    "tags": [],
+    "hideBreadcrumbs": true
+  },
+  "widgets": [
+    {
+      "parentId": "980d822b-d56d-4695-a6e9-46b61e11c31f",
+      "type": "Basic/Rows",
+      "zone": "Content",
+      "id": "ba2ea5fa-f8f2-4cbd-b2b8-c1a82e107b85",
+      "generalFields": {
+        "rowCount": 5,
+        "gap": 35
+      },
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "ba2ea5fa-f8f2-4cbd-b2b8-c1a82e107b85",
+      "type": "Basic/Banner",
+      "zone": "Content0",
+      "id": "bc26db2f-c6c2-49cd-8be1-553fa732aeb3",
+      "generalFields": {
+        "background": "image",
+        "focalPoint": "center",
+        "backgroundColor": "black",
+        "buttonLink": {
+          "type": "Page",
+          "value": "c8b97f15-18bc-468f-a344-ce64c4828a6a"
+        },
+        "minimumHeight": "1/4 viewport",
+        "variant": "primary"
+      },
+      "translatableFields": {
+        "image": {
+          "a26095ef-c714-e311-ba31-d43d7e4e88b2": "/images/home-page-banner.png"
+        },
+        "heading": {
+          "a26095ef-c714-e311-ba31-d43d7e4e88b2": "<p style=\"line-height: 1;\"><span style=\"font-size: 24px;\"><strong>50% OFF ALL EXAMPLE EQUIPMENT</strong></span></p>"
+        },
+        "subheading": {
+          "a26095ef-c714-e311-ba31-d43d7e4e88b2": "<p><span style=\"font-size: 24px;\"><strong>Stay Safe on the Job</strong></span></p>"
+        },
+        "buttonLabel": {
+          "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Shop Now"
+        }
+      },
+      "contextualFields": {}
+    },
+    {
+      "parentId": "ba2ea5fa-f8f2-4cbd-b2b8-c1a82e107b85",
+      "type": "Basic/RichContent",
+      "zone": "Content1",
+      "id": "1ecd0885-75c0-48b6-b301-bcdb0cc433ed",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {
+        "content": {
+          "a26095ef-c714-e311-ba31-d43d7e4e88b2|Desktop|d06988c0-9358-4dbb-aa3d-b7be5b6a7fd9": "<p style=\"text-align: center;\"><strong><span style=\"font-size: 24px;\">Shop by Category</span></strong></p>"
+        }
+      }
+    },
+    {
+      "parentId": "ba2ea5fa-f8f2-4cbd-b2b8-c1a82e107b85",
+      "type": "Category/CategoryList",
+      "zone": "Content1",
+      "id": "2cb1cd1c-8020-4bf6-aa13-f8c3da21cf03",
+      "generalFields": {
+        "showImages": false
+      },
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "ba2ea5fa-f8f2-4cbd-b2b8-c1a82e107b85",
+      "type": "Basic/Banner",
+      "zone": "Content2",
+      "id": "1947d81c-c790-4d29-913b-e33123f1345f",
+      "generalFields": {
+        "background": "image",
+        "focalPoint": "center",
+        "backgroundColor": "black",
+        "buttonLink": {
+          "type": "Page",
+          "value": "c8b97f15-18bc-468f-a344-ce64c4828a6a"
+        },
+        "minimumHeight": "1/4 viewport",
+        "variant": "primary"
+      },
+      "translatableFields": {
+        "image": {
+          "a26095ef-c714-e311-ba31-d43d7e4e88b2": "/images/home-page-banner.png"
+        },
+        "heading": {
+          "a26095ef-c714-e311-ba31-d43d7e4e88b2": "<p style=\"line-height: 1;\"><span style=\"font-size: 24px;\"><strong>TITLE HEADLINE</strong></span></p>"
+        },
+        "subheading": {
+          "a26095ef-c714-e311-ba31-d43d7e4e88b2": "<p><span style=\"font-size: 24px;\"><strong>Sub-Title Stuff</strong></span></p>"
+        },
+        "buttonLabel": {
+          "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Shop All Products"
+        }
+      },
+      "contextualFields": {}
+    },
+    {
+      "parentId": "ba2ea5fa-f8f2-4cbd-b2b8-c1a82e107b85",
+      "type": "Brand/BrandGallery",
+      "zone": "Content3",
+      "id": "b3025423-70c3-4bb1-81ef-0415e85bb6c7",
+      "generalFields": {
+        "brandsToDisplay": "random",
+        "numberOfBrandsToDisplay": "11",
+        "brandsSelected": [],
+        "maximumNumberOfBrandsPerRow": "6",
+        "maximumBrandImageHeight": 140
+      },
+      "translatableFields": {
+        "title": {
+          "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Shop by Brands"
+        }
+      },
+      "contextualFields": {}
+    },
+    {
+      "parentId": "ba2ea5fa-f8f2-4cbd-b2b8-c1a82e107b85",
+      "type": "Common/ProductCarousel",
+      "zone": "Content4",
+      "id": "87b9f9bb-c804-4f9a-bf91-5c8fbc7a2172",
+      "generalFields": {
+        "title": "Featured Products",
+        "carouselType": "topSellers",
+        "displayProductsFrom": "allCategories",
+        "selectedCategoryIds": [],
+        "relatedProductType": "",
+        "numberOfProductsToDisplay": 10,
+        "seedWithManuallyAssigned": "",
+        "maxNumberOfColumns": 4,
+        "showImage": true,
+        "showTitle": true,
+        "showBrandName": true,
+        "showPartNumbers": true,
+        "showPrice": true,
+        "showAddToCart": true,
+        "showAddToList": true
+      },
+      "translatableFields": {},
+      "contextualFields": {}
+    }
+  ],
+  "id": "980d822b-d56d-4695-a6e9-46b61e11c31f",
+  "generalFields": {
+    "horizontalRule": "",
+    "tags": [],
+    "hideBreadcrumbs": true
+  },
+  "translatableFields": {
+    "title": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Home"
+    }
+  },
+  "contextualFields": {}
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Expired Account Activation Link",
+  "parentType": "MyAccountPage",
+  "urlSegment": "ExpiredAccountActivationLink"
+}

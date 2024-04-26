@@ -1,0 +1,131 @@
+{
+    "nodeId": "9ef04603-c494-433d-93cd-076996b1d370",
+    "name": "VMI Location Details",
+    "type": "VmiLocationDetailsPage",
+    "parentId": "afa9b795-4a85-4a5c-9a47-7a221b822563",
+    "sortOrder": 0,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "variantName": null,
+    "layoutPageId": null,
+    "templateHash": "d44295726d27f114dc0680dd730f08849db3690c58848ea829c4b12814a15bca",
+    "requiresAuthorization": true,
+    "id": "011b6aff-3105-4381-92a8-0948a370ea7a",
+    "generalFields": {
+        "horizontalRule": "",
+        "tags": [],
+        "hideBreadcrumbs": false,
+        "variantName": null,
+        "layoutPage": ""
+    },
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "VMI Location Details"
+        },
+        "urlSegment": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Details"
+        }
+    },
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "011b6aff-3105-4381-92a8-0948a370ea7a",
+            "type": "Basic/Row",
+            "zone": "Content",
+            "isLayout": false,
+            "id": "ce6723ed-cf33-44d1-b4e8-b560a0ecfb35",
+            "generalFields": {
+                "columns": [
+                    [
+                        10,
+                        10,
+                        8,
+                        3,
+                        5
+                    ],
+                    [
+                        2,
+                        2,
+                        4,
+                        9,
+                        7
+                    ]
+                ],
+                "alignment": [],
+                "gap": 0,
+                "reflow": true
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "011b6aff-3105-4381-92a8-0948a370ea7a",
+            "type": "Basic/Row",
+            "zone": "Content",
+            "isLayout": false,
+            "id": "0b17aab9-684a-461c-9f78-5321880abbc0",
+            "generalFields": {
+                "columns": [
+                    [
+                        12,
+                        12,
+                        4,
+                        3,
+                        3
+                    ],
+                    [
+                        12,
+                        12,
+                        8,
+                        9,
+                        9
+                    ]
+                ],
+                "alignment": [],
+                "gap": 0,
+                "reflow": true
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "ce6723ed-cf33-44d1-b4e8-b560a0ecfb35",
+            "type": "VmiLocationDetails/VmiLoationDetailsTitle",
+            "zone": "Content0",
+            "isLayout": false,
+            "id": "bc20408a-a765-44fe-98bc-3161bec90922",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "ce6723ed-cf33-44d1-b4e8-b560a0ecfb35",
+            "type": "VmiLocationDetails/VmiLocationDetailsButtons",
+            "zone": "Content1",
+            "isLayout": false,
+            "id": "b3d1bff3-edd0-462d-b890-3a4c14c21c62",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "0b17aab9-684a-461c-9f78-5321880abbc0",
+            "type": "VmiLocationDetails/VmiLocationDetailsCustomerInfo",
+            "zone": "Content0",
+            "isLayout": false,
+            "id": "8197ab20-f21d-40a2-b979-6c3f5819faec",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "0b17aab9-684a-461c-9f78-5321880abbc0",
+            "type": "VmiLocationDetails/VmiLocationDetailsTabbedTable",
+            "zone": "Content1",
+            "isLayout": false,
+            "id": "894a230a-9766-46d1-8b83-5e48ecd78026",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

@@ -1,0 +1,80 @@
+{
+    "nodeId": "eafee649-c329-484a-a46e-15adf1b56619",
+    "name": "Checkout - Order Confirmation",
+    "type": "OrderConfirmationPage",
+    "parentId": "e34990db-0ee8-49d8-b78c-cd1ac257898b",
+    "sortOrder": 12,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "variantName": null,
+    "id": "49f386b0-b40f-4d3b-a4c7-e52e48c2c142",
+    "generalFields": {
+        "horizontalRule": "",
+        "tags": [],
+        "hideBreadcrumbs": false
+    },
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Checkout - Order Confirmation"
+        },
+        "urlSegment": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "OrderConfirmation"
+        }
+    },
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "49f386b0-b40f-4d3b-a4c7-e52e48c2c142",
+            "type": "OrderConfirmation/OrderConfirmationPageContainer",
+            "zone": "Content",
+            "id": "c0051433-f670-49d7-aefc-7b672c300ba7",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "c0051433-f670-49d7-aefc-7b672c300ba7",
+            "type": "OrderConfirmation/OrderConfirmationHeader",
+            "zone": "Content00",
+            "id": "8c581a15-c145-4306-ae50-88c5e972477c",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "c0051433-f670-49d7-aefc-7b672c300ba7",
+            "type": "OrderConfirmation/OrderConfirmationOrderInformation",
+            "zone": "Content01",
+            "id": "768b8cc8-37cc-4393-a8c1-9361437ac196",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "c0051433-f670-49d7-aefc-7b672c300ba7",
+            "type": "OrderConfirmation/OrderConfirmationTotal",
+            "zone": "Content02",
+            "id": "826627f8-3828-4f34-96d5-29683e9d0762",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "c0051433-f670-49d7-aefc-7b672c300ba7",
+            "type": "OrderConfirmation/OrderConfirmationProductList",
+            "zone": "Content03",
+            "id": "881b5c1f-fa5b-4d85-a8b5-65b0054d2cf8",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "c0051433-f670-49d7-aefc-7b672c300ba7",
+            "type": "OrderConfirmation/OrderConfirmationAccountSignUpMessage",
+            "zone": "Content04",
+            "id": "4d83cd30-b01a-4820-9feb-b7f100c103ca",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

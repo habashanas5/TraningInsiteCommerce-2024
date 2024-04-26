@@ -1,0 +1,46 @@
+{
+  "nodeId": "25cc7b32-b72d-4141-99f2-a21fba89ce16",
+  "name": "Static List",
+  "type": "StaticListPage",
+  "parentId": "980d822b-d56d-4695-a6e9-46b61e11c31f",
+  "sortOrder": 1,
+  "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+  "id": "d6f99076-8c85-46b4-88fd-8093736dc82f",
+  "fields": {
+    "title": "Static List",
+    "name": "Static List",
+    "urlSegment": "StaticList",
+    "horizontalRule": "",
+    "excludeFromNavigation": true,
+    "tags": []
+  },
+  "translatableFields": {
+    "title": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Static List"
+    },
+    "urlSegment": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "StaticList"
+    }
+  },
+  "contextualFields": {},
+  "widgets": [
+    {
+      "parentId": "d6f99076-8c85-46b4-88fd-8093736dc82f",
+      "type": "StaticList/StaticListHeader",
+      "zone": "Content",
+      "id": "32c38d52-7508-4629-aa26-7ae39470947b",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "d6f99076-8c85-46b4-88fd-8093736dc82f",
+      "type": "StaticList/StaticListProductList",
+      "zone": "Content",
+      "id": "263e07fc-09bb-4318-b3c3-3e53f88cca5d",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "fc4479fe-5745-470a-8b5c-8e95b0b7374c",
+    "nodeId": "19b2d69c-2a63-4821-9542-7f4034eeb942",
+    "name": "LocationFinder",
+    "type": "LocationFinderPage",
+    "parentId": "a4a15638-4606-4e36-9d93-b0faec67ebc5",
+    "sortOrder": 1,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "generalFields": {
+        "horizontalRule": "",
+        "tags": []
+    },
+    "translatableFields": {},
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "fc4479fe-5745-470a-8b5c-8e95b0b7374c",
+            "zone": "Content",
+            "type": "Basic/PageTitle",
+            "id": "cb8e2d18-9b64-4787-a711-4f178560e9a6",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "fc4479fe-5745-470a-8b5c-8e95b0b7374c",
+            "zone": "Content",
+            "type": "LocationFinder/LocationFinder",
+            "id": "96e56623-6bf0-4588-a4d3-42c44207df19",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

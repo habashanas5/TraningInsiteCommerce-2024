@@ -1,0 +1,29 @@
+import 'jest-styled-components';
+import React from 'react';
+import { mount } from 'enzyme';
+import ThemeProvider from '../ThemeProvider';
+import {{ Component }} from './{{ Component }}';
+
+describe('{{ Component }}', () => {
+    let props;
+    let mountedWrapper;
+    const wrapper = () => {
+        if (!mountedWrapper) {
+            mountedWrapper = mount(
+                <ThemeProvider>
+                    <{{ Component }} {...props} />
+                </ThemeProvider>
+            );
+        }
+        return mountedWrapper;
+    };
+
+    beforeEach(() => {
+        props = {};
+        mountedWrapper = undefined;
+    });
+
+    test('fail the template test by default', () => {
+        expect(true).toBe(false);
+    });
+});

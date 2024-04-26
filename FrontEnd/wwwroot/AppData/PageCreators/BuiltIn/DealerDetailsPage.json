@@ -1,0 +1,5 @@
+{
+  "name": "Dealer Details",
+  "parentType": "LocationFinderPage",
+  "urlSegment": "DealerDetails"
+}

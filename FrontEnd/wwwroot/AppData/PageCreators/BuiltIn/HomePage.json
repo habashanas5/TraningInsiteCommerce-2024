@@ -1,0 +1,24 @@
+{
+  "name": "Home",
+  "pages": [
+    {
+      "name": "About Us",
+      "type": "Page",
+      "urlSegment": "AboutUs",
+      "excludeFromNavigation": true
+    },
+    {
+      "name": "Contact Us",
+      "type": "Page",
+      "urlSegment": "ContactUs",
+      "excludeFromNavigation": true,
+      "template": "Page/ContactUsPage.json"
+    },
+    {
+      "urlSegment": "LocationFinder",
+      "name": "Locations",
+      "type": "LocationFinderPage",
+      "excludeFromNavigation": true
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+﻿Any .js or .ts files added to this directory or any sub directories will be loaded into the database as theme resources. If a theme references a file that exists here, it will be associated to the entity record for that file.

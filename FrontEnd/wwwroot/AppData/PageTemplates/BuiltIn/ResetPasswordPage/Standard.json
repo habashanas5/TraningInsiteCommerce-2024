@@ -1,0 +1,43 @@
+{
+    "nodeId": "5b5ae87a-1b37-4e71-87cf-e1b2c5e86678",
+    "name": "Reset Password",
+    "type": "ResetPasswordPage",
+    "parentId": "676939f4-1a1b-4b49-ad9f-fbd0d7d8798b",
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "widgets": [
+        {
+            "parentId": "c3be3e66-d5cc-431a-8ada-8a0c65eb7d8d",
+            "zone": "Content",
+            "type": "Basic/PageTitle",
+            "id": "d85f5451-fe4c-40a2-86de-01fb30d19064",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "c3be3e66-d5cc-431a-8ada-8a0c65eb7d8d",
+            "type": "ResetPassword/ResetPassword",
+            "zone": "Content",
+            "id": "d9f9abb7-bf8e-4fb4-bd80-5dfbd325873f",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ],
+    "id": "c3be3e66-d5cc-431a-8ada-8a0c65eb7d8d",
+    "generalFields": {
+        "horizontalRule": "",
+        "tags": [],
+        "hideBreadcrumbs": false,
+        "excludeFromSignInRequired": true
+    },
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Reset Password"
+        },
+        "urlSegment": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "ResetPassword"
+        }
+    },
+    "contextualFields": {}
+}

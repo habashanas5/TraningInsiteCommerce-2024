@@ -1,0 +1,92 @@
+﻿<div id="import-vmi-bins-modal" class="reveal-modal import-vmi-bins-modal" data-reveal data-reveal-init>
+    <div class="modal-wrap">
+        <h2>[% translate 'Import CSV' %]</h2>
+        <div class="pop-content">
+            <div class="row">
+                <div class="row" ng-show="(!vm.errorProducts || vm.errorProducts.length === 0) && vm.uploadServerErrors.length === 0">
+                    <div>
+                        <p>[% siteMessage 'Vmi_BinsImportInstructions_Line1' %]</p>
+                        <p>[% siteMessage 'Vmi_BinsImportInstructions_Line2' %]</p>
+                        <p>
+                            <a target="_blank" href="/Excel/VMIImport_products.csv" download="VMIImport_products.csv">[% translate 'Download CSV File' %]</a>
+                        </p>
+                        <div class="row">
+                            <div class="columns upload-block">
+                                <div class="medium-6 columns">
+                                    <input type="text" ng-model="vm.fileName" disabled />
+                                </div>
+                                <div class="medium-6 columns upload-btn">
+                                    <button id="buttonFileUpload" class="primary btn" ng-click="vm.onButtonFileUploadClick()" ng-disabled="vm.uploadInProgress">[% translate 'Choose File' %]</button>
+                                    <input id="hiddenFileUpload" style="display: none" type="file" onchange="angular.element(this).data('_scope').vm.setFile(this)" />
+                                </div>
+                                <div class="medium-12 columns">
+                                    <div class="errors-block" ng-show="vm.badFile || vm.uploadLimitExceeded">
+                                        <div class="upload-error" ng-show="vm.badFile">
+                                            [% siteMessage 'Vmi_BinsImportUploadError' %]
+                                        </div>
+                                        <div class="upload-error" ng-show="vm.uploadLimitExceeded">
+                                            [% siteMessage 'Vmi_BinsImportRowsLimitExceeded' %]
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" ng-show="vm.errorProducts && vm.errorProducts.length > 0 && vm.uploadServerErrors.length === 0">
+                    <div class="columns import-table-wrapper">
+                        <table class="import-issues-table">
+                            <thead>
+                                <tr>
+                                    <td class="import-row-num">[% translate 'Row #' %]</td>
+                                    <td class="import-item-num">[% translate 'Item #' %]</td>
+                                    <td class="import-reason">[% translate 'Reason' %]</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="errorProduct in vm.errorProducts">
+                                    <td class="import-row-num" ng-bind="errorProduct.index"></td>
+                                    <td class="import-item-num" ng-bind="errorProduct.name"></td>
+                                    <td class="import-reason">
+                                        <span ng-if="errorProduct.error === 'NotEnough'">[% siteMessage 'QuickOrder_NotEnoughQuantity' %]</span>
+                                        <span ng-if="errorProduct.error === 'ConfigurableProduct'">[% siteMessage 'QuickOrder_CannotOrderConfigurable' %]</span>
+                                        <span ng-if="errorProduct.error === 'StyledProduct'">[% siteMessage 'QuickOrder_CannotOrderStyled' %]</span>
+                                        <span ng-if="errorProduct.error === 'Unavailable'">[% siteMessage 'QuickOrder_ProductIsUnavailable' %]</span>
+                                        <span ng-if="errorProduct.error === 'InvalidUnit'">[% translate 'Invalid U/M' %]</span>
+                                        <span ng-if="errorProduct.error === 'NotFound'">[% siteMessage 'Product_NotFound' %]</span>
+                                        <span ng-if="errorProduct.error === 'OutOfStock'">[% translate 'Out of stock' %]</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row" ng-show="vm.uploadServerErrors.length > 0">
+                    <div class="columns import-table-wrapper">
+                        <table class="import-issues-table">
+                            <thead>
+                                <tr>
+                                    <td class="import-row-error">[% translate 'Error' %]</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="uploadServerError in vm.uploadServerErrors">
+                                    <td class="import-row-error" ng-bind="uploadServerError"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row btns">
+                    <button ng-click="vm.closeModal()" class="btn tertiary btn-cancel" type="button">[% translate 'Cancel' %]</button>
+                    <button ng-click="vm.uploadFile()" class="btn primary"
+                            ng-disabled="!vm.file || vm.badFile || vm.uploadInProgress"
+                            ng-show="(!vm.errorProducts || vm.errorProducts.length === 0) && vm.uploadServerErrors.length === 0" type="button">
+                        [% translate 'Import' %]
+                    </button>
+                </div>
+            </div>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+    </div>
+</div>

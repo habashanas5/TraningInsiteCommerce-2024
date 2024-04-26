@@ -1,0 +1,3 @@
+The files provided here should not be modified directly. Changes to them will not affect the InsiteCommerce application.
+The typescript files here are needed for compilation purposes.
+The files are supplied here so that the source can be easily viewed. This is useful in the case of upgrades, to see what changes or bug fixes have been made. And so that an overriden version of a file can be easily created.

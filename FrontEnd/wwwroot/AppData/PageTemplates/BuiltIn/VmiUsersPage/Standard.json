@@ -1,0 +1,109 @@
+{
+    "nodeId": "59b0c851-fa43-4d95-a728-353b1dca5a9c",
+    "name": "VMI Users",
+    "type": "VmiUsersPage",
+    "parentId": "b0fcba34-88e2-40f0-9d64-1304c0994ae2",
+    "sortOrder": -1,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "variantName": null,
+    "layoutPageId": null,
+    "templateHash": null,
+    "requiresAuthorization": false,
+    "id": "56c07e7a-68a0-491d-b3f0-430570e4390a",
+    "generalFields": {
+        "horizontalRule": "",
+        "hideHeader": false,
+        "hideFooter": false,
+        "hideFromSearchEngines": false,
+        "hideFromSiteSearch": false,
+        "excludeFromNavigation": false,
+        "excludeFromSignInRequired": false,
+        "tags": [],
+        "variantName": null,
+        "layoutPage": "",
+        "hideBreadcrumbs": false
+    },
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Users"
+        },
+        "openGraphTitle": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "urlSegment": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "VMIUsers"
+        },
+        "openGraphUrl": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "openGraphImage": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "metaKeywords": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "metaDescription": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        }
+    },
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "56c07e7a-68a0-491d-b3f0-430570e4390a",
+            "type": "Basic/Row",
+            "zone": "Content",
+            "isLayout": false,
+            "id": "aa2f0d39-2268-4ee7-b04a-9fe256e24bbc",
+            "generalFields": {
+                "columns": [
+                    12
+                ],
+                "alignment": [],
+                "gap": 0,
+                "reflow": true
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "aa2f0d39-2268-4ee7-b04a-9fe256e24bbc",
+            "zone": "Content0",
+            "type": "VmiUsers/VmiUsersHeader",
+            "id": "5dd531e8-ea21-4ca3-9b38-9dbb6ff67a61",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {},
+            "isLayout": false
+        },
+        {
+            "parentId": "aa2f0d39-2268-4ee7-b04a-9fe256e24bbc",
+            "type": "VmiUsers/VmiUsersTable",
+            "zone": "Content0",
+            "isLayout": false,
+            "id": "77d91dad-7ed4-46fb-acb5-d105db3e577c",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "aa2f0d39-2268-4ee7-b04a-9fe256e24bbc",
+            "type": "VmiUsers/VmiUsersPagination",
+            "zone": "Content0",
+            "isLayout": false,
+            "id": "08a4f6c0-cf4e-42de-8f18-1cc32cd2581d",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "5dd531e8-ea21-4ca3-9b38-9dbb6ff67a61",
+            "zone": "Content00",
+            "type": "Basic/PageTitle",
+            "id": "1636c5c1-f1c7-4eba-b2fe-7669b12f4098",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {},
+            "isLayout": false
+        }
+    ]
+}

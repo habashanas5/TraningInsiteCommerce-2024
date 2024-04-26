@@ -1,0 +1,61 @@
+{
+  "nodeId": "3a4c6efe-c48c-4c34-9844-f39eb7dd2edc",
+  "name": "Request A Quote",
+  "type": "RfqRequestQuotePage",
+  "parentId": "90f1ae96-4637-4dc6-9d94-c744a43d7ed6",
+  "sortOrder": 0,
+  "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+  "id": "4cba7cf5-489d-4267-bdc3-109c928ecad3",
+  "generalFields": {
+    "horizontalRule": "",
+    "tags": [],
+    "hideBreadcrumbs": false
+  },
+  "translatableFields": {
+    "title": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Request A Quote"
+    },
+    "urlSegment": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Rfq"
+    }
+  },
+  "contextualFields": {},
+  "widgets": [
+    {
+      "parentId": "4cba7cf5-489d-4267-bdc3-109c928ecad3",
+      "type": "RfqRequestQuote/RfqRequestQuoteHeader",
+      "zone": "Content",
+      "id": "c1fdd325-5be7-42da-a16d-5fea29fa0c9e",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "4cba7cf5-489d-4267-bdc3-109c928ecad3",
+      "type": "RfqRequestQuote/RfqRequestQuotePageContainer",
+      "zone": "Content",
+      "id": "24787c5d-c965-4966-8152-36ce4b273e26",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "24787c5d-c965-4966-8152-36ce4b273e26",
+      "type": "RfqRequestQuote/RfqRequestQuoteProductList",
+      "zone": "Content0",
+      "id": "e3682324-0f34-4a3a-be32-78608faa4d14",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "24787c5d-c965-4966-8152-36ce4b273e26",
+      "type": "RfqRequestQuote/RfqRequestQuoteSpecifications",
+      "zone": "Content1",
+      "id": "9fdfb98a-4448-4a9a-a5b9-7f0f1a7ed24b",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    }
+  ]
+}

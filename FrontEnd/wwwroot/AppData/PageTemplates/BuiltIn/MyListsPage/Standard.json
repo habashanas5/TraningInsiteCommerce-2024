@@ -1,0 +1,71 @@
+{
+  "id": "7fd4adb2-52e6-4656-90c3-a54052906377",
+  "parentId": "f9c98cf8-c69d-400b-9a6f-8367be20698e",
+  "nodeId": "81bd55c9-6d9d-406c-9ce7-6d3162b7cf3e",
+  "sortOrder": 0,
+  "fields": {
+  },
+  "translatableFields": {},
+  "type": "MyListsPage",
+  "widgets": [
+    {
+      "parentId": "7fd4adb2-52e6-4656-90c3-a54052906377",
+      "zone": "Content",
+      "type": "Basic/Rows",
+      "id": "13da12ef-21b9-4a74-a36b-adf27e44fc93",
+      "fields": {
+        "rowCount": 2,
+        "gap": 0
+      }
+    },
+    {
+      "parentId": "13da12ef-21b9-4a74-a36b-adf27e44fc93",
+      "zone": "Content0",
+      "type": "MyLists/MyListsHeader",
+      "id": "2df82576-da8d-4541-8549-5713fc343bb9"
+    },
+    {
+      "parentId": "13da12ef-21b9-4a74-a36b-adf27e44fc93",
+      "zone": "Content1",
+      "type": "MyLists/MyListsPagination",
+      "id": "50b0ad1c-c81b-40e0-824a-e9d0cfc8b441"
+    },
+    {
+      "parentId": "13da12ef-21b9-4a74-a36b-adf27e44fc93",
+      "zone": "Content1",
+      "type": "MyLists/MyListsList",
+      "id": "af9d737f-4116-42de-9021-0c6fc8f12b7e"
+    },
+    {
+      "parentId": "13da12ef-21b9-4a74-a36b-adf27e44fc93",
+      "zone": "Content1",
+      "type": "MyLists/MyListsPagination",
+      "id": "19439d5b-7bbc-4044-b4fd-a552d89d5a9a"
+    },
+    {
+      "parentId": "2df82576-da8d-4541-8549-5713fc343bb9",
+      "zone": "Content10",
+      "type": "MyLists/MyListsSearchBox",
+      "id": "d5c82837-36bc-4cdf-9c78-7ff70933a2dc"
+    },
+    {
+      "parentId": "2df82576-da8d-4541-8549-5713fc343bb9",
+      "zone": "Content00",
+      "type": "Basic/PageTitle",
+      "id": "8d23f4fa-fd94-480b-b2c7-3a02611b74dc"
+    },
+    {
+      "parentId": "2df82576-da8d-4541-8549-5713fc343bb9",
+      "zone": "Content01",
+      "type": "MyLists/MyListsCreateListButton",
+      "id": "e13bd93f-a2d8-4350-9b49-0957101711ac"
+    },
+    {
+      "parentId": "2df82576-da8d-4541-8549-5713fc343bb9",
+      "zone": "Content11",
+      "type": "MyLists/MyListsSortControl",
+      "id": "8858efbe-6acf-47f0-bfd6-0f1c286e30af"
+    }
+  ],
+  "websiteId": "5c028c3a-c7f1-41fe-a4c0-1414b4c7acdb"
+}

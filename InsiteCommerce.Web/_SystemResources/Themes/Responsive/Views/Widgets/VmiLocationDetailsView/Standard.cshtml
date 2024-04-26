@@ -1,0 +1,244 @@
+﻿<div ng-controller="VmiLocationDetailsController as vm" ng-cloak 
+                                ng-init="vm.vmiLocationListPage='[% urlForPage 'VMILocationsPage' %]';
+                                         vm.exportProductHeaders = [
+                                            '[% translate 'Vmi Location ID' %]',
+                                            '[% translate 'Product ID' %]',
+                                            '[% translate 'Bin Number' %]',
+                                            '[% translate 'Min Qty' %]',
+                                            '[% translate 'Max Qty' %]'
+                                         ];
+                                         vm.exportOrdersHeaders = [
+                                            '[% translate 'Order #' %]',
+                                            '[% translate 'Order Date' %]',
+                                            '[% translate 'Total' %]',
+                                            '[% translate 'Status' %]'
+                                         ]">
+    <div class="row top-actions">
+        <div class="columns top-actions-buttons">
+            <button id="tst_vmiLocationsView_addProductBtn" type="button" class="btn primary location-btn" ng-disabled="!vm.vmiLocation" ng-click="vm.openAddProductPopup()">[% translate 'Add Product' %]</button>
+            <button id="tst_vmiLocationsView_editBtn" type="button" class="btn primary location-btn" ng-click="vm.openEditPopup()">[% translate 'Edit Location' %]</button>
+            <button id="tst_vmiLocationsView_deleteBtn" type="button" class="btn primary location-btn" ng-disabled="!vm.vmiLocation" ng-click="vm.deleteVmiLocation()">[% translate 'Delete Location' %]</button>
+        </div>
+    </div>
+    <div class="location-details" ng-if="vm.vmiLocation && vm.vmiLocation.customer">
+        <div class="location-address">
+            <h3 class="location-header">[% translate 'Address' %]</h3> 
+            <div>
+                {{vm.vmiLocation.customer.address1}}
+            </div>
+            <div ng-if="vm.vmiLocation.customer.address2">
+                {{vm.vmiLocation.customer.address2}}
+            </div>
+            <div ng-if="vm.vmiLocation.customer.address3">
+                {{vm.vmiLocation.customer.address3}}
+            </div>
+            <div ng-if="vm.vmiLocation.customer.address4">
+                {{vm.vmiLocation.customer.address4}}
+            </div>
+            <div>
+                {{vm.vmiLocation.customer.city}}, {{vm.vmiLocation.customer.state.abbreviation}}, {{vm.vmiLocation.customer.postalCode}}
+            </div>
+        </div>
+        <div class="table-select">
+            <h3 class="table-select-header">[% translate 'Table View' %]</h3>
+            <div class="table-view-select">
+                <select id="tableView" name="tableView"
+                        ng-model="vm.tableViewProducts">
+                    <option ng-value="true">[% translate 'Products' %]</option>
+                    <option ng-value="false">[% translate 'Orders' %]</option>
+                </select>
+            </div>
+        </div>
+        <div ng-if="vm.tableViewProducts">
+            <form>
+                <section class="accordion search-vmi-products">
+                    <div class="cm">
+                        <input type="checkbox" id="accord-product-search" class="accord-check" />
+                        <label for="accord-product-search" class="accord-head">[% translate 'Search' %]</label>
+                        <article class="accord-content">
+                            <div class="row">
+                                <div class="columns search-col-1">
+                                    <div class="search-products">
+                                        <label>[% translate 'Search Products' %]</label>
+                                        <div class="row">
+                                            <div class="small-12 columns">
+                                                <input type="text" name="VmiProductSearch" id="VmiProductSearch" value="" placeholder="[% translate 'Search Products' %]" ng-model="vm.productTableSearchFilter" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <button type="submit" class="btn secondary btn-clear" ng-click="vm.clearProductSearch()">[% translate 'Clear' %]</button>
+                                <button type="submit" class="btn primary btn-search" ng-click="vm.searchProducts()">[% translate 'Search' %]</button>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </form>
+            <div id="tst_vmiLocationDetailsView_product_table" class="vmi-location-details-product-table" ng-if="vm.vmiBinList.length > 0">
+		        <div class="row">
+                    <h3 class="results-count">
+                        <span class="result-num" ng-bind="vm.vmiBinPagination.totalItemCount"></span>
+                        <span class="result-lbl">[% translate 'products' %]</span>
+                    </h3>
+                    <div class="btn-group">
+                        <button id="tst_vmiLocationDetailsView_export_products" type="button" class="btn primary export-btn" ng-disabled="vm.checkedProductsCount === 0" ng-click="vm.exportSelectedProducts()">[% translate 'Export Selected' %]</button>
+                        <button id="tst_vmiLocationDetailsView_exportAll_products" type="button" class="btn primary export-all-btn" ng-click="vm.exportAllProducts()">[% translate 'Export All' %]</button>
+                        <button id="tst_vmiLocationDetailsView_delete_products" type="button" class="btn primary delete-btn" ng-disabled="vm.checkedProductsCount === 0" ng-click="vm.deleteVmiProducts()">[% translate 'Delete' %]</button>
+                    </div>
+                </div>
+                <isc-pager pagination="vm.vmiBinPagination" storage-key="vm.vmiBinPaginationStorageKey" update-data="vm.getVmiBinCollection()"></isc-pager>
+                <div class="overflow-table small">
+                    <table class="info-tbl">
+                        <thead>
+                            <tr>
+                                <th class="col-select">
+                                    <span class="sticky-first">
+                                        <input type="checkbox" ng-checked="vm.allProductsSelected"
+                                               ng-click="vm.toggleSelectAllProducts()" />
+                                    </span>
+                                </th>
+                                <th class="col-prod-name">
+                                    [% translate 'Product Name' %]
+                                </th>
+                                <th class="col-erp-number">
+                                    [% translate 'Part #' %]
+                                </th>
+                                <th class="col-bin-number">
+                                    [% translate 'Bin #' %]
+                                </th>
+                                <th class="col-min-qty">
+                                    [% translate 'Min' %]
+                                </th>
+                                <th class="col-max-qty">
+                                    [% translate 'Max' %]
+                                </th>
+                            </tr>
+                        </thead>
+                        <tr class="tst_vmiLocationDetailsPage_product" ng-repeat="vmiProduct in vm.vmiBinList">
+                            <td class="col-select">
+                                <span class="sticky-first">
+                                    <input type="checkbox" ng-checked="vm.isProductChecked(vmiProduct.id)"
+                                            ng-click="vm.toggleSelectedProduct(vmiProduct)" />
+                                </span>
+                            </td>
+                            <td class="col-name"><a id="tst_productList_{{vmiProduct.id}}_descriptionLink" ng-href="{{vmiProduct.product.productDetailUrl}}">{{vmiProduct.product.shortDescription}}</a></td>
+                            <td class="col-part-number" ng-bind="vmiProduct.product.erpNumber"></td>
+                            <td class="col-bin-number" ng-bind="vmiProduct.binNumber"></td>
+                            <td class="col-min-qty" ng-bind="vmiProduct.minimumQty"></td>
+                            <td class="col-max-qty" ng-bind="vmiProduct.maximumQty"></td>
+                        </tr>
+                    </table>
+                </div>
+                <isc-pager pagination="vm.vmiBinPagination" storage-key="vm.vmiBinPaginationStorageKey" bottom="true" update-data="vm.getVmiBinCollection()"></isc-pager>
+	        </div>
+	        <div id="tst_vmiLocationDetailsView_noProductsFound" class="vmi-location-details-no-products" ng-if="!vm.vmiBinList || vm.vmiBinList.length == 0">
+		        <h2>[% translate 'No products found' %]</h2>
+	        </div>
+        </div>
+        <div ng-if="!vm.tableViewProducts">
+            <form>
+                <section class="accordion search-vmi-orders">
+                    <div class="cm">
+                        <input type="checkbox" id="accord-orders-search" class="accord-check" />
+                        <label for="accord-orders-search" class="accord-head">[% translate 'Search' %]</label>
+                        <article class="accord-content">
+                            <div class="row">
+                                <div class="columns search-col-1">
+                                    <div class="search-orders">
+                                        <label>[% translate 'Search Orders' %]</label>
+                                        <div class="row">
+                                            <div class="small-12 columns">
+                                                <input type="text" name="VmiOrdersSearch" id="VmiOrdersSearch" value="" placeholder="[% translate 'Search Orders' %]" ng-model="vm.ordersTableSearchFilter" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <button type="submit" class="btn secondary btn-clear" ng-click="vm.clearOrdersSearch()">[% translate 'Clear' %]</button>
+                                <button type="submit" class="btn primary btn-search" ng-click="vm.searchOrders()">[% translate 'Search' %]</button>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </form>
+            <div id="tst_vmiLocationDetailsView_orders_table" class="vmi-location-details-orders-table" ng-if="vm.vmiOrdersList.length > 0">
+		        <div class="row">
+                    <h3 class="results-count">
+                        <span class="result-num" ng-bind="vm.vmiOrdersPagination.totalItemCount"></span>
+                        <span class="result-lbl">[% translate 'orders' %]</span>
+                    </h3>
+                    <div class="btn-group">
+                        <button id="tst_vmiLocationDetailsView_export_orders" type="button" class="btn primary export-btn" ng-disabled="vm.checkedOrdersCount === 0" ng-click="vm.exportSelectedOrders()">[% translate 'Export Selected' %]</button>
+                        <button id="tst_vmiLocationDetailsView_exportAll_orders" type="button" class="btn primary export-all-btn" ng-click="vm.exportAllOrders()">[% translate 'Export All' %]</button>
+                    </div>
+                </div>
+                <isc-pager pagination="vm.vmiOrdersPagination" storage-key="vm.vmiOrdersPaginationStorageKey" update-data="vm.getVmiOrderCollection()"></isc-pager>
+                <div class="overflow-table small">
+                    <table class="info-tbl">
+                        <thead>
+                            <tr>
+                                <th class="col-select">
+                                    <span class="sticky-first">
+                                        <input type="checkbox" ng-checked="vm.allOrdersSelected"
+                                               ng-click="vm.toggleSelectAllOrders()" />
+                                    </span>
+                                </th>
+                                <th class="col-order-number">
+                                    [% translate 'Order #' %]
+                                </th>
+                                <th class="col-order-date">
+                                    [% translate 'Order Date' %]
+                                </th>
+                                <th class="col-order-total">
+                                    [% translate 'Total' %]
+                                </th>
+                                <th class="col-order-status">
+                                    [% translate 'Status' %]
+                                </th>
+                            </tr>
+                        </thead>
+                        <tr class="tst_vmiLocationDetailsPage_order" ng-repeat="vmiOrder in vm.vmiOrdersList">
+                            <td class="col-select">
+                                <span class="sticky-first">
+                                    <input type="checkbox" ng-checked="vm.isOrderChecked(vmiOrder.id)"
+                                            ng-click="vm.toggleSelectedOrder(vmiOrder)" />
+                                </span>
+                            </td>
+                            <td class="col-order-number"><a id="tst_orderList_{{vmiOrder.id}}_descriptionLink" ng-href="[% urlForPage 'OrderDetailPage' %]?orderNumber={{ vmiOrder.erpOrderNumber || vmiOrder.orderNumber }}">{{vmiOrder.orderNumber}}</a></td>
+                            <td class="col-order-date" ng-bind="vmiOrder.orderDate | date:'shortDate'"></td>
+                            <td class="col-order-total" ng-bind="vmiOrder.orderGrandTotalDisplay"></td>
+                            <td class="col-order-status" ng-bind="vmiOrder.status"></td>
+                        </tr>
+                    </table>
+                </div>
+                <isc-pager pagination="vm.vmiOrdersPagination" storage-key="vm.vmiOrdersPaginationStorageKey" bottom="true" update-data="vm.getVmiOrderCollection()"></isc-pager>
+	        </div>
+	        <div id="tst_vmiLocationDetailsView_noOrdersFound" class="vmi-location-details-no-orders" ng-if="!vm.vmiOrdersList || vm.vmiOrdersList.length == 0">
+		        <h2>[% translate 'No orders found' %]</h2>
+	        </div>
+        </div>
+    </div>
+</div> 
+
+<script type="text/ng-template" id="/PartialViews/Vmi-DeleteLocationPopup">
+    [% partialView 'Vmi-DeleteLocationPopup' %]
+</script>
+
+<script type="text/ng-template" id="/PartialViews/Vmi-DeleteVmiBinsModal">
+    [% partialView 'Vmi-DeleteVmiBinsModal' %]
+</script>
+
+<script type="text/ng-template" id="/PartialViews/Vmi-VmiBinModal">
+    [% partialView 'Vmi-VmiBinModal' %]
+</script>
+
+<script type="text/ng-template" id="/PartialViews/Catalog-VmiLocationPopup">
+    [% partialView 'Catalog-VmiLocationPopup' %]
+</script>
+
+<script type="text/ng-template" id="/PartialViews/Catalog-VmiLocationImportPopup">
+    [% partialView 'Catalog-VmiLocationImportPopup' %] 
+</script>

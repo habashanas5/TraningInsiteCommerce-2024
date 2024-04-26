@@ -1,0 +1,108 @@
+{
+  "nodeId": "8453065c-949e-4b8b-939d-3fd427c740f7",
+  "name": "news1",
+  "type": "NewsPage",
+  "parentId": "0685dcf3-7022-4b14-b8e1-1f924f8e7db7",
+  "sortOrder": -1,
+  "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+  "variantName": null,
+  "id": "70ed473c-72f9-47cb-b720-8a863f0d97b3",
+  "generalFields": {
+    "horizontalRule": "",
+    "hideHeader": false,
+    "hideFooter": false,
+    "hideFromSearchEngines": false,
+    "hideFromSiteSearch": false,
+    "excludeFromNavigation": false,
+    "excludeFromSignInRequired": false,
+    "tags": [],
+    "variantName": "",
+    "hideBreadcrumbs": false,
+    "publishDate": null
+  },
+  "translatableFields": {
+    "title": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+    },
+    "openGraphTitle": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+    },
+    "urlSegment": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+    },
+    "openGraphUrl": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+    },
+    "openGraphImage": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+    },
+    "metaKeywords": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+    },
+    "metaDescription": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+    },
+    "author": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+    },
+    "newsSummary": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+    },
+    "newsContent": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "<p>Content!</p>"
+    }
+  },
+  "contextualFields": {},
+  "widgets": [
+    {
+      "parentId": "70ed473c-72f9-47cb-b720-8a863f0d97b3",
+      "type": "Basic/Row",
+      "zone": "Content",
+      "id": "73244a87-d878-4853-a112-5e707ea045d4",
+      "generalFields": {
+        "columns": [
+          12
+        ],
+        "alignment": [],
+        "gap": 0,
+        "reflow": true
+      },
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "70ed473c-72f9-47cb-b720-8a863f0d97b3",
+      "type": "Basic/Row",
+      "zone": "Content",
+      "id": "a93d5fda-8ada-4d5f-9c02-4ede4f45a0ac",
+      "generalFields": {
+        "columns": [
+          12
+        ],
+        "alignment": [],
+        "gap": 0,
+        "reflow": true
+      },
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "73244a87-d878-4853-a112-5e707ea045d4",
+      "type": "Basic/PageTitle",
+      "zone": "Content0",
+      "id": "987bd07b-3ab0-480f-b6d0-650379f4d237",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "a93d5fda-8ada-4d5f-9c02-4ede4f45a0ac",
+      "type": "NewsPage/NewsPageView",
+      "zone": "Content0",
+      "id": "af24df44-6f8c-4622-a5e9-a3d042276a0a",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    }
+  ]
+}

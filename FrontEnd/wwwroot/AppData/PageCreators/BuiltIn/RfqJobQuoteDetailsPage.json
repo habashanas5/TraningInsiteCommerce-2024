@@ -1,0 +1,6 @@
+{
+    "name": "Job Quote Details",
+    "parentType": "RfqJobQuotesPage",
+    "urlSegment": "JobQuoteDetails"
+  }
+  

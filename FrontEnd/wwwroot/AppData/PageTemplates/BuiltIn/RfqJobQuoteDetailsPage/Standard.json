@@ -1,0 +1,61 @@
+{
+    "nodeId": "69375d27-fd9d-4c56-a4dc-fc05c4192e2b",
+    "name": "Job Quote Details",
+    "type": "RfqJobQuoteDetailsPage",
+    "parentId": "7e41995b-1fab-4ef0-b5c0-835ee02a7f8b",
+    "sortOrder": -1,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "id": "e6a97d05-a369-49e9-9dca-4ba5d6d9ce9b",
+    "generalFields": {
+        "horizontalRule": "",
+        "tags": [],
+        "hideBreadcrumbs": false
+    },
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Job Quote Details"
+        },
+        "urlSegment": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "JobQuoteDetails"
+        }
+    },
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "e6a97d05-a369-49e9-9dca-4ba5d6d9ce9b",
+            "type": "RfqJobQuoteDetails/RfqJobQuoteDetailsHeader",
+            "zone": "Content",
+            "id": "4001035e-67d7-4e6a-8eaf-ccc7338514ec",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "e6a97d05-a369-49e9-9dca-4ba5d6d9ce9b",
+            "type": "RfqJobQuoteDetails/RfqJobQuoteDetailsPageContainer",
+            "zone": "Content",
+            "id": "67f6d11d-1526-4f27-8334-19b9899bd336",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "67f6d11d-1526-4f27-8334-19b9899bd336",
+            "type": "RfqJobQuoteDetails/RfqJobQuoteDetailsInformation",
+            "zone": "Info",
+            "id": "25f5565d-06af-49a3-8443-9164dd509e46",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "67f6d11d-1526-4f27-8334-19b9899bd336",
+            "type": "RfqJobQuoteDetails/RfqJobQuoteDetailsProductList",
+            "zone": "Table",
+            "id": "58ed8f14-4070-481a-aa0a-5c6a5cceecf1",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

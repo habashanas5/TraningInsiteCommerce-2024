@@ -1,0 +1,2 @@
+﻿Any 3rd party js libraries can be added here. If a theme references them, they will be considered external resources and included as a link. They will not be loaded into the database as a theme resource.
+Any .d.ts files added to this directory or any subdirectory will be loaded as typescript definitions. They can then be referenced by themes that need them to compile associated typescript resources

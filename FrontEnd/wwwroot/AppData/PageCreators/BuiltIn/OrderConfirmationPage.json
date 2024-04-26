@@ -1,0 +1,5 @@
+{
+  "name": "Checkout - Order Confirmation",
+  "parentType": "HomePage",
+  "urlSegment": "OrderConfirmation"
+}

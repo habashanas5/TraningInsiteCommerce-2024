@@ -1,0 +1,5 @@
+{
+  "name": "ExampleSystemPage",
+  "parentType": "HomePage",
+  "urlSegment": "ExampleSystemPage"
+}

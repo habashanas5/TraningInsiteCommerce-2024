@@ -1,0 +1,7 @@
+﻿Product Number,Bin #,Min QTY,Max QTY
+required,optional,optional,optional
+Basic information,,,
+This is the ERPNumber which is the unique lookup value to the product,,,
+10001,,,
+10001-MED-RED,,,
+10001-MED-BLU,,,

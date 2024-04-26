@@ -1,0 +1,46 @@
+{
+  "comment1": "Do not put any comments in this file using // or any other format.",
+  "comment2": "Do not change commerce_routes variable name as it is required for deploy code as-is.",
+  "comment3": "This file exists in 3 places. Change them all or talk to Jonathan.",
+  "files": [
+    "https://github.com/InsiteSoftware/insite-commerce-config/edit/master/kubernetes/spire_routes.json",
+    "https://github.com/InsiteSoftware/insite-commerce/blob/dev/Src/Spire/config/spire_routes.json",
+    "https://github.com/InsiteSoftware/insite-commerce/blob/dev/Src/Backend/Core/Spire/Insite.Spire/spire_routes.json"
+  ],
+  "commerce_routes": [
+    "admin",
+    "api",
+    "bundles",
+    "ckfinder",
+    "connect",
+    "elmah",
+    "email",
+    "excel",
+    "identity",
+    "importexport",
+    "mobilecreditcard",
+    "quickping.aspx",
+    "secureelmah",
+    "sitemap",
+    "swagger",
+    "systemresources",
+    "userfiles",
+    "afterimpersonate"
+  ],
+  "comment4": "integration is a subset of commerce_routes that should go to the integration containers",
+  "integration_routes": [
+    "admin",
+    "connect",
+    "elmah",
+    "importexport",
+    "secureelmah",
+    "swagger"
+  ],
+  "spire_system_uris": [
+    "contentadmin",
+    "creators",
+    "dist",
+    "redirectto",
+    ".spire"
+  ]
+}

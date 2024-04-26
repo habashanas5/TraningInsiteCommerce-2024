@@ -1,0 +1,167 @@
+.ma-vmi-users {
+    .search-users {
+        margin-bottom: 1.5em;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .ma-vmi-users {
+        .btn {
+            width: 100%;
+            margin-bottom: 1em;
+        }
+
+        .btn-add-user {
+            margin: 1em 0 1.5em 0;
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+    .ma-vmi-users {
+        .search-users label.accord-head {
+            display: inline-block;
+        }
+
+        .search-users .large-4 {
+            display: inline-block;
+            float: left;
+        }
+
+        .search-users .btns .btn {
+            margin-left: 1em;
+            float: right;
+        }
+
+        .btn-add-user {
+            float: right;
+            top: -60px;
+            position: relative;
+        }
+    }
+}
+
+.popup-add-vmi-user {
+    .modal-wrap {
+        padding: 1.5em;
+        max-height: 95vh;
+        overflow-y: auto;
+
+        .search-user-label, .role-label, .search-vmi-locations-label {
+            font-weight: 600;
+        }
+
+        .left-block {
+            padding-left: 0;
+
+            .user-selector {
+                display: block;
+
+                .select-step {
+                    margin-bottom: 1em;
+                    position: relative;
+
+                    .k-input {
+                        padding-right: 2em;
+                    }
+                }
+
+                + .icon-arw-down-5 {
+                    position: absolute;
+                    top: 1.55em;
+                    right: .75em;
+                    font-size: 22px;
+                    cursor: pointer;
+                }
+            }
+
+            .vmi-user-property {
+                padding-bottom: 0.75em;
+
+                .vmi-user-property-label{
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .right-block {
+            padding-right: 0;
+
+            .vmi-locations-search-block {
+                padding-left: 0;
+            }
+
+            .info-tbl td {
+                word-break: break-all;
+            }
+        }
+
+        .row.btns {
+            margin: 0.75rem 0 0 0;
+
+            .btn-add-vmi-user {
+                margin: 0 0 0 0.5em;
+            }
+
+            .btn-cancel{
+                margin-left: 0.5em;
+            }
+        }
+    }
+}
+
+.popup-remove-vmi-user {
+    .modal-wrap {
+        max-width: 480px;
+
+        p {
+            margin-left: 15px;
+        }
+
+        .btns {
+            padding-right: 15px;
+        }
+    }
+}
+
+.popup-import-vmi-user {
+    .modal-wrap {
+        max-width: 480px;
+
+        .modal-text{
+            margin-bottom: 1.25rem;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        .oui-message {
+            margin-bottom: 12px;
+
+            .upload-error {
+                color: #CC2200;
+                background-color: rgb(252, 244, 242);
+                border: 1px solid rgb(249, 201, 191);
+                padding: 10px 10px 10px 45px;
+                position: relative;
+
+                &::after {
+                    display: block;
+                    position: absolute;
+                    left: 14px;
+                    top: 13px;
+                    content: "\f071";
+                    font-family: 'good-oatmeal-v2';
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+.popup-user-importing-issues {
+    .continue-button {
+        margin-left: 6px;
+    }
+}

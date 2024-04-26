@@ -1,0 +1,5 @@
+{
+  "name": "My Quotes",
+  "parentType": "MyAccountPage",
+  "urlSegment": "Rfq/MyQuotes"
+}

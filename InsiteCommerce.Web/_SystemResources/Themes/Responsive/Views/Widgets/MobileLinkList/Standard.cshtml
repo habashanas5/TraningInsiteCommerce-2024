@@ -1,0 +1,9 @@
+﻿[% if IsEditingMode and CurrentPage.ContentKey == Model.PageContentKey -%]
+<div class="widget-mobileLinkList">
+    [% zone 'Mobile Link List Actions' label: 'Link List Actions' %]
+</div>
+[% else -%]
+<div class="widget-mobileLinkList">
+    [% zone 'Mobile Link List Actions' label: 'Link List Actions' %]
+</div>
+[% endif -%]

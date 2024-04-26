@@ -1,0 +1,5 @@
+{
+  "name": "Sign In",
+  "parentType": "HomePage",
+  "urlSegment": "SignIn"
+}

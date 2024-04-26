@@ -1,0 +1,5 @@
+{
+  "name": "Requisition Confirmation",
+  "parentType": "HomePage",
+  "urlSegment": "Requisition/Confirmation"
+}

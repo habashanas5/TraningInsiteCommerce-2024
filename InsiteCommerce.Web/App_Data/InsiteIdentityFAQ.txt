@@ -1,0 +1,6 @@
+Identity Server requires a certificate in order to encrypt/decrypt data. Insite Commerce uses the file /AppData/insiteidentity.pfx
+
+Steps to generate a new certificate.
+1. Run powershell {SDK Folder}\tools\generatePfx.ps1 - this generates two files, insiteidentity.pfx and InsiteIdentityPassword.txt
+2. Copy the generated insiteidentity.pfx to this folder ({Web Project Folder}/AppData/insiteidentity.pfx)
+3. Copy the password in InsiteIdentityPassword.txt into the IdentityServerCertificatePassword node in {Web Project Folder}/config/AppSettings.config

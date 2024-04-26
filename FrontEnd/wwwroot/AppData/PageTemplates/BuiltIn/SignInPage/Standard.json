@@ -1,0 +1,66 @@
+{
+    "id": "114f1eee-8f06-4796-bcce-c25693cf244f",
+    "nodeId": "879e0f6d-20d9-4896-8957-f76ec5c0c744",
+    "name": "Sign In",
+    "type": "SignInPage",
+    "parentId": "b74d3ade-6ab0-45b4-b11e-e177373f6fe0",
+    "sortOrder": 8,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "generalFields": {
+        "horizontalRule": "",
+        "tags": []
+    },
+    "translatableFields": {},
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "114f1eee-8f06-4796-bcce-c25693cf244f",
+            "zone": "Content",
+            "type": "Basic/PageTitle",
+            "id": "9f696d40-681e-49db-a9ff-2f5e98268b18",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "id": "8574aa61-29a6-4894-b244-dd84855b9396",
+            "parentId": "114f1eee-8f06-4796-bcce-c25693cf244f",
+            "type": "Basic/Row",
+            "zone": "Content",
+            "generalFields": {
+                "columns": [[12,12,12,4,4],2,[12,12,12,4,4],2],
+                "gap": 15
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "id": "bdd87d14-c7dd-4066-b4ba-72af9b8abab4",
+            "parentId": "8574aa61-29a6-4894-b244-dd84855b9396",
+            "type": "SignIn/SignInExistingAccount",
+            "zone": "Content0",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "8574aa61-29a6-4894-b244-dd84855b9396",
+            "zone": "Content2",
+            "type": "SignIn/SignInCreateNewAccount",
+            "id": "10e618a6-7640-4e6d-a562-aa9081070032",
+            "generalFields": {
+                "text": "Create an account to checkout faster, view order history, save product lists, and more!"
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "id": "f930054b-a922-4a6c-a927-2c952d447172",
+            "parentId": "114f1eee-8f06-4796-bcce-c25693cf244f",
+            "type": "SignIn/SignInExternalProviders",
+            "zone": "Content",
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "jsx": "react",
+        "target": "esnext",
+        "moduleResolution": "node",
+        "allowJs": true,
+        "checkJs": false,
+        "noEmit": true,
+        "pretty": true,
+        "strict": true,
+        "isolatedModules": false,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "lib": ["dom", "es6", "es7", "dom.iterable", "scripthost"],
+        "types": ["./node_modules/@types/"],
+        "paths": {
+            "@insite/mobius/*": ["../mobius/src/*"]
+        }
+    },
+    "include": ["src"],
+    "exclude": ["node_modules"]
+}

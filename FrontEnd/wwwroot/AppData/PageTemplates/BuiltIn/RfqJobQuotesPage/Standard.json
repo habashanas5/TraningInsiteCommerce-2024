@@ -1,0 +1,61 @@
+{
+    "nodeId": "556e2423-f2a5-4f82-915a-f244d443bgh2",
+    "name": "Job Quotes",
+    "type": "RfqJobQuotesPage",
+    "parentId": "a46310a5-374a-4d1e-a4f2-b3614b727065",
+    "sortOrder": 0,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "id": "16fa52df-e745-4dc3-a416-86a6ca717f4b",
+    "generalFields": {
+      "horizontalRule": "",
+      "tags": [],
+      "hideBreadcrumbs": false
+    },
+    "translatableFields": {
+      "title": {
+        "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Job Quotes"
+      },
+      "urlSegment": {
+        "a26095ef-c714-e311-ba31-d43d7e4e88b2": "JobQuotes"
+      }
+    },
+    "contextualFields": {},
+    "widgets": [
+      {
+        "parentId": "16fa52df-e745-4dc3-a416-86a6ca717f4b",
+        "type": "Basic/PageTitle",
+        "zone": "Content",
+        "id": "55e6fbdb-5a61-47a8-88ae-28e232217464",
+        "generalFields": {},
+        "translatableFields": {},
+        "contextualFields": {}
+      },
+      {
+        "parentId": "16fa52df-e745-4dc3-a416-86a6ca717f4b",
+        "zone": "Content",
+        "type": "RfqJobQuotes/RfqJobQuotesTypeSelector",
+        "id": "05ccacd8-4d14-4b7b-a543-a29e791d49cc",
+        "generalFields": {},
+        "translatableFields": {},
+        "contextualFields": {}
+      },
+      {
+        "parentId": "16fa52df-e745-4dc3-a416-86a6ca717f4b",
+        "zone": "Content",
+        "type": "RfqJobQuotes/RfqJobQuotesTable",
+        "id": "ef098571-4909-4cf5-8b48-b77ab2619f1d",
+        "generalFields": {},
+        "translatableFields": {},
+        "contextualFields": {}
+      },
+      {
+        "parentId": "16fa52df-e745-4dc3-a416-86a6ca717f4b",
+        "zone": "Content",
+        "type": "RfqJobQuotes/RfqJobQuotesPagination",
+        "id": "2af4c9bb-b9d0-4b73-9ff1-0490534b0670",
+        "generalFields": {},
+        "translatableFields": {},
+        "contextualFields": {}
+      }
+    ]
+  }

@@ -1,0 +1,61 @@
+{
+    "id": "e1fe51a5-82ea-41e4-ac30-0d5ec5a26974",
+    "parentId": "afdf450c-5351-431d-8772-d48bace88ad9",
+    "nodeId": "bdf41e9a-7983-4439-a865-b2ce3694e72f",
+    "sortOrder": 1,
+    "fields": {
+    },
+    "translatableFields": {},
+    "type": "InvoiceHistoryPage",
+    "widgets": [
+        {
+            "id": "ebd77d55-235f-4709-9170-6c1e09c0d883",
+            "parentId": "e1fe51a5-82ea-41e4-ac30-0d5ec5a26974",
+            "type": "InvoiceHistory/InvoiceHistoryHeader",
+            "zone": "Content",
+            "fields": {},
+            "translatableFields": {}
+        },
+        {
+            "id": "e3150108-9012-4e57-94ec-90a1d2a46860",
+            "parentId": "e1fe51a5-82ea-41e4-ac30-0d5ec5a26974",
+            "type": "InvoiceHistory/InvoiceHistoryFilter",
+            "zone": "Content",
+            "generalFields": {
+                "showStatus": true,
+                "showDateRange": true,
+                "showOrderNumber": true,
+                "showPoNumber": true,
+                "showInvoiceNumber": true,
+                "showShipTo": true
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "id": "95b92b05-e129-490e-a28c-560caa53f24f",
+            "parentId": "ebd77d55-235f-4709-9170-6c1e09c0d883",
+            "type": "InvoiceHistory/InvoiceHistoryBuckets",
+            "zone": "Content00",
+            "fields": {},
+            "translatableFields": {}
+        },
+        {
+            "id": "7d3dab1b-57a6-419d-87c4-4d5e034fca0f",
+            "parentId": "e1fe51a5-82ea-41e4-ac30-0d5ec5a26974",
+            "type": "InvoiceHistory/InvoiceHistoryTable",
+            "zone": "Content",
+            "fields": {},
+            "translatableFields": {}
+        },
+        {
+            "id": "e26f8ed7-d0e5-41f7-8502-11e81c01ac7a",
+            "parentId": "e1fe51a5-82ea-41e4-ac30-0d5ec5a26974",
+            "type": "InvoiceHistory/InvoiceHistoryPagination",
+            "zone": "Content",
+            "fields": {},
+            "translatableFields": {}
+        }
+    ],
+    "websiteId": "5c028c3a-c7f1-41fe-a4c0-1414b4c7acdb"
+}

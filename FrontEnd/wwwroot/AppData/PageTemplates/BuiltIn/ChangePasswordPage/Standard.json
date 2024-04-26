@@ -1,0 +1,26 @@
+{
+    "id": "d3882c4c-365b-44d6-8f84-d7488043de2f",
+    "nodeId": "e510e784-237d-498e-81b2-799e663c401f",
+    "type": "ChangePasswordPage",
+    "parentId": "40d9365e-86ff-4621-8b76-1b3fd3443e70",
+    "sortOrder": -1,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "fields": {
+        "title": "ChangePassword",
+        "name": "ChangePassword",
+        "urlSegment": "ChangePassword"
+    },
+    "translatableFields": {},
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "d3882c4c-365b-44d6-8f84-d7488043de2f",
+            "zone": "Content",
+            "type": "ChangePassword/ChangePassword",
+            "id": "262f7f84-376c-448f-98dd-dd4cc380fea6",
+            "fields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

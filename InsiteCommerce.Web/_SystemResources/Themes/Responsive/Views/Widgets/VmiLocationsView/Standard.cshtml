@@ -1,0 +1,112 @@
+﻿<div ng-controller="VmiLocationsController as vm" ng-init="vm.exportHeaders = [
+                                '[% translate 'Customer ID' %]',
+                                '[% translate 'Location Name' %]',
+                                '[% translate 'Use Bins' %]',
+                                '[% translate 'Primary Location' %]',
+                                '[% translate 'Label' %]'
+                            ];
+                    vm.vmiLocationDetailsUrl ='[% urlForPage 'VMILocationDetailsPage' %]';" ng-cloak>
+    <div class="row top-actions">
+        <div class="medium-6 columns"></div>
+        <div class="medium-6 columns top-actions-buttons">
+            <button id="tst_vmiLocationsView_addBtn" type="button" class="btn primary add-btn" ng-click="vm.openAddPopup()">[% translate 'Add Location' %]</button>
+        </div>
+    </div>
+    <form>
+        <section class="accordion search-vmi-locations">
+            <div class="cm">
+                <input type="checkbox" id="accord-1" class="accord-check" />
+                <label for="accord-1" class="accord-head">[% translate 'Search' %]</label>
+                <article class="accord-content">
+                    <div class="row">
+                        <div class="columns search-col-1">
+                            <div class="search-total">
+                                <label>[% translate 'Search Locations' %]</label>
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <input type="text" name="VmiLocation" id="VmiLocation" value="" placeholder="[% translate 'Search locations' %]" ng-model="vm.searchFilter" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button type="submit" class="btn primary btn-search" ng-click="vm.search()">[% translate 'Search' %]</button>
+                        <button type="submit" class="btn secondary btn-clear" ng-click="vm.clear()">[% translate 'Clear' %]</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </form>
+    <div class="vmi-location-table" ng-show="vm.savedLocations.length > 0">
+        <div class="row">
+            <h3 class="results-count">
+                <span class="result-num" ng-bind="vm.pagination.totalItemCount"></span>
+                <span class="result-lbl">[% translate 'locations' %]</span>
+            </h3>
+            <div class="btn-group">
+                <button id="tst_vmiLocationsView_export" type="button" class="btn primary export-btn" ng-disabled="vm.checkedLocationsCount === 0" ng-click="vm.exportSelected()">[% translate 'Export Selected' %]</button>
+                <button id="tst_vmiLocationsView_exportAll" type="button" class="btn primary export-all-btn" ng-click="vm.exportAll()">[% translate 'Export All' %]</button>
+                <button id="tst_vmiLocationsView_delete" type="button" class="btn primary delete-btn" ng-disabled="vm.checkedLocationsCount === 0" ng-click="vm.deleteVmiLocations()">[% translate 'Delete' %]</button>
+            </div>
+        </div>
+        <isc-pager pagination="vm.pagination" storage-key="vm.paginationStorageKey" update-data="vm.getLocations()"></isc-pager>
+        <div class="overflow-table small">
+            <table class="info-tbl">
+                <thead>
+                    <tr>
+                        <th class="col-select">
+                            <span class="sticky-first">
+                                <input type="checkbox" ng-checked="vm.allSelected"
+                                       ng-click="vm.toggleSelectedAll()" />
+                            </span>
+                        </th>
+                        <th class="col-name">
+                            <a href="javascript:void(0)" class="sort" id="tst_myaccount_vmi_locations_sort_name"
+                               ng-class="{'sort-ascending': vm.sort === 'Name', 'sort-descending': vm.sort === 'Name DESC'}"
+                               ng-click="vm.changeSort('Name')">
+                                [% translate 'Location Name' %]
+                            </a>
+                        </th>
+                        <th class="col-shipto">
+                            <a href="javascript:void(0)" class="sort" id="tst_myaccount_vmi_locations_sort_address"
+                               ng-class="{'sort-ascending': vm.sort === 'Customer.CustomerSequence, Customer.CustomerNumber', 'sort-descending': vm.sort === 'Customer.CustomerSequence DESC, Customer.CustomerNumber DESC'}"
+                               ng-click="vm.changeSort('Customer.CustomerSequence, Customer.CustomerNumber')">
+                                [% translate 'Ship To Address' %]
+                            </a>
+                        </th>
+                        <th class="col-actions">
+                            [% translate 'Actions' %]
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="tst_vmiLocationsPage_location" ng-repeat="location in vm.savedLocations">
+                        <td class="col-select">
+                            <span class="sticky-first">
+                                <input type="checkbox" ng-checked="vm.isLocationChecked(location.id)"
+                                       ng-click="vm.toggleSelected(location)" />
+                            </span>
+                        </td>
+                        <td class="col-name-value"><a id="tst_vmiLocationDetailsView_link_{{location.id}}" ng-href="{{::vm.vmiLocationDetailsUrl}}?locationId={{::location.id}}">{{ location.name }}</a></td>
+                        <td class="col-shipto" ng-bind="location.customerLabel"></td>
+                        <td class="col-edit"><a ng-click="vm.openEditPopup(location)">[% translate 'Edit' %]</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <isc-pager pagination="vm.pagination" storage-key="vm.paginationStorageKey" bottom="true" update-data="vm.getLocations()"></isc-pager>
+    </div>
+</div>
+
+<script type="text/ng-template" id="/PartialViews/Vmi-DeleteLocationPopup">
+    [% partialView 'Vmi-DeleteLocationPopup' %]
+</script>
+
+<script type="text/ng-template" id="/PartialViews/Catalog-VmiLocationPopup">
+    [% partialView 'Catalog-VmiLocationPopup' %]
+</script>
+
+<script type="text/ng-template" id="/PartialViews/Catalog-VmiLocationImportPopup">
+    [% partialView 'Catalog-VmiLocationImportPopup' %] 
+</script>

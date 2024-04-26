@@ -1,0 +1,9 @@
+﻿[% if IsEditingMode and CurrentPage.ContentKey == Model.PageContentKey -%]
+<div class="widget-mobileSearchHistory">
+    [% zone 'Mobile Search History' label: 'Search History' %]
+</div>
+[% else -%]
+<div class="widget-mobileSearchHistory">
+    <h3>[[Model.Title]]</h3>
+</div>
+[% endif -%]

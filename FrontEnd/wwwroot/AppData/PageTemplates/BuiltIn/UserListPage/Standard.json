@@ -1,0 +1,115 @@
+{
+    "nodeId": "61845156-57fc-4637-89c0-d99b54cdbc9c",
+    "name": "User Administration",
+    "type": "UserListPage",
+    "parentId": "e3331abc-16ab-4a41-be96-6935b47f814e",
+    "sortOrder": 0,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "variantName": null,
+    "id": "e2fc2edf-9bcf-4fac-9d67-2b996549fcf6",
+    "generalFields": {
+        "horizontalRule": "",
+        "hideHeader": false,
+        "hideFooter": false,
+        "hideFromSearchEngines": false,
+        "hideFromSiteSearch": false,
+        "excludeFromNavigation": false,
+        "excludeFromSignInRequired": false,
+        "tags": [],
+        "hideBreadcrumbs": false
+    },
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "User Administration"
+        },
+        "openGraphTitle": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "urlSegment": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "UserAdministration"
+        },
+        "openGraphUrl": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "openGraphImage": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "metaKeywords": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "metaDescription": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        }
+    },
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "e2fc2edf-9bcf-4fac-9d67-2b996549fcf6",
+            "type": "UserList/UserListUsersTable",
+            "zone": "Content00",
+            "id": "4d790d09-7029-41b6-9726-6c7623616201",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "e2fc2edf-9bcf-4fac-9d67-2b996549fcf6",
+            "type": "Basic/Row",
+            "zone": "Content",
+            "id": "bca4e8fb-c965-4168-b61f-de4e63ec415d",
+            "generalFields": {
+                "columns": [
+                    12
+                ],
+                "alignment": [],
+                "gap": 0,
+                "reflow": true
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "e2fc2edf-9bcf-4fac-9d67-2b996549fcf6",
+            "zone": "Content",
+            "type": "Basic/Row",
+            "id": "8ab711a4-9117-47ad-b75c-53ce984ac78c",
+            "generalFields": {
+                "columns": [
+                    12
+                ],
+                "alignment": [],
+                "gap": 0,
+                "reflow": true
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "bca4e8fb-c965-4168-b61f-de4e63ec415d",
+            "zone": "Content0",
+            "type": "UserList/UserListHeader",
+            "id": "89d580c9-460c-46c6-8546-0e87d4f64401",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "8ab711a4-9117-47ad-b75c-53ce984ac78c",
+            "type": "UserList/UserListUsersTable",
+            "zone": "Content0",
+            "id": "ee7df701-52de-4fc6-b8b7-0f3e560f9afd",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "89d580c9-460c-46c6-8546-0e87d4f64401",
+            "zone": "Content00",
+            "type": "Basic/PageTitle",
+            "id": "97f6a89f-d707-4081-bffa-bfb7e0e3a9bf",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

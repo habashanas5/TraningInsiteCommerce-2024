@@ -1,0 +1,36 @@
+{
+    "nodeId": "89b6e892-cc52-4a14-999e-c7b094329043",
+    "name": "Compare Products Page",
+    "type": "ProductComparePage",
+    "parentId": "5d1b7aa4-74b7-499d-bfa9-758b792be58a",
+    "sortOrder": 0,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "variantName": null,
+    "id": "9bfd43ef-48c3-4921-a34a-601f083c69d9",
+    "generalFields": {
+        "horizontalRule": "",
+        "tags": [],
+        "variantName": "",
+        "hideBreadcrumbs": true
+    },
+    "translatableFields": {
+        "title": {
+            "9607f9dd-402d-472e-b859-5d43e42b4743": "Compare Products"
+        },
+        "urlSegment": {
+            "42ad3123-1f29-414c-baf4-60de2d533cb0": "Catalog/ProductComparison"
+        }
+    },
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "9bfd43ef-48c3-4921-a34a-601f083c69d9",
+            "type": "ProductCompare/ProductCompareCarousel",
+            "zone": "Content",
+            "id": "260f52e2-8373-44d9-addc-7cc69c549e13",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

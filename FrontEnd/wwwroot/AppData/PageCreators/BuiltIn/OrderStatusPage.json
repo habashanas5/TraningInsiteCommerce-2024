@@ -1,0 +1,5 @@
+{
+    "name": "Order Status",
+    "parentType": "HomePage",
+    "urlSegment": "OrderStatus"
+}

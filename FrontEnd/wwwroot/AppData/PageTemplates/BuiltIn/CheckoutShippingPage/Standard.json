@@ -1,0 +1,88 @@
+{
+    "nodeId": "c05a7205-74ac-41f6-a14b-f30231bdcf31",
+    "name": "Checkout - Shipping",
+    "type": "CheckoutShippingPage",
+    "parentId": "5336590b-a163-49f0-970e-c58f0a26cb7f",
+    "sortOrder": 0,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "id": "a0e9b801-66bc-486c-ac05-30cceb16f161",
+    "generalFields": {
+        "horizontalRule": "",
+        "tags": [],
+        "hideBreadcrumbs": false
+    },
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Checkout - Shipping"
+        },
+        "urlSegment": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "CheckoutShipping"
+        }
+    },
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "a0e9b801-66bc-486c-ac05-30cceb16f161",
+            "type": "CheckoutShipping/CheckoutShippingPageContainer",
+            "zone": "Content",
+            "id": "c008aa35-c01d-4dd1-b5f9-e478acda7509",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "c008aa35-c01d-4dd1-b5f9-e478acda7509",
+            "type": "CheckoutShipping/CheckoutShippingHeader",
+            "zone": "Content0",
+            "id": "9fcc1d2c-5f0e-4c5a-89a5-2e0c28319eaf",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "c008aa35-c01d-4dd1-b5f9-e478acda7509",
+            "type": "CheckoutShipping/CheckoutShippingFulfillmentMethodSelector",
+            "zone": "Content1",
+            "id": "5290bcb6-1d2c-416b-a549-d020ca4c2bc4",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "c008aa35-c01d-4dd1-b5f9-e478acda7509",
+            "type": "CheckoutShipping/CheckoutShippingOrderNotesEntry",
+            "zone": "Content2",
+            "id": "8527716a-a923-4391-b192-4801073b7917",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "c008aa35-c01d-4dd1-b5f9-e478acda7509",
+            "type": "CheckoutShipping/CheckoutShippingCartTotal",
+            "zone": "Content3",
+            "id": "78991bc8-7442-4c96-894b-8e11c41054cd",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "c008aa35-c01d-4dd1-b5f9-e478acda7509",
+            "type": "CheckoutShipping/CheckoutShippingAddresses",
+            "zone": "Content4",
+            "id": "b3c2e2a5-b5b9-468f-ac50-b5f515e24c08",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "c008aa35-c01d-4dd1-b5f9-e478acda7509",
+            "type": "Common/CartApproverMessage",
+            "zone": "Content5",
+            "id": "f9d3a6bf-2a5e-4876-a048-f2114ec3e3ba",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

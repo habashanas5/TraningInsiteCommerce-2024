@@ -1,0 +1,258 @@
+{
+    "nodeId": "91cf5670-9b5f-48c4-9b56-0e72f6ac8ba5",
+    "name": "Footer",
+    "type": "Footer",
+    "parentId": "00000000-0000-0000-0000-000000000000",
+    "sortOrder": 0,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "variantName": null,
+    "layoutPageId": null,
+    "templateHash": "4359d807212f45cf212d1cc9cee78972ca8b67c405fa516a419774122befd8af",
+    "id": "2875f56a-00c6-4c95-b0a6-f50f4687e205",
+    "generalFields": {
+        "horizontalRule": "",
+        "tags": [],
+        "hideBreadcrumbs": false,
+        "variantName": "",
+        "layoutPage": ""
+    },
+    "translatableFields": {},
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "2875f56a-00c6-4c95-b0a6-f50f4687e205",
+            "type": "Footer/FooterContainer",
+            "zone": "Content",
+            "isLayout": false,
+            "id": "d97a15bd-d838-4a98-bd08-90955c482d7c",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "d97a15bd-d838-4a98-bd08-90955c482d7c",
+            "type": "Basic/LinkList",
+            "zone": "LinkList1",
+            "isLayout": false,
+            "id": "9e95035d-12f7-4916-9fda-9450c73cbdaa",
+            "generalFields": {
+                "direction": "vertical",
+                "alignment": "left",
+                "titleLink": {
+                    "type": "Page",
+                    "value": ""
+                },
+                "links": []
+            },
+            "translatableFields": {
+                "title": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Our Company"
+                }
+            },
+            "contextualFields": {}
+        },
+        {
+            "parentId": "d97a15bd-d838-4a98-bd08-90955c482d7c",
+            "type": "Basic/LinkList",
+            "zone": "LinkList2",
+            "isLayout": false,
+            "id": "cccf0002-f8dd-499e-a62b-0742fa849204",
+            "generalFields": {
+                "direction": "vertical",
+                "alignment": "left",
+                "titleLink": {
+                    "type": "Page",
+                    "value": ""
+                },
+                "links": []
+            },
+            "translatableFields": {
+                "title": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Shop Products"
+                }
+            },
+            "contextualFields": {}
+        },
+        {
+            "parentId": "d97a15bd-d838-4a98-bd08-90955c482d7c",
+            "type": "Basic/LinkList",
+            "zone": "LinkList3",
+            "isLayout": false,
+            "id": "7c173331-1449-4746-b701-eb69991969a4",
+            "generalFields": {
+                "direction": "vertical",
+                "alignment": "left",
+                "titleLink": {
+                    "type": "Page",
+                    "value": ""
+                },
+                "links": []
+            },
+            "translatableFields": {
+                "title": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Shop Brands"
+                }
+            },
+            "contextualFields": {}
+        },
+        {
+            "parentId": "d97a15bd-d838-4a98-bd08-90955c482d7c",
+            "type": "Basic/LinkList",
+            "zone": "LinkList4",
+            "isLayout": false,
+            "id": "85a7724e-fbd0-4754-b4c1-96b4609ad8ef",
+            "generalFields": {
+                "direction": "vertical",
+                "alignment": "left",
+                "titleLink": {
+                    "type": "Page",
+                    "value": ""
+                },
+                "links": []
+            },
+            "translatableFields": {
+                "title": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Shop Product Lines"
+                }
+            },
+            "contextualFields": {}
+        },
+        {
+            "parentId": "d97a15bd-d838-4a98-bd08-90955c482d7c",
+            "type": "Basic/Subscribe",
+            "zone": "Subscribe",
+            "isLayout": false,
+            "id": "8b67f2c8-6397-4533-85ab-b45760e16e51",
+            "generalFields": {},
+            "translatableFields": {
+                "alignment": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": "center"
+                },
+                "title": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+                },
+                "description": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": "<p>Keep up-to-date on product news and the latest offers.</p>"
+                },
+                "placeholder": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Enter email address"
+                },
+                "disclaimer": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+                },
+                "label": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Subscribe"
+                }
+            },
+            "contextualFields": {}
+        },
+        {
+            "parentId": "d97a15bd-d838-4a98-bd08-90955c482d7c",
+            "type": "Basic/SocialLinks",
+            "zone": "SocialLinks",
+            "isLayout": false,
+            "id": "3c26ad66-ba8c-48e6-bc78-de417db874fa",
+            "generalFields": {
+                "direction": "horizontal",
+                "alignment": "left",
+                "iconSize": 30,
+                "linksPerRow": 8,
+                "visibilityState": "both",
+                "iconColor": "",
+                "backgroundColor": ""
+            },
+            "translatableFields": {
+                "links": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": []
+                }
+            },
+            "contextualFields": {}
+        },
+        {
+            "parentId": "d97a15bd-d838-4a98-bd08-90955c482d7c",
+            "type": "Basic/LinkList",
+            "zone": "SiteMapLinks",
+            "isLayout": false,
+            "id": "8012a29b-898b-4e4b-b57f-186ed374eedb",
+            "generalFields": {
+                "direction": "horizontal",
+                "alignment": "center",
+                "titleLink": {
+                    "type": "Page",
+                    "value": ""
+                },
+                "links": [
+                    {
+                        "fields": {
+                            "destination": {
+                                "type": "Page",
+                                "value": "nodeIdFor('Home')"
+                            },
+                            "openInNewWindow": false
+                        }
+                    },
+                    {
+                        "fields": {
+                            "destination": {
+                                "type": "Page",
+                                "value": "nodeIdFor('MyAccount')"
+                            },
+                            "openInNewWindow": false
+                        }
+                    },
+                    {
+                        "fields": {
+                            "destination": {
+                                "type": "Page",
+                                "value": "nodeIdFor('About Us')"
+                            },
+                            "openInNewWindow": false
+                        }
+                    }
+                ]
+            },
+            "translatableFields": {
+                "title": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+                }
+            },
+            "contextualFields": {}
+        },
+        {
+            "parentId": "d97a15bd-d838-4a98-bd08-90955c482d7c",
+            "type": "Basic/RichContent",
+            "zone": "RichContent",
+            "isLayout": false,
+            "id": "ca959c16-fd9e-4be3-be69-9a382ca844dd",
+            "generalFields": {
+                "backgroundColor": "",
+                "padding": 0
+            },
+            "translatableFields": {},
+            "contextualFields": {
+                "content": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2|Desktop|d06988c0-9358-4dbb-aa3d-b7be5b6a7fd9": "<pre>&copy; 2019 Victory Manufacturing.</pre>"
+                }
+            }
+        },
+        {
+            "parentId": "d97a15bd-d838-4a98-bd08-90955c482d7c",
+            "type": "Basic/Logo",
+            "zone": "Logo",
+            "isLayout": false,
+            "id": "8b940796-7fe3-42ae-9f1a-d744726d5b8c",
+            "generalFields": {
+                "isMobileSpecific": false
+            },
+            "translatableFields": {
+                "logoImage": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": "/Images/victory_logo.svg"
+                },
+                "mobileSpecificImage": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+                }
+            },
+            "contextualFields": {}
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "id": "d70bed7b-63ef-4cf8-893d-212c6a7b4437",
+    "nodeId": "d70bed7b-63ef-4cf8-893d-212c6a7b4437",
+    "type": "BrandsPage",
+    "sortOrder": 0,
+    "fields": {
+        "title": "Brands",
+        "name": "Brands",
+        "urlSegment": "Brands"
+    },
+    "translatableFields": {},
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "d70bed7b-63ef-4cf8-893d-212c6a7b4437",
+            "zone": "Content",
+            "type": "Brand/BrandGallery",
+            "id": "a623fb4d-8e18-4d91-bce3-4f2e012eca2b",
+            "fields": {
+                "title": "",
+                "brandsToDisplay": "random",
+                "numberOfBrandsToDisplay": 12,
+                "brandsSelected": [],
+                "maximumNumberOfBrandsPerRow": "6",
+                "maximumBrandImageHeight": 100
+            },
+            "translatableFields": {}
+        },
+        {
+            "parentId": "d70bed7b-63ef-4cf8-893d-212c6a7b4437",
+            "zone": "Content",
+            "type": "Brand/BrandList",
+            "id": "d8d543eb-699d-4c47-825e-502b01b40e0c",
+            "fields": {},
+            "translatableFields": {}
+        }
+    ]
+}

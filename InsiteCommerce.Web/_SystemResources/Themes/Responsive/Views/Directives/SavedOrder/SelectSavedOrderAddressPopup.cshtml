@@ -1,0 +1,53 @@
+﻿<div id="popup-select-saved-order-address" class="reveal-modal popup-select-saved-order-address" data-reveal data-reveal-init>
+    <div class="modal-wrap">
+        <h2>[% translate 'Saved Order Address' %]</h2>
+        <div class="pop-content">
+            <div>
+                <div class="row">
+                    [% siteMessage 'SavedOrder_AddressSelect' %]
+                </div>
+                <div class="row">
+                    <input id="use-current-no" class="tst_selectCustomerPopup_useFromOrder" name=selected-address" ng-model="vm.useCustomerFrom" type="radio" value="order" />
+                    <label for="use-current-no"><h3>[% translate 'Saved Order' %]</h3></label>
+                </div>
+                <div class="row  address-info">
+                    <div class="medium-6 large-6 columns bill-info">
+                        <div class="oc-head">
+                            <h4>[% translate 'Billing Information' %]</h4>
+                        </div>
+                        <isc-address-display address="vm.cart.billTo" show-email="false"></isc-address-display>
+                    </div>
+                    <div class="medium-6 large-6 columns ship-info">
+                        <div class="oc-head">
+                            <h4>[% translate 'Shipping Information' %]</h4>
+                        </div>
+                        <isc-address-display address="vm.cart.shipTo" show-email="false"></isc-address-display>
+                    </div>
+                </div>
+                <div class="row">
+                    <input id="use-current-yes" class="tst_selectCustomerPopup_useFromSession" name="selected-address" ng-model="vm.useCustomerFrom" type="radio" value="session" />
+                    <label for="use-current-yes"><h3>[% translate 'Currently Selected' %]</h3></label>
+                </div>
+                <div class="row address-info">
+                    <div class="medium-6 large-6 columns bill-info">
+                        <div class="oc-head">
+                            <h4>[% translate 'Billing Information' %]</h4>
+                        </div>
+                        <isc-address-display address="vm.session.billTo" show-email="false"></isc-address-display>
+                    </div>
+                    <div class="medium-6 large-6 columns ship-info">
+                        <div class="oc-head">
+                            <h4>[% translate 'Shipping Information' %]</h4>
+                        </div>
+                        <isc-address-display address="vm.session.shipTo" show-email="false"></isc-address-display>
+                    </div>
+                </div>
+                <div class="row btns">
+                    <button id="tst_selectCustomerPopup_cancel" ng-click="vm.closeModal('#popup-select-saved-order-address')" class="btn secondary btn-cancel" type="button">[% translate 'Cancel' %]</button>
+                    <button id="tst_selectCustomerPopup_continue" class="btn primary" type="button" ng-click="vm.setCustomer()">[% translate 'Continue' %]</button>
+                </div>
+            </div>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+    </div>
+</div>

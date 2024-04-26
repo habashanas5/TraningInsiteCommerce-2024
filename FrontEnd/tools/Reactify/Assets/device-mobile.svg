@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 855" enable-background="new 0 0 400 855" xml:space="preserve">
+<path id="device" fill-rule="evenodd" clip-rule="evenodd" fill="#DBDADA" d="M370,0H30C13.4,0,0,13.4,0,30v795
+	c0,16.6,13.4,30,30,30h340c16.6,0,30-13.4,30-30V30C400,13.4,386.6,0,370,0z M386.5,812.5c0,15.8-12.5,28.5-28,28.5h-317
+	c-15.5,0-28-12.8-28-28.5V56.4c0-15.8,12.5-28.5,28-28.5h317.1c15.5,0,28,12.8,28,28.5v756.1H386.5z"/>
+<ellipse id="camera" fill-rule="evenodd" clip-rule="evenodd" fill="#F3F3F3" cx="253" cy="14.7" rx="4" ry="3.9"/>
+<path id="sound" fill-rule="evenodd" clip-rule="evenodd" fill="#F3F3F3" d="M138.9,10.8H239c2.2,0,3.9,1.8,3.9,3.9l0,0
+	c0,2.2-1.8,3.9-3.9,3.9H138.9c-2.2,0-3.9-1.8-3.9-3.9l0,0C135,12.6,136.8,10.8,138.9,10.8z"/>
+</svg>

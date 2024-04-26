@@ -1,0 +1,72 @@
+{
+    "nodeId": "89f4bd59-0429-445e-9386-3635500d31a3",
+    "name": "Order Upload",
+    "type": "OrderUploadPage",
+    "parentId": "12bb9423-8181-46ea-8f60-0748981766ac",
+    "sortOrder": 12,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "fields": {
+        "title": "Order Upload",
+        "name": "Order Upload",
+        "urlSegment": "OrderUpload"
+    },
+    "widgets": [
+        {
+            "parentId": "2b300442-89ca-4dd6-9a63-c4f9054f5193",
+            "type": "Basic/PageTitle",
+            "zone": "Content",
+            "id": "524cbe72-a65e-46fc-8509-7efd84f39065",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "2b300442-89ca-4dd6-9a63-c4f9054f5193",
+            "zone": "Content",
+            "type": "OrderUpload/OrderUploadPageContainer",
+            "id": "f628428f-4ded-42fe-82aa-1fd7538cb46f",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "f628428f-4ded-42fe-82aa-1fd7538cb46f",
+            "zone": "Content00",
+            "type": "OrderUpload/OrderUploadFileUpload",
+            "id": "1068c525-87c8-48d3-b852-525a034114bf",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "id": "7b47fc60-a0ab-421b-82a2-067fc2b49fc4",
+            "parentId": "f628428f-4ded-42fe-82aa-1fd7538cb46f",
+            "type": "Basic/RichContent",
+            "zone": "Content01",
+            "fields": {
+                "content": "<ol><li style=\"line-height: 2;\">Create a spreadsheet<ul style=\"list-style-type: circle;\"><li style=\"margin-left: 20px; line-height: 2;\">First column - add item #s or customer part #s.</li><li style=\"margin-left: 20px; line-height: 2;\">Second column - add quantities (optional).</li><li style=\"margin-left: 20px; line-height: 2;\">Third column - add unit of measure (optional).</li></ul></li><li style=\"line-height: 2;\">Column headings can be added in the first row (optional).</li><li style=\"line-height: 2;\">Save the file in XLS, XLSX or CSV format.</li><li style=\"line-height: 2;\">Select the file to upload and click Upload Order.</li><li style=\"line-height: 2;\"><strong>There is a file maximum of 500 rows.</strong></li></ol>"
+            },
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {
+                "content": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2|Desktop|d06988c0-9358-4dbb-aa3d-b7be5b6a7fd9": "<ol><li style=\"line-height: 2;\">Create a spreadsheet<ul style=\"list-style-type: circle;\"><li style=\"margin-left: 20px; line-height: 2;\">First column - add item #s or customer part #s.</li><li style=\"margin-left: 20px; line-height: 2;\">Second column - add quantities (optional).</li><li style=\"margin-left: 20px; line-height: 2;\">Third column - add unit of measure (optional).</li></ul></li><li style=\"line-height: 2;\">Column headings can be added in the first row (optional).</li><li style=\"line-height: 2;\">Save the file in XLS, XLSX or CSV format.</li><li style=\"line-height: 2;\">Select the file to upload and click Upload Order.</li><li style=\"line-height: 2;\"><strong>There is a file maximum of 500 rows.</strong></li></ol>"
+                }
+            }
+        }
+    ],
+    "id": "2b300442-89ca-4dd6-9a63-c4f9054f5193",
+    "generalFields": {
+        "horizontalRule": "",
+        "tags": []
+    },
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Order Upload"
+        },
+        "urlSegment": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "OrderUpload"
+        }
+    },
+    "contextualFields": {}
+}

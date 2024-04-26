@@ -1,0 +1,73 @@
+{
+  "id": "bf232074-fde1-43f1-a577-ffb1069582a4",
+  "parentId": "f9c98cf8-c69d-400b-9a6f-8367be20698e",
+  "nodeId": "0bc46eed-bc3d-492b-8c0a-d464674dbbb1",
+  "name": "Quote Details",
+  "sortOrder": 0,
+  "fields": {
+    "title": "Quote Details",
+    "name": "Quote Details",
+    "urlSegment": "QuoteDetails",
+    "horizontalRule": "",
+    "excludeFromNavigation": true,
+    "tags": []
+  },
+  "translatableFields": {
+    "title": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Quote Details"
+    },
+    "urlSegment": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "QuoteDetails"
+    }
+  },
+  "contextualFields": {},
+  "type": "RfqQuoteDetailsPage",
+  "widgets": [
+    {
+      "id": "521cfe14-39a6-401e-8a54-fa1c4cf5ee9c",
+      "parentId": "bf232074-fde1-43f1-a577-ffb1069582a4",
+      "type": "RfqQuoteDetails/RfqQuoteDetailsHeader",
+      "zone": "Content",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "bf232074-fde1-43f1-a577-ffb1069582a4",
+      "zone": "Content",
+      "type": "RfqQuoteDetails/RfqQuoteDetailsPageContainer",
+      "id": "db273b6a-40c4-478d-ad1b-a59e399b4ed4",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "db273b6a-40c4-478d-ad1b-a59e399b4ed4",
+      "type": "RfqQuoteDetails/RfqQuoteDetailsInformation",
+      "zone": "Content00",
+      "id": "560589d3-585f-4046-88f8-e6a4811eded5",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "db273b6a-40c4-478d-ad1b-a59e399b4ed4",
+      "type": "RfqQuoteDetails/RfqQuoteDetailsProductList",
+      "zone": "Content02",
+      "id": "f80113f4-a0f9-411f-b5a2-78d3127ae9b1",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "db273b6a-40c4-478d-ad1b-a59e399b4ed4",
+      "type": "RfqQuoteDetails/RfqQuoteDetailsMessages",
+      "zone": "Content1",
+      "id": "dce1bcbe-a44d-4e47-9762-b38b5bb72186",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    }
+  ],
+  "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc"
+}

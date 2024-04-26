@@ -1,0 +1,89 @@
+{
+    "nodeId": "bcb97f24-037d-4cd6-a9c9-aa45d3c753bd",
+    "name": "Cart Reminder Unsubscribe",
+    "type": "CartReminderUnsubscribePage",
+    "parentId": "ecd2f03b-1861-441d-b4dd-f32faa18ccbe",
+    "sortOrder": -1,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "variantName": null,
+    "id": "2b0ef4d5-ac90-4d52-81fa-d2b459049c53",
+    "generalFields": {
+        "horizontalRule": "",
+        "hideHeader": true,
+        "hideFooter": true,
+        "hideFromSearchEngines": false,
+        "hideFromSiteSearch": false,
+        "excludeFromNavigation": false,
+        "excludeFromSignInRequired": false,
+        "tags": [],
+        "variantName": "",
+        "hideBreadcrumbs": false
+    },
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Cart Reminder Unsubscribe"
+        },
+        "openGraphTitle": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "urlSegment": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "CartReminderUnsubscribe"
+        },
+        "openGraphUrl": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "openGraphImage": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "metaKeywords": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "metaDescription": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        }
+    },
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "2b0ef4d5-ac90-4d52-81fa-d2b459049c53",
+            "type": "Basic/PageTitle",
+            "zone": "Content",
+            "id": "aa1a9002-0e94-4066-90c0-b747e35ea85b",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "2b0ef4d5-ac90-4d52-81fa-d2b459049c53",
+            "zone": "Content",
+            "type": "Basic/Row",
+            "id": "10b39efb-9d25-4e6c-8fcb-0ddf05843f85",
+            "generalFields": {
+                "columns": [
+                    12
+                ],
+                "alignment": [],
+                "gap": 0,
+                "reflow": true
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "10b39efb-9d25-4e6c-8fcb-0ddf05843f85",
+            "zone": "Content0",
+            "type": "CartReminderUnsubscribe/CartReminderUnsubscribeMessage",
+            "id": "8453d146-120b-4105-a954-1c68bf9497b2",
+            "generalFields": {},
+            "translatableFields": {
+                "unsubscribeMessage": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": "You have been unsubscribed."
+                },
+                "unsubscribeDescription": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": "{0} cart reminder emails will no longer be sent to {1}."
+                }
+            },
+            "contextualFields": {}
+        }
+    ]
+}

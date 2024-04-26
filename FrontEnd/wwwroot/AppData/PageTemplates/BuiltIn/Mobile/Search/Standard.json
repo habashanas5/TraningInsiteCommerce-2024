@@ -1,0 +1,45 @@
+{
+  "nodeId": "ee35bfb2-a1eb-4df5-8eba-8ab01b928ddc",
+  "name": "Search",
+  "type": "Mobile/Search",
+  "parentId": "00000000-0000-0000-0000-000000000000",
+  "sortOrder": 0,
+  "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+  "variantName": null,
+  "id": "5f821c70-de18-4d34-ab58-0ea3eaf6e106",
+  "generalFields": {
+      "horizontalRule": "",
+      "hideHeader": false,
+      "hideFooter": false,
+      "hideFromSearchEngines": false,
+      "hideFromSiteSearch": true,
+      "excludeFromNavigation": true,
+      "excludeFromSignInRequired": false,
+      "tags": [],
+      "variantName": "",
+      "hideBreadcrumbs": false
+  },
+  "translatableFields": {
+      "title": {
+          "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Search"
+      }
+  },
+  "contextualFields": {},
+  "widgets": [
+      {
+          "parentId": "5f821c70-de18-4d34-ab58-0ea3eaf6e106",
+          "zone": "Content",
+          "type": "Mobile/SearchHistory",
+          "id": "76af2ab7-f94c-4fd7-83f0-3417b6cd6004",
+          "generalFields": {
+              "previousSearches": 5
+          },
+          "translatableFields": {
+              "title": {
+                  "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Search History"
+              }
+          },
+          "contextualFields": {}
+      }
+  ]
+}

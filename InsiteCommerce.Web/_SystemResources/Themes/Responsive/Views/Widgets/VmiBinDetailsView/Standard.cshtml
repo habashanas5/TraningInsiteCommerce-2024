@@ -1,0 +1,155 @@
+﻿<div ng-controller="VmiBinDetailController as vm" 
+     ng-init="vm.exportHeaders = ['[% translate 'Count' %]','[% translate 'Last Count Date' %]','[% translate 'User' %]'];" ng-cloak>
+    <div ng-show="vm.vmiBin">
+        <div class="row">
+            <div class="small-12 medium-8 large-8 columns">
+                <h1 class="page-title [[Model.CssClass]]">
+                    <span ng-bind="vm.vmiBin.product.shortDescription"></span>
+                </h1>
+            </div>
+            <div class="btns small-12 medium-4 large-4 columns">
+                <button class="btn secondary" ng-click="vm.openEditProductModal()">[% translate 'Edit Product' %]</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-9 columns">
+                <div class="row">
+                    <div class="large-6 columns">
+                        <div class="od-head">
+                            <h3 class="od-lbl">[% translate 'Part #' %]:</h3>
+                            <h3 class="od-data" ng-bind="vm.vmiBin.product.erpNumber"></h3>
+                            <h3 class="od-lbl" ng-if="vm.vmiBin.product.customerName">[% translate 'My Part #' %]:</h3>
+                            <h3 class="od-data" ng-bind="vm.vmiBin.product.customerName"></h3>
+                            <h3 class="od-lbl" ng-if="vm.vmiBin.product.manufacturerItem">[% translate 'Manufacturer Part #' %]:</h3>
+                            <h3 class="od-data" ng-bind="vm.vmiBin.product.manufacturerItem"></h3>
+                            <h3 class="od-lbl" ng-if="vm.vmiBin.binNumber">[% translate 'Bin #' %]:</h3>
+                            <h3 class="od-data" ng-bind="vm.vmiBin.binNumber"></h3>
+                        </div>
+                    </div>
+                    <div class="large-6 columns">
+                        <div class="od-head">
+                            <h3 class="od-lbl">[% translate 'QTY' %]:</h3>
+                            <h3 class="od-data" ng-bind="vm.vmiBin.previousCountQty"></h3>
+                            <h3 class="od-lbl">[% translate 'Minimum QTY' %]:</h3>
+                            <h3 class="od-data" ng-bind="vm.vmiBin.minimumQty"></h3>
+                            <h3 class="od-lbl">[% translate 'Maximum QTY' %]:</h3>
+                            <h3 class="od-data" ng-bind="vm.vmiBin.maximumQty"></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="columns">
+                        <section class="accordion search-vmi-counts">
+                            <div class="cm">
+                                <input type="checkbox" id="accord-1" class="accord-check" />
+                                <label for="accord-1" class="accord-head">[% translate 'Search' %]</label>
+                                <article class="accord-content">
+                                    <div class="row">
+                                        <div class="medium-12 large-6 columns">
+                                            <div class="search-date">
+                                                <label>[% translate 'Previous Count Date Range' %]</label>
+                                                <div class="row">
+                                                    <div class="small-6 columns search-date-from">
+                                                        <em>[% translate 'From' %]</em>
+                                                        <input type="text" class="datepicker" isc-pick-a-date="vm.searchFilter.previousCountFromDate" />
+                                                    </div>
+                                                    <div class="small-6 columns search-date-to">
+                                                        <em>[% translate 'To_date' %]</em>
+                                                        <input type="text" class="datepicker" isc-pick-a-date="vm.searchFilter.previousCountToDate" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="medium-12 large-6 columns">
+                                            <div class="search-user">
+                                                <label>[% translate 'Search User' %]</label>
+                                                <input id="vmi-count-searchbox" type="text" class="vmi-count-searchbox" kendo-auto-complete k-options="vm.vmiCountOptions"
+                                                       ng-init="vm.vmiCountOptionsPlaceholder = '[% translate 'Search or select user' EscapeSingleQuotes %]'"
+                                                       ng-model="vm.searchFilter.userName" />
+                                                <span class="icon-arw-down-5" ng-click="vm.vmiCounts.length && vm.openAutocomplete($event, '#vmi-count-searchbox')"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btns">
+                                        <button type="submit" class="btn primary btn-search" ng-click="vm.search()">[% translate 'Search' %]</button>
+                                        <button type="submit" class="btn secondary btn-clear" ng-click="vm.clear()">[% translate 'Clear' %]</button>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="columns">
+                        <div ng-show="vm.vmiCounts.length > 0">
+
+                            <h3 class="results-count">
+                                <span class="result-num" ng-bind="vm.pagination.totalItemCount"></span>
+                                <span class="result-lbl">[% translate 'counts' %]</span>
+                                <button type="button" class="btn primary btn-export-all" ng-click="vm.exportAll()">[% translate 'Export All' %]</button>
+                                <button type="button" class="btn primary btn-export-selected" ng-disabled="!vm.isAnyRowSelected()" ng-click="vm.exportSelected()">[% translate 'Export Selected' %]</button>
+                            </h3>
+
+                            <isc-pager pagination="vm.pagination" storage-key="vm.paginationStorageKey" update-data="vm.getVmiCounts()"></isc-pager>
+
+                            <div class="overflow-table small">
+                                <table class="info-tbl">
+                                    <tbody>
+                                        <tr>
+                                            <th class="col-check">
+                                                <span class="sticky-first">
+                                                    <input type="checkbox" ng-model="vm.allSelected" ng-click="vm.selectAll()" />
+                                                </span>
+                                            </th>
+                                            <th class="col-count">
+                                                <a href="javascript:void(0)" class="sort"
+                                                   ng-class="{'sort-ascending':vm. searchFilter.sort === 'count', 'sort-descending': vm.searchFilter.sort === 'count DESC'}"
+                                                   ng-click="vm.changeSort('count')">
+                                                    [% translate 'Count' %]
+                                                </a>
+                                            </th>
+                                            <th class="col-lastCountDate">
+                                                <a href="javascript:void(0)" class="sort"
+                                                   ng-class="{'sort-ascending': vm.searchFilter.sort === 'createdOn', 'sort-descending': vm.searchFilter.sort === 'createdOn DESC'}"
+                                                   ng-click="vm.changeSort('createdOn')">
+                                                    [% translate 'Last Count Date' %]
+                                                </a>
+                                            </th>
+                                            <th class="col-user">
+                                                <a href="javascript:void(0)" class="sort"
+                                                   ng-class="{'sort-ascending': vm.searchFilter.sort === 'createdBy', 'sort-descending': vm.searchFilter.sort === 'createdBy DESC'}"
+                                                   ng-click="vm.changeSort('createdBy')">
+                                                    [% translate 'User' %]
+                                                </a>
+                                            </th>
+                                        </tr>
+                                        <tr ng-repeat="vmiCount in vm.vmiCounts">
+                                            <td class="col-check">
+                                                <span class="sticky-first">
+                                                    <input type="checkbox" ng-model="vm.isSelected[vmiCount.id]" ng-click="vm.select(vmiCount.id)" />
+                                                </span>
+                                            </td>
+                                            <td class="col-count" ng-bind="vmiCount.count"></td>
+                                            <td class="col-lastCountDate" ng-bind="vmiCount.createdOn | date:'shortDate'"></td>
+                                            <td class="col-user" ng-bind="vmiCount.createdBy"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <isc-pager pagination="vm.pagination" bottom="true" storage-key="vm.paginationStorageKey" update-data="vm.getVmiCounts()"></isc-pager>
+                        </div>
+
+                        <div class="search-no-results" ng-show="vm.vmiCounts.length === 0">
+                            <h3>[% translate 'No counts found' %].</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="large-3 columns"></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/ng-template" id="/PartialViews/Vmi-VmiBinModal">
+    [% partialView 'Vmi-VmiBinModal' %]
+</script>

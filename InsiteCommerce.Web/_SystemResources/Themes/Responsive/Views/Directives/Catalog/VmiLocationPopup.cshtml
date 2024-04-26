@@ -1,0 +1,54 @@
+﻿<div id="VmiLocationPopup" class="reveal-modal popup-vmi-location" data-reveal data-reveal-init>
+    <div class="modal-wrap">
+        <h2 ng-if="vm.editMode">[% translate 'Edit Location' %]</h2>
+        <h2 ng-if="!vm.editMode">[% translate 'Add Location' %]</h2>
+        <div class="is-required-field-tooltip">* [% translate 'is required' %]</div>
+        <form name="vm.vmiLocationForm" id="vmiLocationForm" ng-submit="vm.editMode ? vm.updateLocation() : vm.addToVmiLocationList()" novalidate>
+            <label>[% translate 'Assign Products to Bin Locations' %]</label>
+            <div class="bin-location-select">
+                <div class="bin-info">
+                    <div class="ship-select">
+                        <select id="useBin" name="useBin"
+                                ng-model="vm.useBin" ng-disabled="vm.editMode">
+                            <option ng-value="true">[% translate 'Enable' %]</option>
+                            <option ng-value="false">[% translate 'Disable' %]</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <label>[% translate 'Location Name' %] *</label>
+            <div class="location-name-input">
+                <div class="location-name">
+                    <div class="ship-select">
+                        <input type="text" ng-model="vm.locationName" name="locationName" class="location-name" data-test-selector="tst_vmiLocationPopUp_enterLocationName" placeholder="[% translate 'Enter location name' %]" autofocus="autofocus" isc-limit-number-of-characters="255" ng-maxlength="255" maxlength="255" required />
+                    </div>
+                    <div class="max-field-tooltip spacer-element">
+                        <isc-characters-left-counter form-element="vm.vmiLocationForm.locationName" field-model="vm.locationName" limit="255"></isc-characters-left-counter>
+                        [% translate 'characters left' %].
+                    </div>
+                </div>
+            </div>
+            <label>[% translate 'Select an Existing Address' %]</label>
+            <div class="ship-to-select">
+                <div class="shipping-info">
+                    <div class="ship-select">
+                        <select id="shipTo" name="shipTo"
+                                ng-model="vm.shipTo"
+                                ng-options="shipTo.label for shipTo in vm.billTo.shipTos" ng-disabled="vm.editMode"></select>
+                    </div>
+                </div>
+            </div>
+            <div id="error" class="error" ng-show="vm.vmiLocationForm.$submitted && (vm.errorMessage || vm.vmiLocationForm.locationName.$error.required || vm.vmiLocationForm.locationName.$error.maxlength)">
+                    <span ng-show="vm.errorMessage" class="field-validation-error" ng-bind="vm.errorMessage"></span>
+                    <span ng-show="vm.vmiLocationForm.locationName.$error.required" class="field-validation-error">{{'[% siteMessage 'Field_Required' EscapeSingleQuotes %]'.replace('{0}', '[% translate 'Location Name' EscapeSingleQuotes %]')}}</span>
+                    <span ng-show="vm.vmiLocationForm.locationName.$error.maxlength" class="field-validation-error">{{'[% siteMessage 'Field_Too_Long' EscapeSingleQuotes %]'.replace('{0}', '[% translate 'Location Name' EscapeSingleQuotes %]').replace('{1}', 255)}}</span>
+            </div>
+            <div class="row btns">
+                <a class="import-csv" ng-if="!vm.editMode" ng-click="vm.openImportLocationPopup()">[% translate 'Import CSV' %]</a>
+                <button ng-click="vm.closeModal()" class="btn tertiary btn-cancel" type="button">[% translate 'Cancel' %]</button>
+                <button class="btn primary btn-save-location" type="submit" data-test-selector="tst_AddLocationPopUp_addVmiLocation">[% translate 'Save' %]</button>
+            </div>
+        </form>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+</div>

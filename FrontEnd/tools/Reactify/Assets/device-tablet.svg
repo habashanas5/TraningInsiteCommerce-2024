@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 815 1085" enable-background="new 0 0 815 1085" xml:space="preserve">
+<path id="device" fill-rule="evenodd" clip-rule="evenodd" fill="#DBDBDB" d="M785,0H30C13.4,0,0,13.4,0,30v1025
+	c0,16.6,13.4,30,30,30h755c16.6,0,30-13.4,30-30V30C815,13.4,801.6,0,785,0z M792,1031c0,16.6-13.4,30-30,30H54
+	c-16.6,0-30-13.4-30-30V67c0-16.6,13.4-30,30-30h708c16.6,0,30,13.4,30,30V1031z"/>
+<circle id="camera" fill-rule="evenodd" clip-rule="evenodd" fill="#F4F4F4" cx="408" cy="19" r="8"/>
+</svg>

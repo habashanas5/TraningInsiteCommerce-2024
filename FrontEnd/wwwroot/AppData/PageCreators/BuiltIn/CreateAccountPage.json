@@ -1,0 +1,5 @@
+{
+  "name": "Create Account",
+  "parentType": "MyAccountPage",
+  "urlSegment": "CreateAccount"
+}

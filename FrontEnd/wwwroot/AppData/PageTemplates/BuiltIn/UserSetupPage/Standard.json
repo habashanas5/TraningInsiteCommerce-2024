@@ -1,0 +1,103 @@
+{
+    "nodeId": "3f3e74a5-f312-40dd-a4b1-22a4c8cfdd2e",
+    "name": "User Setup",
+    "type": "UserSetupPage",
+    "parentId": "b9331280-b6de-40da-87fd-80b8a1a740b4",
+    "sortOrder": 0,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "variantName": null,
+    "id": "b7a1b5a6-7b41-4ce2-be67-728b43de748d",
+    "generalFields": {
+        "horizontalRule": "",
+        "tags": [],
+        "hideBreadcrumbs": false
+    },
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "User Setup"
+        },
+        "urlSegment": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "UserSetup"
+        }
+    },
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "b7a1b5a6-7b41-4ce2-be67-728b43de748d",
+            "type": "UserSetup/UserSetupHeader",
+            "zone": "Content",
+            "id": "ddf20f3c-3488-4e51-a574-758ded7dac20",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "b7a1b5a6-7b41-4ce2-be67-728b43de748d",
+            "zone": "Content",
+            "type": "Basic/Row",
+            "id": "e0c443ac-98a9-41a9-8bcb-8f38b929f91b",
+            "generalFields": {
+                "columns": [[12,12,6,4,4],[12,12,6,4,4],[12,12,6,4,4]],
+                "alignment": [],
+                "gap": 30,
+                "reflow": true
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "c670735b-b8d8-4369-a46c-1c9c473ce513",
+            "type": "UserSetup/UserSetupStatus",
+            "zone": "Content0",
+            "id": "85a6e75c-ed6a-460d-b1a7-80ec990a8916",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "c670735b-b8d8-4369-a46c-1c9c473ce513",
+            "type": "UserSetup/UserSetupUserInformation",
+            "zone": "Content1",
+            "id": "ad835300-d2be-4d7f-994e-17e90df2170a",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "c670735b-b8d8-4369-a46c-1c9c473ce513",
+            "type": "UserSetup/UserSetupSettings",
+            "zone": "Content2",
+            "id": "800586c4-d49c-448b-9be0-2b545914a281",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "e0c443ac-98a9-41a9-8bcb-8f38b929f91b",
+            "zone": "Content0",
+            "type": "UserSetup/UserSetupStatus",
+            "id": "7235ad20-213e-4f74-bff5-1de7a241d71b",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "e0c443ac-98a9-41a9-8bcb-8f38b929f91b",
+            "zone": "Content1",
+            "type": "UserSetup/UserSetupUserInformation",
+            "id": "9e2ced22-c446-4302-b84c-604bde8d699a",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "e0c443ac-98a9-41a9-8bcb-8f38b929f91b",
+            "zone": "Content2",
+            "type": "UserSetup/UserSetupSettings",
+            "id": "281490ab-b152-4595-93e4-8bcefabd91fb",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

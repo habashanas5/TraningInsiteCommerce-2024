@@ -1,0 +1,100 @@
+{
+    "nodeId": "e1a1c409-93dd-4716-8dd2-f28e5a181d23",
+    "name": "VMI Locations",
+    "type": "VmiLocationsPage",
+    "parentId": "d2cc18b4-4b9a-4a5d-a512-8e5c03382ad8",
+    "sortOrder": 0,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "variantName": null,
+    "layoutPageId": null,
+    "templateHash": "065a53af8b577dbac0dc5cc7d645e5dc6c6653a3b01c38cd5162d00a145e795e",
+    "requiresAuthorization": false,
+    "id": "3e33356c-89d8-4c59-af36-d8f5fa80fa19",
+    "generalFields": {
+        "horizontalRule": "",
+        "tags": [],
+        "hideBreadcrumbs": false,
+        "variantName": null,
+        "layoutPage": ""
+    },
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "VMI Locations"
+        },
+        "urlSegment": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "VmiLocations"
+        }
+    },
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "3e33356c-89d8-4c59-af36-d8f5fa80fa19",
+            "type": "VmiLocations/VmiLocationsHeader",
+            "zone": "Content",
+            "isLayout": false,
+            "id": "4ee474d4-f336-47ba-9dfb-bdd913e8644b",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "3e33356c-89d8-4c59-af36-d8f5fa80fa19",
+            "type": "Basic/Row",
+            "zone": "Content",
+            "isLayout": false,
+            "id": "f33d99a4-19f2-4136-bb99-34d546d5b6db",
+            "generalFields": {
+                "columns": [
+                    4,
+                    4,
+                    4
+                ],
+                "alignment": [],
+                "gap": 0,
+                "reflow": true
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "3e33356c-89d8-4c59-af36-d8f5fa80fa19",
+            "zone": "Content",
+            "type": "VmiLocations/VmiLocationsActions",
+            "id": "51fe300f-66de-4355-aa21-7d8fced1e870",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {},
+            "isLayout": false
+        },
+        {
+            "parentId": "3e33356c-89d8-4c59-af36-d8f5fa80fa19",
+            "type": "VmiLocations/VmiLocationsTable",
+            "zone": "Content",
+            "isLayout": false,
+            "id": "0eeb43c0-76f4-4299-b665-897142000014",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "3e33356c-89d8-4c59-af36-d8f5fa80fa19",
+            "zone": "Content",
+            "type": "VmiLocations/VmiLocationsPagination",
+            "id": "5d57c07c-d358-4f28-8c81-4e8c10519192",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {},
+            "isLayout": false
+        },
+        {
+            "parentId": "f33d99a4-19f2-4136-bb99-34d546d5b6db",
+            "type": "VmiLocations/VmiLocationsSearchBox",
+            "zone": "Content0",
+            "isLayout": false,
+            "id": "e007ceac-aebc-4c5f-aa47-51da1dffabe3",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

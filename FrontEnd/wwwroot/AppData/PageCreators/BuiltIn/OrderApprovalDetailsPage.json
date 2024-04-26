@@ -1,0 +1,5 @@
+{
+  "name": "Order Approval Details",
+  "parentType": "OrderApprovalListPage",
+  "urlSegment": "Details"
+}

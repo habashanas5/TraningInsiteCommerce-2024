@@ -1,0 +1,1 @@
+﻿Any .d.ts files added to this directory or any subdirectory will be loaded as typescript definitions. They can then be referenced by themes that need them to compile associated typescript resources

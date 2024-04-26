@@ -1,0 +1,280 @@
+﻿.ma-vmi-bins {
+    .btns {
+        margin-top: .5em;
+        float: left;
+        width: 100%;
+    }
+
+    .btns .btn {
+        float: right;
+    }
+
+    .search-vmi-bins {
+        margin-top: 20px;
+    }
+
+    .top-actions-block {
+        .top-actions-controls {
+            text-align: right;
+
+            button {
+                margin-bottom: 0;
+            }
+        }
+
+        position: relative;
+        top: -60px;
+        margin-bottom: -60px;
+        overflow: hidden;
+    }
+
+    .search-date {
+        position: relative;
+    }
+
+    .picker {
+        right: 0% !important;
+    }
+
+    .search-date-to .picker__holder {
+        right: 0% !important;
+    }
+
+    .search-vmi-bins {
+        .search-date {
+            em {
+                display: block;
+            }
+        }
+    }
+
+    .search-no-results {
+        background-color: #F2F2F2;
+        text-align: center;
+        padding: 70px 0;
+    }
+
+    .results-count {
+        display: inline-block;
+        padding: 0.5em 0 0.5em;
+    }
+
+    .btn-group {
+        display: inline-block;
+        padding: 0.5em .75em;
+        float: right;
+    }
+
+    .overflow-table {
+        overflow: auto;
+
+        .col-check {
+            input {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.delete-vmi-bins-modal {
+    .modal-wrap {
+        max-width: 480px;
+    }
+
+    p {
+        margin-left: 15px;
+    }
+
+    .row {
+        .btns {
+            padding-right: 15px;
+        }
+    }
+}
+
+.vmi-bin-modal {
+    .modal-wrap {
+        max-width: 700px;
+    }
+
+    .controls-block {
+        margin-bottom: 20px;
+    }
+
+    .row {
+        .btns {
+            margin-right: 45px;
+
+            .btn {
+                margin-left: 7px;
+            }
+        }
+    }
+
+    .form-errors-block {
+        margin-bottom: 15px;
+        margin-top: -15px;
+    }
+
+    .qo-search-input {
+        border: 1px solid #cccccc;
+        white-space: nowrap;
+        height: 40px;
+
+        .icon-wrapper {
+            i {
+                opacity: 0.5;
+                margin: 3px 0 3px 8px;
+            }
+        }
+
+        span.qo-searchbox {
+            &.k-state-disabled {
+                padding-left: 0;
+                margin-left: 0;
+            }
+
+            display: inline-block;
+            padding-left: 25px;
+            margin-left: -32px;
+            width: 100%;
+
+            input {
+                border: none;
+                margin: 0;
+                box-shadow: none;
+                height: 2.3125rem;
+            }
+        }
+    }
+
+    .success-message {
+        font-size: 14px;
+        padding: .5em 1em;
+        display: block;
+        color: #3C763D;
+        background-color: #dff0d8;
+    }
+}
+
+.import-vmi-bins-modal {
+    .modal-wrap {
+        max-width: 550px;
+    }
+
+    p {
+        margin-left: 15px;
+    }
+
+    .btns {
+        padding-right: 15px;
+    }
+
+    .upload-block {
+        margin-bottom: 20px;
+
+        .upload-btn {
+            padding-left: 0;
+        }
+    }
+
+    .errors-block {
+        .upload-error {
+            color: #CC2200;
+            background-color: rgb(252, 244, 242);
+            border: 1px solid rgb(249, 201, 191);
+            padding: 10px 10px 10px 45px;
+            position: relative;
+
+            &::after {
+                display: block;
+                position: absolute;
+                left: 14px;
+                top: 13px;
+                content: "\f071";
+                font-family: 'good-oatmeal-v2';
+                font-size: 18px;
+            }
+        }
+    }
+
+    .import-table-wrapper {
+        padding-bottom: 20px;
+
+        .import-issues-table {
+            width: 100%;
+            min-width: 400px;
+            border-top: 0;
+            margin-bottom: 0;
+
+            td {
+                font-size: 13px;
+                font-weight: 600;
+            }
+
+            thead tr {
+                background: white;
+                border: 1px solid rgb(188, 188, 188);
+            }
+
+            tbody {
+                td {
+                    color: #CC2200;
+                }
+
+                tr {
+                    background: rgb(252, 244, 242);
+                    border-left: 1px solid rgb(249, 201, 191);
+                    border-right: 1px solid rgb(249, 201, 191);
+                    border-bottom: 1px solid rgb(249, 201, 191);
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .ma-vmi-bins {
+        .btns .btn {
+            width: 100%;
+            margin-bottom: 1em;
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+    .ma-vmi-bins {
+        .btns .btn {
+            margin-left: 1em;
+        }
+
+        label.accord-head {
+            display: inline-block;
+        }
+
+        .search-vmi-bins {
+            .search-date {
+                input {
+                    width: 90px;
+                    display: inline-block;
+                }
+
+                em {
+                    display: inline-block;
+                    float: left;
+                    line-height: 38px;
+                    margin-right: .75em;
+                }
+
+                .row .small-6 {
+                    width: auto;
+                }
+
+                [class*="column"] + [class*="column"]:last-child {
+                    float: left;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

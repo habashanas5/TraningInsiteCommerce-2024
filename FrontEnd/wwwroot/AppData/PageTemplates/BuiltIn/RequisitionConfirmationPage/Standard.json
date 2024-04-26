@@ -1,0 +1,73 @@
+{
+  "nodeId": "98546921-a721-48de-8331-1e031a2ac917",
+  "name": "Requisition Confirmation",
+  "type": "RequisitionConfirmationPage",
+  "parentId": "685d675a-7d5b-49a8-80af-14496ee80804",
+  "sortOrder": 1,
+  "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+  "id": "755945d1-ba6a-41d1-a56b-ebf695cec905",
+  "fields": {
+    "title": "Requisition Confirmation",
+    "name": "Requisition Confirmation",
+    "urlSegment": "Requisition/Confirmation",
+    "horizontalRule": "",
+    "excludeFromNavigation": true,
+    "tags": []
+  },
+  "translatableFields": {
+    "title": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Requisition Confirmation"
+    },
+    "urlSegment": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Requisition/Confirmation"
+    }
+  },
+  "contextualFields": {},
+  "widgets": [
+    {
+      "parentId": "755945d1-ba6a-41d1-a56b-ebf695cec905",
+      "type": "RequisitionConfirmation/RequisitionConfirmationHeader",
+      "zone": "Content",
+      "id": "c20ee6db-30f5-4cf4-a88e-04e6c931b711",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "755945d1-ba6a-41d1-a56b-ebf695cec905",
+      "type": "RequisitionConfirmation/RequisitionConfirmationPageContainer",
+      "zone": "Content",
+      "id": "e936e118-a031-454d-9031-0c19b78cea8b",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "e936e118-a031-454d-9031-0c19b78cea8b",
+      "type": "RequisitionConfirmation/RequisitionConfirmationAddresses",
+      "zone": "Content0",
+      "id": "d0510b85-7564-4d8b-a98f-b1a38faaae3d",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "e936e118-a031-454d-9031-0c19b78cea8b",
+      "type": "RequisitionConfirmation/RequisitionConfirmationProductList",
+      "zone": "Content0",
+      "id": "23e77e47-6563-4543-8f77-36339037a7e1",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "e936e118-a031-454d-9031-0c19b78cea8b",
+      "type": "RequisitionConfirmation/RequisitionConfirmationTotal",
+      "zone": "Content1",
+      "id": "98ea3d32-43f0-44c9-9308-671241fa3ba8",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    }
+  ]
+}

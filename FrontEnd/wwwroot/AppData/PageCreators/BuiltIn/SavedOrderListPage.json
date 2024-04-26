@@ -1,0 +1,5 @@
+{
+  "name": "Saved Orders",
+  "parentType": "MyAccountPage",
+  "urlSegment": "SavedOrders"
+}

@@ -1,0 +1,12 @@
+﻿<div id="deleteLocationPopup" class="reveal-modal popup-delete-location" data-reveal data-reveal-init>
+    <div class="modal-wrap">
+        <h2 ng-if="vm.vmiLocations.length === 1">[% translate 'Delete Location' %]</h2>
+        <h2 ng-if="vm.vmiLocations.length !== 1">[% translate 'Delete Selected Locations' %]</h2>
+        <div>[% siteMessage 'VmiLocation_Delete' %]</div>
+        <div class="row btns">
+            <button ng-click="vm.closeModal()" class="btn tertiary btn-cancel" type="button">[% translate 'Cancel' %]</button>
+            <button ng-click="vm.deleteVmiLocations()" class="btn primary btn-delete-location" data-test-selector="tst_DeleteLocationPopUp_deleteVmiLocation">[% translate 'Delete' %]</button>
+        </div>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+</div>

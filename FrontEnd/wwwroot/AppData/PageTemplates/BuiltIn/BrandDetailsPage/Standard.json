@@ -1,0 +1,77 @@
+{
+    "id": "10fee1a3-768d-4fe2-8c2e-8f613b2d0669",
+    "nodeId": "10fee1a3-768d-4fe2-8c2e-8f613b2d0669",
+    "type": "BrandDetailsPage",
+    "sortOrder": 0,
+    "fields": {
+        "title": "Brand Details",
+        "name": "Brand Details",
+        "urlSegment": "BrandDetails"
+    },
+    "translatableFields": {},
+    "contextualFields": {},
+    "widgets": [
+        {
+            "id": "fcc5ed2c-c5e5-416a-9783-759ea42a5b22",
+            "parentId": "10fee1a3-768d-4fe2-8c2e-8f613b2d0669",
+            "type": "Basic/Row",
+            "zone": "Content",
+            "fields": {
+                "columns": [[12,12,4,3,3],[12,12,8,9,9]],
+                "gap": 30
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "fcc5ed2c-c5e5-416a-9783-759ea42a5b22",
+            "type": "BrandDetails/BrandDetailsLogo",
+            "id": "16a3c97f-7884-43ed-b18d-a8fb17437819",
+            "zone": "Content0",
+            "fields": {},
+            "translatableFields": {}
+        },
+        {
+            "parentId": "fcc5ed2c-c5e5-416a-9783-759ea42a5b22",
+            "type": "BrandDetails/BrandDetailsImage",
+            "id": "c1eeb58d-4449-443a-871f-d43cc86ccb95",
+            "zone": "Content0",
+            "fields": {},
+            "translatableFields": {}
+        },
+        {
+            "parentId": "fcc5ed2c-c5e5-416a-9783-759ea42a5b22",
+            "type": "BrandDetails/BrandDetailsCategories",
+            "id": "2cedb55a-28d2-46e3-b1f8-ba3485133184",
+            "zone": "Content0",
+            "fields": {
+                "title": "Shop By Category",
+                "showImages": false,
+                "subCategoriesToShow": 4,
+                "gridType": "column"
+            },
+            "translatableFields": {}
+        },
+        {
+            "parentId": "fcc5ed2c-c5e5-416a-9783-759ea42a5b22",
+            "type": "BrandDetails/BrandDetailsContent",
+            "id": "80006947-35f0-4ba8-9b9e-920457664b97",
+            "zone": "Content1",
+            "fields": {},
+            "translatableFields": {}
+        },
+        {
+            "parentId": "fcc5ed2c-c5e5-416a-9783-759ea42a5b22",
+            "type": "BrandDetails/BrandDetailsProductLines",
+            "id": "28c96497-fb2e-43cd-8058-f5e284f47a82",
+            "zone": "Content1",
+            "fields": {
+                "title": "Product Lines",
+                "showImages": true,
+                "maxToShow": 8,
+                "gridType": "row"
+            },
+            "translatableFields": {}
+        }
+    ]
+}

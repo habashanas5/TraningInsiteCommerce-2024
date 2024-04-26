@@ -1,0 +1,43 @@
+{
+    "id": "3bbcdea6-57f1-44ca-bb8a-8fe7b04c0247",
+    "nodeId": "af5e3f6e-e1bf-4578-ba2e-e8819d2a3678",
+    "name": "Page Not Found",
+    "type": "NotFoundErrorPage",
+    "parentId": "b7c3099a-f200-4127-83f3-f0649ffc498c",
+    "sortOrder": 13,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "generalFields": {
+        "horizontalRule": "",
+        "tags": []
+    },
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Page Not Found"
+        }
+    },
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "3bbcdea6-57f1-44ca-bb8a-8fe7b04c0247",
+            "zone": "Content",
+            "type": "Basic/PageTitle",
+            "id": "fc5c76cf-3a8e-45e9-84c5-bdce4bb9be9f",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "id": "866dbfb4-e4f3-47ee-9422-47c5c7c1dbd8",
+            "parentId": "3bbcdea6-57f1-44ca-bb8a-8fe7b04c0247",
+            "type": "Basic/RichContent",
+            "zone": "Content",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {
+                "content": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2|Desktop|d06988c0-9358-4dbb-aa3d-b7be5b6a7fd9": "<h3>You might want to try one of these links:</h3><ul><li><a href=\"#\">Link 1</a></li><li><a href=\"#\">Link 2</a></li><li><a href=\"#\">Link 3</a></li></ul><h3>Or head back to the <a href=\"/\">homepage</a>.</h3>"
+                }
+            }
+        }
+    ]
+}

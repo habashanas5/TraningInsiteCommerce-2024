@@ -1,0 +1,7 @@
+{
+  "name": "@insite/mobius",
+  "version": "0.0.0",
+  "scripts": {
+    "create": "node ./template/create"
+  }
+}

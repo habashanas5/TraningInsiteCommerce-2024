@@ -1,0 +1,5 @@
+{
+  "name": "Cart Reminder Unsubscribe",
+  "parentType": "MyAccountPage",
+  "urlSegment": "CartReminderUnsubscribe"
+}

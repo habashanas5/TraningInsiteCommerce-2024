@@ -1,0 +1,5 @@
+{
+    "name": "VMI Location Details",
+    "parentType": "VmiLocationsPage",
+    "urlSegment": "Details"
+}

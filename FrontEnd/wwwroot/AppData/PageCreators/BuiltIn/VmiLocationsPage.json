@@ -1,0 +1,5 @@
+{
+    "name": "VMI Locations",
+    "parentType": "MyAccountPage",
+    "urlSegment": "VmiLocations"
+}

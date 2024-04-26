@@ -1,0 +1,116 @@
+﻿<div ng-controller="VmiUsersController as vm" ng-cloak>
+    <a href="javascript:void(0)" ng-click="vm.openAddVmiUserPopup()" class="btn primary btn-add-user">[% translate 'Add User' %]</a>
+    <section class="accordion search-users">
+        <div>
+            <input type="checkbox" id="accord-1" class="accord-check"/>
+            <label for="accord-1" class="accord-head">[% translate 'Search' %]</label>
+            <article class="accord-content">
+                <div class="row">
+                    <div class="medium-12 large-4 columns">
+                        <div>
+                            <label>[% translate 'Search User' %]</label>
+                            <input type="text" name="search-users" ng-model="vm.searchText" isc-enter="vm.search(vm.sort, true)" placeholder="[% translate 'Enter Username' %]"/>
+                        </div>
+                    </div>
+                    <div class="medium-12 large-4 columns">
+                        <div class="search-role">
+                            <label>[% translate 'Role' %]</label>
+                            <select ng-model="vm.role">
+                                <option value="">[% translate 'Choose Role' %]</option>
+                                <option value="User">[% translate 'User' %]</option>
+                                <option value="Admin">[% translate 'Admin' %]</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 btns">
+                        <a href="javascript:void(0)" class="btn primary btn-search" ng-click="vm.search(vm.sort, true)">[% translate 'Search' %]</a>
+                        <a href="javascript:void(0)" class="btn secondary btn-clear" ng-click="vm.clearSearch()">[% translate 'Clear' %]</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <div ng-show="vm.users.length > 0">
+        <h3 class="results-count">
+            <span class="result-num" ng-bind="vm.pagination.totalItemCount"></span>
+            <span class="result-lbl">[% translate 'users' %]</span>
+        </h3>
+        <isc-pager pagination="vm.pagination" storage-key="vm.paginationStorageKey" update-data="vm.search(vm.sort)"></isc-pager>
+        <div class="overflow-table small">
+            <table class="info-tbl">
+                <tbody>
+                <tr>
+                    <th class="col-username">
+                        <span class="sticky-first">
+                            <a href="javascript:void(0)" class="sort"
+                               ng-class="{'sort-ascending': vm.sort === 'UserName', 'sort-descending': vm.sort === 'UserName DESC'}"
+                               ng-click="vm.sortBy('UserName')">
+                                [% translate 'Username' %]
+                            </a>
+                        </span>
+                    </th>
+                    <th class="col-first-name">
+                        <a href="javascript:void(0)" class="sort"
+                           ng-class="{'sort-ascending': vm.sort === 'FirstName', 'sort-descending': vm.sort === 'FirstName DESC'}"
+                           ng-click="vm.sortBy('FirstName')">
+                            [% translate 'First Name' %]
+                        </a>
+                    </th>
+                    <th class="col-last-name">
+                        <a href="javascript:void(0)" class="sort"
+                           ng-class="{'sort-ascending': vm.sort === 'LastName', 'sort-descending': vm.sort === 'LastName DESC'}"
+                           ng-click="vm.sortBy('LastName')">
+                            [% translate 'Last Name' %]
+                        </a>
+                    </th>
+                    <th class="col-email" ng-if="vm.displayEmail">
+                        <a href="javascript:void(0)" class="sort"
+                           ng-class="{'sort-ascending': vm.sort === 'Email', 'sort-descending': vm.sort === 'Email DESC'}"
+                           ng-click="vm.sortBy('Email')">
+                            [% translate 'Email' %]
+                        </a>
+                    </th>
+                    <th class="col-role">
+                        <a href="javascript:void(0)" class="sort"
+                           ng-class="{'sort-ascending': vm.sort === 'VmiRole', 'sort-descending': vm.sort === 'VmiRole DESC'}"
+                           ng-click="vm.sortBy('VmiRole')">
+                            [% translate 'Role' %]
+                        </a>
+                    </th>
+                    <th class="col-actions">[% translate 'Actions' %]</th>
+                </tr>
+                <tr ng-repeat="user in vm.users">
+                    <td class="col-username">
+                        <span class="sticky-first">
+                            <a ng-href="javascript:void(0)" ng-click="vm.openAddVmiUserPopup(user)">{{ user.userName }} </a>
+                        </span>
+                    </td>
+                    <td class="col-first-name" ng-bind="user.firstName"></td>
+                    <td class="col-last-name" ng-bind="user.lastName"></td>
+                    <td class="col-email" ng-if="vm.displayEmail" ng-bind="user.email"></td>
+                    <td class="col-role" ng-bind="user.vmiRole"></td>
+                    <td class="col-actions">
+                        <a href="javascript:void(0)" ng-click="vm.openAddVmiUserPopup(user)" class="btn-edit-user">[% translate 'Edit' %]</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <isc-pager pagination="vm.pagination" bottom="true" storage-key="vm.paginationStorageKey" update-data="vm.search(vm.sort)"></isc-pager>
+    </div>
+</div>
+
+<script type="text/ng-template" id="/PartialViews/VmiUsers-AddVmiUserPopup">
+    [% partialView 'VmiUsers-AddVmiUserPopup' %]
+</script>
+
+<script type="text/ng-template" id="/PartialViews/VmiUsers-RemoveVmiUserPopup">
+    [% partialView 'VmiUsers-RemoveVmiUserPopup' %]
+</script>
+
+<script type="text/ng-template" id="/PartialViews/VmiUsers-ImportVmiUserPopup">
+    [% partialView 'VmiUsers-ImportVmiUserPopup' %]
+</script>

@@ -1,0 +1,119 @@
+{
+    "nodeId": "ccd00f0a-9c50-4871-9469-96a216cefca3",
+    "name": "My Lists Details",
+    "type": "MyListsDetailsPage",
+    "parentId": "7472deb0-3c1c-4002-ae66-180e618c4ea2",
+    "sortOrder": 0,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "variantName": null,
+    "layoutPageId": null,
+    "templateHash": null,
+    "id": "fa5836b4-a918-4426-881a-b083bcd96cc8",
+    "generalFields": {
+        "variantName": "",
+        "horizontalRule": "",
+        "tags": [],
+        "hideBreadcrumbs": false
+    },
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "My Lists Details"
+        },
+        "urlSegment": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Details"
+        }
+    },
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "fa5836b4-a918-4426-881a-b083bcd96cc8",
+            "type": "Basic/Rows",
+            "zone": "Content",
+            "isLayout": false,
+            "id": "6fa9194f-e7b2-4f07-b095-06a2883aab18",
+            "generalFields": {
+                "rowCount": 4,
+                "gap": 0
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "6fa9194f-e7b2-4f07-b095-06a2883aab18",
+            "type": "MyListsDetails/MyListsDetailsActions",
+            "zone": "Content0",
+            "isLayout": false,
+            "id": "5c2a1915-3bdc-40d2-b1f7-23df59fc10da",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "6fa9194f-e7b2-4f07-b095-06a2883aab18",
+            "type": "MyListsDetails/MyListsDetailsHeader",
+            "zone": "Content1",
+            "isLayout": false,
+            "id": "cb23e9a3-90f9-404a-bcf5-29b49045d0f2",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "6fa9194f-e7b2-4f07-b095-06a2883aab18",
+            "type": "MyListsDetails/MyListDetailsPagination",
+            "zone": "Content1",
+            "isLayout": false,
+            "id": "363e9910-3511-4c0c-888d-c82ce3c17727",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "6fa9194f-e7b2-4f07-b095-06a2883aab18",
+            "type": "MyListsDetails/MyListsDetailsOptions",
+            "zone": "Content2",
+            "isLayout": false,
+            "id": "2cb0b738-fb42-4fbe-8654-faa3006b1673",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "6fa9194f-e7b2-4f07-b095-06a2883aab18",
+            "type": "MyListsDetails/MyListsDetailsProductList",
+            "zone": "Content3",
+            "isLayout": false,
+            "id": "988cadc0-ea09-4ec4-9657-4c97de02eb5e",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "6fa9194f-e7b2-4f07-b095-06a2883aab18",
+            "type": "MyListsDetails/MyListDetailsPagination",
+            "zone": "Content3",
+            "isLayout": false,
+            "id": "9310a14d-b7bc-434b-974b-a654ba427e9c",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "2cb0b738-fb42-4fbe-8654-faa3006b1673",
+            "type": "Basic/RichContent",
+            "zone": "UploadInstructions",
+            "isLayout": false,
+            "id": "94ec19b9-1aa4-44ca-b0c7-580c18cc0bf1",
+            "generalFields": {
+                "backgroundColor": "",
+                "padding": 0
+            },
+            "translatableFields": {},
+            "contextualFields": {
+                "content": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2|Desktop|d06988c0-9358-4dbb-aa3d-b7be5b6a7fd9": "<ol><li style=\"line-height: 2;\">Create a spreadsheet<ul style=\"list-style-type: circle;\"><li style=\"margin-left: 20px; line-height: 2;\">First column - add item #s or customer part #s.</li><li style=\"margin-left: 20px; line-height: 2;\">Second column - add quantities (optional).</li><li style=\"margin-left: 20px; line-height: 2;\">Third column - add unit of measure (optional).</li></ul></li><li style=\"line-height: 2;\">Column headings can be added in the first row (optional).</li><li style=\"line-height: 2;\">Save the file in XLS, XLSX or CSV format.</li><li style=\"line-height: 2;\">Select the file to upload and click Upload File.</li><li style=\"line-height: 2;\"><strong>There is a file maximum of 500 rows.</strong></li></ol>"
+                }
+            }
+        }
+    ]
+}

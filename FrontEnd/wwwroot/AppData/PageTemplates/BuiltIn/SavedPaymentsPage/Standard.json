@@ -1,0 +1,64 @@
+{
+    "id": "fcef4961-d653-4ddc-b5ad-155ad5ddeac9",
+    "nodeId": "1441d106-62e3-4658-8d6d-a40ea92de9ed",
+    "type": "SavedPaymentsPage",
+    "parentId": "a952fb70-4fff-4dbe-bee2-cf6b342148d7",
+    "sortOrder": 5,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "fields": {
+        "title": "Saved Payments",
+        "name": "Saved Payments",
+        "urlSegment": "SavedPayments",
+        "horizontalRule": "",
+        "tags": []
+    },
+    "translatableFields": {},
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "fcef4961-d653-4ddc-b5ad-155ad5ddeac9",
+            "zone": "Content",
+            "type": "SavedPayments/SavedPaymentsView",
+            "id": "9288861d-a015-483b-94ac-310ebff9a34a",
+            "fields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "9288861d-a015-483b-94ac-310ebff9a34a",
+            "zone": "Content0",
+            "type": "Basic/PageTitle",
+            "id": "21bf52dc-4a8c-44cf-838b-b48656826c0b",
+            "fields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "9288861d-a015-483b-94ac-310ebff9a34a",
+            "zone": "Content1",
+            "type": "SavedPayments/SavedPaymentsAddCardButton",
+            "id": "cac68710-a618-4a5d-a76a-06f24372f4eb",
+            "fields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "9288861d-a015-483b-94ac-310ebff9a34a",
+            "zone": "Content2",
+            "type": "SavedPayments/SavedPaymentsDefaultCard",
+            "id": "0baef597-8eea-4497-bb1b-9735990f5e1e",
+            "fields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "9288861d-a015-483b-94ac-310ebff9a34a",
+            "zone": "Content3",
+            "type": "SavedPayments/SavedPaymentsCardList",
+            "id": "85895754-8d59-4f7c-a69a-421ded36cbc8",
+            "fields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

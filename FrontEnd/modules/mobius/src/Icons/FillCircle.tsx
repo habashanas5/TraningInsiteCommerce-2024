@@ -1,0 +1,18 @@
+import * as React from "react";
+
+const FillCircle: React.FC = () => {
+    return (
+        <svg
+            focusable="false"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+        >
+            <circle cx="12" cy="12" r="12"></circle>
+        </svg>
+    );
+};
+
+export default React.memo(FillCircle);

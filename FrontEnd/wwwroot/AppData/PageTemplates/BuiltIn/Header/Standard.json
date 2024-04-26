@@ -1,0 +1,284 @@
+{
+    "nodeId": "8c4af81c-6dea-4ce2-8828-5111ccab0c3d",
+    "name": "Header",
+    "type": "Header",
+    "parentId": "00000000-0000-0000-0000-000000000000",
+    "sortOrder": 0,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "variantName": null,
+    "layoutPageId": null,
+    "templateHash": "111c82827c49fbd6ef4b6f348c668e03c2ffc9dbc43294568b60bb7242e05b3a",
+    "id": "77328a43-7020-4211-afde-885b78a5aa26",
+    "generalFields": {
+        "horizontalRule": "",
+        "tags": [],
+        "hideBreadcrumbs": false,
+        "variantName": "",
+        "layoutPage": ""
+    },
+    "translatableFields": {},
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "77328a43-7020-4211-afde-885b78a5aa26",
+            "type": "Header/SecondaryNavigation",
+            "zone": "SecondaryNavigation",
+            "isLayout": false,
+            "id": "6e3fc804-cf98-406a-a779-79d338b9f6a4",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "77328a43-7020-4211-afde-885b78a5aa26",
+            "type": "Header/LogoLinksSearch",
+            "zone": "SecondaryNavigation",
+            "isLayout": false,
+            "id": "00670da4-7bca-45af-8a46-743922834740",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "77328a43-7020-4211-afde-885b78a5aa26",
+            "type": "Header/MainNavigation",
+            "zone": "MainNavigation",
+            "isLayout": false,
+            "id": "e13b6b47-e69b-4262-b3b9-72b69c264019",
+            "generalFields": {
+                "showQuickOrder": true
+            },
+            "translatableFields": {
+                "links": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": [
+                        {
+                            "fields": {
+                                "linkType": "CascadingMenu",
+                                "destination": {
+                                    "type": "Category",
+                                    "value": "00000000-0000-0000-0000-000000000000"
+                                },
+                                "overrideTitle": "",
+                                "title": "",
+                                "numberOfColumns": 6,
+                                "maxDepth": 3,
+                                "openInNewWindow": false
+                            }
+                        },
+                        {
+                            "fields": {
+                                "linkType": "MegaMenu",
+                                "destination": {
+                                    "type": "Page",
+                                    "value": "nodeIdFor('Home')"
+                                },
+                                "overrideTitle": "Pages",
+                                "title": "",
+                                "numberOfColumns": 6,
+                                "maxDepth": 3,
+                                "openInNewWindow": false
+                            }
+                        }
+                    ]
+                }
+            },
+            "contextualFields": {}
+        },
+        {
+            "parentId": "77328a43-7020-4211-afde-885b78a5aa26",
+            "type": "Common/CartLink",
+            "zone": "Cart",
+            "isLayout": false,
+            "id": "579c4b99-471a-4beb-a65c-0ced7cc6a6b8",
+            "generalFields": {
+                "visibilityState": "both",
+                "icon": "cart"
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "6e3fc804-cf98-406a-a779-79d338b9f6a4",
+            "type": "Common/HeaderSignIn",
+            "zone": "SignIn",
+            "isLayout": false,
+            "id": "bb2d916a-af7a-4a62-aad1-e0ae17274f8b",
+            "generalFields": {
+                "visibilityState": "both",
+                "icon": "User",
+                "includeAccountMenu": true
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "6e3fc804-cf98-406a-a779-79d338b9f6a4",
+            "type": "Common/HeaderShipToAddress",
+            "zone": "ShipToAddress",
+            "isLayout": false,
+            "id": "cb28e726-c3ea-4390-af30-e75e127bb673",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "6e3fc804-cf98-406a-a779-79d338b9f6a4",
+            "type": "Common/LanguageMenu",
+            "zone": "Language",
+            "isLayout": false,
+            "id": "23772453-10da-445f-ad52-e9c1465f46b8",
+            "generalFields": {
+                "showIcon": true
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "6e3fc804-cf98-406a-a779-79d338b9f6a4",
+            "type": "Common/CurrencyMenu",
+            "zone": "Currency",
+            "isLayout": false,
+            "id": "7a9cb429-7793-4e39-ab12-0da461a3d3cc",
+            "generalFields": {
+                "showIcon": true
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "00670da4-7bca-45af-8a46-743922834740",
+            "type": "Basic/Logo",
+            "zone": "Logo",
+            "isLayout": false,
+            "id": "55733943-5b5d-4f68-a1f3-3286419e9ea9",
+            "generalFields": {
+                "isMobileSpecific": false
+            },
+            "translatableFields": {
+                "logoImage": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": "/images/victory_logo.svg"
+                },
+                "mobileSpecificImage": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+                }
+            },
+            "contextualFields": {}
+        },
+        {
+            "parentId": "00670da4-7bca-45af-8a46-743922834740",
+            "type": "Header/HeaderLinkList",
+            "zone": "LinkList",
+            "isLayout": false,
+            "id": "e58ecde4-aa23-42e8-a228-59030430626f",
+            "generalFields": {
+                "direction": "horizontal",
+                "alignment": "right",
+                "links": [
+                    {
+                        "fields": {
+                            "destination": {
+                                "type": "Page",
+                                "value": "nodeIdFor('Locations')"
+                            },
+                            "openInNewWindow": false
+                        }
+                    },
+                    {
+                        "fields": {
+                            "destination": {
+                                "type": "Page",
+                                "value": "nodeIdFor('Contact Us')"
+                            },
+                            "openInNewWindow": false
+                        }
+                    },
+                    {
+                        "fields": {
+                            "destination": {
+                                "type": "Page",
+                                "value": "nodeIdFor('About Us')"
+                            },
+                            "openInNewWindow": false
+                        }
+                    }
+                ]
+            },
+            "translatableFields": {
+                "title": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+                }
+            },
+            "contextualFields": {}
+        },
+        {
+            "parentId": "00670da4-7bca-45af-8a46-743922834740",
+            "type": "Header/HeaderSearchInput",
+            "zone": "Search",
+            "isLayout": false,
+            "id": "a0c20cc4-100c-45b2-8530-48de6f557a67",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "cb28e726-c3ea-4390-af30-e75e127bb673",
+            "type": "Header/AddressDrawerContainer",
+            "zone": "Container",
+            "isLayout": false,
+            "id": "2005ce97-ab49-4242-bc8f-d3ea5cdb0816",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "2005ce97-ab49-4242-bc8f-d3ea5cdb0816",
+            "type": "Header/AddressDrawerFulfillmentMethodSelector",
+            "zone": "FulfillmentMethod",
+            "isLayout": false,
+            "id": "9383eb46-5f36-4cc1-9532-dab8a94e5658",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "2005ce97-ab49-4242-bc8f-d3ea5cdb0816",
+            "type": "Header/AddressDrawerSelectCustomer",
+            "zone": "Addresses",
+            "isLayout": false,
+            "id": "bf441019-ed49-4c81-8702-0de9677c8f85",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "2005ce97-ab49-4242-bc8f-d3ea5cdb0816",
+            "type": "Header/AddressDrawerPickUpLocationSelector",
+            "zone": "PickUpAddress",
+            "isLayout": false,
+            "id": "d4b4633e-47a3-46dc-ab0e-dc69341285b5",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "2005ce97-ab49-4242-bc8f-d3ea5cdb0816",
+            "type": "Header/AddressDrawerApplyButton",
+            "zone": "ApplyButton",
+            "isLayout": false,
+            "id": "f06c9869-0b49-4b0d-920d-219a89c0bd3f",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "2005ce97-ab49-4242-bc8f-d3ea5cdb0816",
+            "type": "Header/AddressDrawerPunchOutCustomer",
+            "zone": "PunchOutAddress",
+            "isLayout": false,
+            "id": "79299c29-9470-474a-aa98-ae0ba3ed8720",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

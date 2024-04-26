@@ -1,0 +1,29 @@
+{
+  "nodeId": "14ed5fa7-b1a7-45d0-831a-472374b20625",
+  "name": "Robots.txt",
+  "type": "RobotsTxtPage",
+  "parentId": "00000000-0000-0000-0000-000000000000",
+  "sortOrder": 0,
+  "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+  "id": "b7f7afd6-5e81-4077-8749-a8ae7485ed6b",
+  "generalFields": {
+    "hideHeader": true,
+    "hideFooter": true,
+    "horizontalRule": "",
+    "tags": [],
+    "hideBreadcrumbs": true
+  },
+  "translatableFields": {},
+  "contextualFields": {},
+  "widgets": [
+    {
+      "parentId": "b7f7afd6-5e81-4077-8749-a8ae7485ed6b",
+      "type": "RobotsTxt/RobotsTxtContent",
+      "zone": "Content",
+      "id": "162924ea-b03a-4a96-8ec6-c6d806f98677",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    }
+  ]
+}

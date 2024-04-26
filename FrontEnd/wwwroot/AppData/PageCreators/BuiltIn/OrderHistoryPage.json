@@ -1,0 +1,12 @@
+{
+  "name": "Order History",
+  "parentType": "MyAccountPage",
+  "urlSegment": "Orders",
+  "pages": [
+    {
+      "urlSegment": "Details",
+      "name": "Order Details",
+      "type": "OrderDetailsPage"
+    }
+  ]
+}

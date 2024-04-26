@@ -1,0 +1,72 @@
+{
+    "nodeId": "d9660121-bd70-4846-aaf4-c9acb805d500",
+    "name": "Expired Account Activation Link",
+    "type": "ExpiredAccountActivationLinkPage",
+    "parentId": "a8f96748-0ee4-4f23-b834-248512d34273",
+    "sortOrder": -1,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "variantName": null,
+    "id": "a30284f8-4361-4faa-b8ee-899f9fc6bfb3",
+    "generalFields": {
+        "horizontalRule": "",
+        "hideHeader": false,
+        "hideFooter": false,
+        "hideFromSearchEngines": false,
+        "hideFromSiteSearch": false,
+        "excludeFromNavigation": false,
+        "excludeFromSignInRequired": true,
+        "tags": [],
+        "hideBreadcrumbs": false
+    },
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Account Activation Link Expired"
+        },
+        "openGraphTitle": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "urlSegment": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "ExpiredAccountActivationLink"
+        },
+        "openGraphUrl": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "openGraphImage": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "metaKeywords": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        },
+        "metaDescription": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+        }
+    },
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "a30284f8-4361-4faa-b8ee-899f9fc6bfb3",
+            "type": "Basic/PageTitle",
+            "zone": "Content",
+            "id": "d5caf6c1-3af1-4723-a5f5-25fac1b49f82",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "a30284f8-4361-4faa-b8ee-899f9fc6bfb3",
+            "type": "Basic/RichContent",
+            "zone": "Content",
+            "id": "b5bcbdcf-d631-4dd7-a32f-e1d38c981802",
+            "generalFields": {
+                "backgroundColor": "",
+                "padding": 0
+            },
+            "translatableFields": {},
+            "contextualFields": {
+                "content": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2|Desktop|d06988c0-9358-4dbb-aa3d-b7be5b6a7fd9": "<div>The link you used for activating your account is invalid. Please get a new link by trying <a href=\"/RedirectTo/SignInPage\">Forgot Password</a>.</div>"
+                }
+            }
+        }
+    ]
+}

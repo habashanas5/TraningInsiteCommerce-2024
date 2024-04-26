@@ -1,0 +1,35 @@
+{
+    "id": "6cde1eff-1a3b-4c7b-bbce-c5fb9ba2a0a3",
+    "nodeId": "2329a577-ebf2-4081-8d90-8bcadcae54ee",
+    "name": "Unhandled error",
+    "type": "UnhandledErrorPage",
+    "parentId": "b7c3099a-f200-4127-83f3-f0649ffc498c",
+    "sortOrder": 14,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "generalFields": {
+        "horizontalRule": "",
+        "hideBreadcrumbs": true,
+        "tags": []
+    },
+    "translatableFields": {
+        "title": {
+            "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Unhandled error"
+        }
+    },
+    "contextualFields": {},
+    "widgets": [
+        {
+            "id": "a737a7ef-39fb-45b1-8562-758af161125c",
+            "parentId": "6cde1eff-1a3b-4c7b-bbce-c5fb9ba2a0a3",
+            "type": "Basic/RichContent",
+            "zone": "Content",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {
+                "content": {
+                    "a26095ef-c714-e311-ba31-d43d7e4e88b2|Desktop|d06988c0-9358-4dbb-aa3d-b7be5b6a7fd9": "<p>We&#39;re sorry. An unhandled error has occurred and been reported.</p>"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Saved Order Details",
+  "parentType": "SavedOrderListPage",
+  "urlSegment": "Details"
+}

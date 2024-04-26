@@ -1,0 +1,59 @@
+{
+    "id": "cc05e861-3e17-4c14-a50a-c21c949be976",
+    "nodeId": "03715df7-0cee-4e3d-b91b-0048156aeee9",
+    "name": "ChangeCustomer",
+    "type": "ChangeCustomerPage",
+    "parentId": "f9c98cf8-c69d-400b-9a6f-8367be20698e",
+    "sortOrder": 1,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "generalFields": {
+        "horizontalRule": "",
+        "tags": []
+    },
+    "translatableFields": {},
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "cc05e861-3e17-4c14-a50a-c21c949be976",
+            "zone": "Content",
+            "type": "Basic/PageTitle",
+            "id": "3df81d65-60ce-4173-b353-0cce0ec2aca9",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "id": "98334078-d264-451a-b31e-002d8168f5eb",
+            "parentId": "cc05e861-3e17-4c14-a50a-c21c949be976",
+            "type": "Basic/Row",
+            "zone": "Content",
+            "fields": {
+                "columns": [[12,12,12,6,6],[12,12,12,6,6]],
+                "gap": 30
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "id": "7a9fc0fe-dead-491a-b585-6b202e569519",
+            "parentId": "98334078-d264-451a-b31e-002d8168f5eb",
+            "type": "Basic/Rows",
+            "zone": "Content0",
+            "fields": {
+                "rowCount": 2,
+                "gap": 1
+            },
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "id": "e4daeb7d-7496-4b29-ba7f-570579dd2d93",
+            "parentId": "7a9fc0fe-dead-491a-b585-6b202e569519",
+            "type": "ChangeCustomer/ChangeCustomerSelectCustomer",
+            "zone": "Content0",
+            "fields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

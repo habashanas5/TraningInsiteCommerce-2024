@@ -1,0 +1,5 @@
+{
+  "name": "Quick Order",
+  "parentType": "HomePage",
+  "urlSegment": "QuickOrder"
+}

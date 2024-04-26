@@ -1,0 +1,5 @@
+{
+  "name": "Quote Confirmation",
+  "parentType": "RfqRequestQuotePage",
+  "urlSegment": "Confirmation"
+}

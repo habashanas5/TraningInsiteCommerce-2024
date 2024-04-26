@@ -1,0 +1,36 @@
+{
+    "id": "08924bc2-a597-4283-90f1-14c269cc33f2",
+    "nodeId": "03715df7-0cee-4e3d-b91b-0048156aeee9",
+    "name": "CreateAccount",
+    "type": "CreateAccountPage",
+    "parentId": "8603d260-877e-4ee2-a9d8-92fd51960472",
+    "sortOrder": 1,
+    "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+    "generalFields": {
+        "horizontalRule": "",
+        "tags": [],
+        "excludeFromSignInRequired": true
+    },
+    "translatableFields": {},
+    "contextualFields": {},
+    "widgets": [
+        {
+            "parentId": "08924bc2-a597-4283-90f1-14c269cc33f2",
+            "zone": "Content",
+            "type": "Basic/PageTitle",
+            "id": "7a2944a4-af48-4fed-bf34-8443d02303a8",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        },
+        {
+            "parentId": "08924bc2-a597-4283-90f1-14c269cc33f2",
+            "zone": "Content",
+            "type": "CreateAccount/CreateAccount",
+            "id": "7e64dab4-2e9b-454b-a46b-a67ad6c5f095",
+            "generalFields": {},
+            "translatableFields": {},
+            "contextualFields": {}
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+  "nodeId": "98546921-a721-48de-8331-1e031a2ac917",
+  "name": "Requisitions",
+  "type": "RequisitionsPage",
+  "parentId": "a46310a5-374a-4d1e-a4f2-b3614b727065",
+  "sortOrder": 1,
+  "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+  "id": "227330b8-e391-442d-891f-1b021b948662",
+  "fields": {
+    "title": "Requisitions",
+    "name": "Requisitions",
+    "urlSegment": "Requisitions",
+    "horizontalRule": "",
+    "excludeFromNavigation": true,
+    "tags": []
+  },
+  "translatableFields": {
+    "title": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Requisitions"
+    },
+    "urlSegment": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "Requisitions"
+    }
+  },
+  "contextualFields": {},
+  "widgets": [
+    {
+      "parentId": "227330b8-e391-442d-891f-1b021b948662",
+      "type": "Requisitions/RequisitionsHeader",
+      "zone": "Content",
+      "id": "6d2afa8a-9813-40b7-8267-73045f263598",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "227330b8-e391-442d-891f-1b021b948662",
+      "type": "Requisitions/RequisitionsProductList",
+      "zone": "Content",
+      "id": "31fc97ed-94cb-4faf-8b46-2f7e4c50fe01",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    }
+  ]
+}

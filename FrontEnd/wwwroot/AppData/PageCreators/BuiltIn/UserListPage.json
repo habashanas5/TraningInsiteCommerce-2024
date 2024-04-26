@@ -1,0 +1,13 @@
+{
+    "name": "User Administration",
+    "parentType": "MyAccountPage",
+    "urlSegment": "UserAdministration",
+    "pages": [
+      {
+        "urlSegment": "UserSetup",
+        "name": "User Setup",
+        "type": "UserSetupPage"
+      }
+    ]
+  }
+  

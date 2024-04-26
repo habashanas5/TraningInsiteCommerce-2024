@@ -1,0 +1,79 @@
+{
+  "nodeId": "556e2423-f2a5-4f82-915a-f244d443bff2",
+  "name": "My Quotes",
+  "type": "RfqMyQuotesPage",
+  "parentId": "a46310a5-374a-4d1e-a4f2-b3614b727065",
+  "sortOrder": 0,
+  "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+  "id": "16fa52df-e745-4dc3-a416-86a6ca717f3c",
+  "generalFields": {
+    "horizontalRule": "",
+    "tags": [],
+    "hideBreadcrumbs": false
+  },
+  "translatableFields": {
+    "title": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "My Quotes"
+    },
+    "urlSegment": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "MyQuotes"
+    }
+  },
+  "contextualFields": {},
+  "widgets": [
+    {
+      "parentId": "16fa52df-e745-4dc3-a416-86a6ca717f3c",
+      "type": "RfqMyQuotes/RfqMyQuotesHeader",
+      "zone": "Content",
+      "id": "55e6fbdb-5a61-47a8-88ae-28e232217464",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "55e6fbdb-5a61-47a8-88ae-28e232217464",
+      "zone": "Content00",
+      "type": "Basic/PageTitle",
+      "id": "877e8f6c-5f02-4ed6-9307-9fec1690f878",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "55e6fbdb-5a61-47a8-88ae-28e232217464",
+      "zone": "Content00",
+      "type": "RfqMyQuotes/RfqMyQuotesTypeSelector",
+      "id": "e76b14c4-a2b1-41d9-8eeb-a7d4d1b46b8d",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "16fa52df-e745-4dc3-a416-86a6ca717f3c",
+      "zone": "Content",
+      "type": "RfqMyQuotes/RfqMyQuotesFilter",
+      "id": "b03b628e-96d3-4f84-b0d2-a789679a89c8",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "16fa52df-e745-4dc3-a416-86a6ca717f3c",
+      "zone": "Content",
+      "type": "RfqMyQuotes/RfqMyQuotesTable",
+      "id": "457b0030-defd-4e95-9326-cdd17fd50e26",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "16fa52df-e745-4dc3-a416-86a6ca717f3c",
+      "zone": "Content",
+      "type": "RfqMyQuotes/RfqMyQuotesPagination",
+      "id": "43a88862-5564-4f2c-8cee-355073b58ee1",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    }
+  ]
+}

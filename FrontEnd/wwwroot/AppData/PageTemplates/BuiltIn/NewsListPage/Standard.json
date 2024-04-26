@@ -1,0 +1,98 @@
+{
+  "nodeId": "df7d8090-07c7-4f6a-893b-d1879acf3d61",
+  "name": "News",
+  "type": "NewsListPage",
+  "parentId": "eb5e3035-0340-413c-ba27-e60f8d0a0b14",
+  "sortOrder": -1,
+  "websiteId": "c2c53320-98dc-4eca-8022-9efc00dea0dc",
+  "variantName": null,
+  "id": "838ec6b7-93b7-4ce4-817a-36455511e0e6",
+  "generalFields": {
+    "horizontalRule": "",
+    "hideHeader": false,
+    "hideFooter": false,
+    "hideFromSearchEngines": false,
+    "hideFromSiteSearch": false,
+    "excludeFromNavigation": false,
+    "excludeFromSignInRequired": false,
+    "tags": [],
+    "variantName": "",
+    "hideBreadcrumbs": false
+  },
+  "translatableFields": {
+    "title": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "News"
+    },
+    "openGraphTitle": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+    },
+    "urlSegment": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": "news"
+    },
+    "openGraphUrl": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+    },
+    "openGraphImage": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+    },
+    "metaKeywords": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+    },
+    "metaDescription": {
+      "a26095ef-c714-e311-ba31-d43d7e4e88b2": ""
+    }
+  },
+  "contextualFields": {},
+  "widgets": [
+    {
+      "parentId": "838ec6b7-93b7-4ce4-817a-36455511e0e6",
+      "zone": "Content",
+      "type": "Basic/Row",
+      "id": "79fee04b-38ee-4a48-8437-6e5977ae2cfc",
+      "generalFields": {
+        "columns": [
+          12
+        ],
+        "alignment": [],
+        "gap": 0,
+        "reflow": true
+      },
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "838ec6b7-93b7-4ce4-817a-36455511e0e6",
+      "zone": "Content",
+      "type": "Basic/Row",
+      "id": "b4cb914c-dafc-414c-868e-b2a9fac2c2c5",
+      "generalFields": {
+        "columns": [
+          12
+        ],
+        "alignment": [],
+        "gap": 0,
+        "reflow": true
+      },
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "79fee04b-38ee-4a48-8437-6e5977ae2cfc",
+      "zone": "Content0",
+      "type": "Basic/PageTitle",
+      "id": "547debf5-9974-4187-a1ac-61e5ddd9b392",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    },
+    {
+      "parentId": "b4cb914c-dafc-414c-868e-b2a9fac2c2c5",
+      "zone": "Content0",
+      "type": "NewsList/NewsListView",
+      "id": "6f695f72-8db4-43dc-ba79-6b50af6884e6",
+      "generalFields": {},
+      "translatableFields": {},
+      "contextualFields": {}
+    }
+  ]
+}
