@@ -1,4 +1,4 @@
-﻿/*using Insite.Core.Context;
+﻿using Insite.Core.Context;
 using Insite.Core.Interfaces.Data;
 using Insite.Core.Interfaces.Dependency;
 using Insite.Core.Interfaces.Localization;
@@ -43,4 +43,4 @@ namespace InsiteCommerce.Web.Extensions.Plugins.Pipelines.GetProductPricingPies
             return result;  
         }
     }
-}*/
+}

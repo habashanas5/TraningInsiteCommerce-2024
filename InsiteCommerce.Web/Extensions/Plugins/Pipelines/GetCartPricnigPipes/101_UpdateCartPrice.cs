@@ -1,4 +1,4 @@
-﻿/*using Insite.Common.Helpers;
+﻿using Insite.Common.Helpers;
 using Insite.Common.Providers;
 using Insite.Core.Context;
 using Insite.Core.Interfaces.Data;
@@ -44,4 +44,3 @@ namespace InsiteCommerce.Web.Extensions.Plugins.Pipelines.GetCartPricnigPipes
         }
     }
 }
-*/

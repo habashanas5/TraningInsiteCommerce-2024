@@ -1,5 +1,4 @@
-﻿/*
-using Insite.Catalog.Services.Dtos;
+﻿using Insite.Catalog.Services.Dtos;
 using Insite.Catalog.Services.Parameters;
 using Insite.Catalog.Services.Pipelines;
 using Insite.Catalog.Services.Pipelines.Parameters;
@@ -41,5 +40,3 @@ namespace InsiteCommerce.Web.Extensions.Catalog.Handler.GetProductCollectionHand
         }
     }
 }
-
-*/

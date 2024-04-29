@@ -1,5 +1,4 @@
-﻿/*
-using Insite.Cart.Services.Parameters;
+﻿using Insite.Cart.Services.Parameters;
 using Insite.Cart.Services.Results;
 using Insite.Core.Interfaces.Data;
 using Insite.Core.Interfaces.Dependency;
@@ -59,4 +58,3 @@ namespace InsiteCommerce.Web.Extensions.Cart.Handler.AddCartLineHandler
         }
     }
 }
-*/

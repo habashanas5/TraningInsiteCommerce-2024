@@ -64,6 +64,7 @@
     </Content>
     <Content Include="ImportExport\**\*" />
     <EmbeddedResource Include="AdminConsoleMenuExtensions.json" />
+    <EmbeddedResource Include="Extensions\DatabaseScripts\UserProfileCustomProperty.sql" />
     <Content Include="crossdomain.xml" />
     <Content Include="config\*.config" />
     <Content Include="Global.asax" />
@@ -88,6 +89,9 @@
     <Content Include="Themes\**\*" />
     <Content Remove="Themes\**\bin\**\*" />
     <Content Remove="Themes\**\obj\**\*" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Extensions\DatabaseScripts\UserProfileCustomProperty.sql" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Insite.Commerce.Private" Version="5.1.0.178" />
