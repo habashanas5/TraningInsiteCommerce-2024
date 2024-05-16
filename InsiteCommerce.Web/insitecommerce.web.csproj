@@ -65,6 +65,7 @@
     <Content Include="ImportExport\**\*" />
     <EmbeddedResource Include="AdminConsoleMenuExtensions.json" />
     <EmbeddedResource Include="Extensions\DatabaseScripts\2024.05.02.01.ProductExtension.sql" />
+    <EmbeddedResource Include="Extensions\DatabaseScripts\2024.05.14.01.ContactUsExtension.sql" />
     <Content Include="crossdomain.xml" />
     <Content Include="config\*.config" />
     <Content Include="Global.asax" />
@@ -92,14 +93,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Extensions\DatabaseScripts\2024.05.02.01.ProductExtension.sql" />
+    <None Remove="Extensions\DatabaseScripts\2024.05.14.01.ContactUsExtension.sql" />
     <None Remove="Extensions\DatabaseScripts\UserProfileCustomProperty.sql" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Insite.Commerce.Private" Version="5.1.0.178" />
     <PackageReference Include="Insite.Commerce.Public" Version="5.1.0.178" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Extensions\CustomApi\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
