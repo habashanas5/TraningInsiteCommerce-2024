@@ -4,7 +4,10 @@ using Insite.Core.Localization;
 using Insite.Core.Plugins.Utilities;
 using Insite.Core.WebApi;
 using InsiteCommerce.Web.Extensions.Entities;
+using Microsoft.AspNet.SignalR.Messaging;
+using Microsoft.Graph;
 using System.Linq;
+using System.Net.Mail;
 using System.Web.Http;
 
 namespace InsiteCommerce.Web.Extensions.CustomApi
@@ -16,19 +19,25 @@ namespace InsiteCommerce.Web.Extensions.CustomApi
         private readonly ICookieManager cookieManager;
         public IUnitOfWork unitOfWork;
         private readonly CustomMessageProvider customMessageProvider;
-      
+        private readonly ContactUsSettings contactUsSettings;
+        protected readonly IEmailService EmailService;
+
         public ContactUsExtensionController
           (
            ICookieManager cookieManager,
            IUnitOfWorkFactory unitOfWorkFactory,
            IEmailService emailService,
-            IEntityTranslationService entityTranslationService
+           IEntityTranslationService entityTranslationService,
+           ContactUsSettings contactUsSettings
+
           )
           : base((cookieManager))
         {
             this.unitOfWorkFactory = unitOfWorkFactory;
             unitOfWork = unitOfWorkFactory.GetUnitOfWork();
             this.customMessageProvider = new CustomMessageProvider();
+            this.EmailService = emailService;
+            this.contactUsSettings = contactUsSettings;
         }
 
         [HttpGet]
@@ -62,35 +71,44 @@ namespace InsiteCommerce.Web.Extensions.CustomApi
 
         [HttpPost]
         [Route("AddContactUsExtensionsList")]
-        public IHttpActionResult AddContactUsExtension()
+        public IHttpActionResult AddContactUsExtension([FromBody] ContactUsData contactUsData)
         {
-            var contactUsExtensionsRepository = unitOfWork.GetRepository<ContactUsExtension>();
-
-            var initialContactUsExtension = new ContactUsExtension
+            if (contactUsData == null)
             {
-                Subject = "ContactUs",
-                FirstName = "John",
-                LastName = "Doe",
-                Email =  "johndoe@example.com",
-                Phone =  "123456789",
-                Address = "123 Main St",
-                Message = "message",
-                Country = "Japan",
-                ZipCode = "12345"
-            };
+                return BadRequest("ContactUsData is null");
+            }
 
+            var contactUsExtensionsRepository = unitOfWork.GetRepository<ContactUsExtension>();
+            string emailTo = contactUsSettings?.ContactUsEmailAddress;
+
+            if (string.IsNullOrEmpty(emailTo))
+            {
+                return BadRequest("Email address not found in SystemSetting table.");
+            }
             var contactUsExtension = new ContactUsExtension
             {
-                Subject = initialContactUsExtension.Subject,
-                FirstName = initialContactUsExtension.FirstName,
-                LastName = initialContactUsExtension.LastName,
-                Email = initialContactUsExtension.Email,
-                Phone = initialContactUsExtension.Phone,
-                Address = initialContactUsExtension.Address,
-                Message = initialContactUsExtension.Message,
-                Country = initialContactUsExtension.Country,
-                ZipCode = initialContactUsExtension.ZipCode
+                Subject = contactUsData.Subject,
+                FirstName = contactUsData.FirstName,
+                LastName = contactUsData.LastName,
+                Email = contactUsData.Email,
+                Phone = contactUsData.Phone,
+                Address = contactUsData.Address,
+                Message = contactUsData.Message,
+                Country = contactUsData.Country,
+                ZipCode = contactUsData.ZipCode,
             };
+            string adminSubject = "New Contact Us Submission";
+            string adminMessage = $"You have received a new contact us submission:\n\nFirst Name: {contactUsData.FirstName}\nLast Name: {contactUsData.LastName}\nEmail: {contactUsData.Email}\nMessage: {contactUsData.Message}\nTopic: {contactUsData.Subject}";
+        
+            var sendEmailParameter = new SendEmailParameter
+            {
+                    ToAddresses = new[] { emailTo },
+                    Subject = adminSubject,
+                    FromAddress = contactUsData.Email,
+                    Body = adminMessage
+            };
+
+            this.EmailService.SendEmail(sendEmailParameter, unitOfWork);
             contactUsExtensionsRepository.Insert(contactUsExtension);
             unitOfWork.Save();
 

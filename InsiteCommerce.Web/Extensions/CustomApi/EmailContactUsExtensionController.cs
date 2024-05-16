@@ -27,17 +27,21 @@ namespace InsiteCommerce.Web.Extensions.CustomApi
         private readonly ICookieManager cookieManager;
         public IUnitOfWork unitOfWork;
         protected readonly IEmailService EmailService;
+        private readonly ContactUsSettings contactUsSettings;
 
         public EmailContactUsExtensionController(
              ICookieManager cookieManager,
              IUnitOfWorkFactory unitOfWorkFactory,
-             IEmailService emailService
+             IEmailService emailService,
+             ContactUsSettings contactUsSettings
+
             )
         : base((cookieManager))
         {
             this.unitOfWorkFactory = unitOfWorkFactory;
             unitOfWork = unitOfWorkFactory.GetUnitOfWork();
             this.EmailService = emailService;
+            this.contactUsSettings = contactUsSettings;
         }
 
         [HttpPost]
@@ -46,10 +50,9 @@ namespace InsiteCommerce.Web.Extensions.CustomApi
         {
             try
             {
-                string emailTo = GetEmailAddressFromSystemSetting();
+                string emailTo = contactUsSettings?.ContactUsEmailAddress;
                 if (string.IsNullOrEmpty(emailTo))
                 {
-                    // Handle the case where the email address is not found
                     return BadRequest("Email address not found in SystemSetting table.");
                 }
 
@@ -73,12 +76,6 @@ namespace InsiteCommerce.Web.Extensions.CustomApi
                 return Ok(new { Success = true });
             }
             catch(Exception ex) {return BadRequest(ex.Message); }
-        }
-
-        private string GetEmailAddressFromSystemSetting()
-        {
-             var systemSetting = unitOfWork.GetRepository<SystemSetting>().GetTable().FirstOrDefault(setting => setting.Name == "ContactUsEmail");
-             return systemSetting?.Value;
         }
     }
 }
